@@ -38,3 +38,12 @@ examples/
 - Rusted Warfare 1.15 Unit Modding Reference
 - Rusted Warfare 1.15 版本动态逻辑/Action 变化
 - NaomiUGR 的 Rusted Warfare Graphics Repository（其中包含 1.15 Modding Reference 与大量单位资源）
+
+
+## 网站项目 / Mod Workshop website
+
+完整网站源码、配套教程模组和维护脚本见 [website/](website/)
+
+在线访问：[铁锈战争模组工坊](https://rwmod.noaushio.uk)
+
+本次网站教程示例通过静态检查，尚未在游戏引擎内验证，原有仓库验证说明保持独立

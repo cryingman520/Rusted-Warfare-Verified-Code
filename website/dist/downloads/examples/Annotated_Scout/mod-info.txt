@@ -1,0 +1,7 @@
+[mod]
+# 游戏 Mod 管理页显示的标题。
+title: Annotated Scout / 中文注释示例
+# 普通静态说明文字。
+description: 演示单位配置、炮塔、弹种切换与内存计数。已静态核对，尚未实机验证。
+# 使用与本手册一致的最低版本。
+minVersion: 1.15

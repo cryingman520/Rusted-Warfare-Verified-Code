@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 这是对象组片段，不是独立地图。合入完整 TMX 时应合并已有 triggers 组。 -->
+<!-- XML object 的 type 决定触发器类型，properties 才是具体参数。 -->
+<objectgroup name="triggers">
+  <!-- 地图开始后 10 秒，在此位置为已存在的队伍 0 生成两辆 tank。 -->
+  <object name="doc_spawn" type="unitAdd" x="200" y="200" width="20" height="20">
+    <properties>
+      <property name="team" value="0"/>
+      <property name="delay" value="10s"/>
+      <property name="repeatCount" value="1"/>
+      <property name="spawnUnits" value="tank*2"/>
+      <property name="globalMessage" value="示例增援已经抵达"/>
+    </properties>
+  </object>
+</objectgroup>

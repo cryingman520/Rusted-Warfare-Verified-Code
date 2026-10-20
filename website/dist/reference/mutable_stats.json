@@ -1,0 +1,268 @@
+[
+  {
+    "key": "mass",
+    "description_zh": "碰撞质量",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 62
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "maxenergy",
+    "description_zh": "能量上限",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 63
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "energy",
+    "description_zh": "当前能量",
+    "can_preserve_as_changed_stat": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 64
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "maxhp",
+    "description_zh": "生命上限",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 65
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "hp",
+    "description_zh": "当前生命",
+    "can_preserve_as_changed_stat": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 66
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "maxshield",
+    "description_zh": "护盾上限",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 67
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "shield",
+    "description_zh": "当前护盾",
+    "can_preserve_as_changed_stat": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 68
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "shieldregen",
+    "description_zh": "护盾恢复率",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 69
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "armour",
+    "description_zh": "护甲",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 70
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "maxattackrange",
+    "description_zh": "攻击距离上限",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 71
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "shootdelaymultiplier",
+    "description_zh": "射击间隔倍率；更小通常更快",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 72
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "shootdamagemultiplier",
+    "description_zh": "射击伤害倍率",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 73
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "movespeed",
+    "description_zh": "移动速度上限",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 74
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "maxturnspeed",
+    "description_zh": "转向速度上限",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 75
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "fogofwarsightrange",
+    "description_zh": "视野范围",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 76
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "nanorange",
+    "description_zh": "建造/维修范围",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 77
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "selfregenrate",
+    "description_zh": "自我生命恢复率",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 78
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "targetheight",
+    "description_zh": "目标高度",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 79
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  {
+    "key": "nanofactoryspeed",
+    "description_zh": "工厂生产速度倍率",
+    "can_preserve_as_changed_stat": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/as.java",
+      "line": 80
+    },
+    "operators": [
+      "=",
+      "+=",
+      "-="
+    ]
+  }
+]

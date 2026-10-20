@@ -1,0 +1,5 @@
+[mod]
+# 教程配套项目 / Tutorial project
+title: Adaptive Patrol
+description: Automatically enter emergency mode below half health and return to cruise after repair
+minVersion: 1.15

@@ -1,0 +1,5 @@
+[mod]
+# 教程配套项目 / Tutorial project
+title: Patrol Pair
+description: Two ground vehicles for learning unit basics and inheritance
+minVersion: 1.15

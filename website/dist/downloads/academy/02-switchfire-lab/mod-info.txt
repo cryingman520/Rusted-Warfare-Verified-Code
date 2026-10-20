@@ -1,0 +1,5 @@
+[mod]
+# 教程配套项目 / Tutorial project
+title: Switchfire Lab
+description: Switch ammunition, count shots and reuse the logic in a second vehicle
+minVersion: 1.15

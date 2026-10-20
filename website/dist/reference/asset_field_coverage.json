@@ -1,0 +1,7493 @@
+[
+  {
+    "section": "core",
+    "key": "strictLevel",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/all-units.template",
+      "line": 7,
+      "value": "1"
+    }
+  },
+  {
+    "section": "mod",
+    "key": "title",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mod-info.txt",
+      "line": 2,
+      "value": "Mega Builders"
+    }
+  },
+  {
+    "section": "mod",
+    "key": "description",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mod-info.txt",
+      "line": 3,
+      "value": "Example mod which replaces builders with Mega Builders"
+    }
+  },
+  {
+    "section": "mod",
+    "key": "minVersion",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mod-info.txt",
+      "line": 5,
+      "value": "v1.15p7"
+    }
+  },
+  {
+    "section": "mod",
+    "key": "tags",
+    "classification": "asset_metadata_not_consumed_by_android_mod_reader",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mod-info.txt",
+      "line": 7,
+      "value": "starting-units, units"
+    }
+  },
+  {
+    "section": "mod",
+    "key": "thumbnail",
+    "classification": "asset_metadata_not_consumed_by_android_mod_reader",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mod-info.txt",
+      "line": 9,
+      "value": "mod-thumbnail.png"
+    }
+  },
+  {
+    "section": "core",
+    "key": "name",
+    "classification": "direct_field",
+    "appearance_count": 127,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 3,
+      "value": "megaBuilder"
+    }
+  },
+  {
+    "section": "core",
+    "key": "class",
+    "classification": "direct_field",
+    "appearance_count": 81,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 4,
+      "value": "CustomUnitMetadata"
+    }
+  },
+  {
+    "section": "core",
+    "key": "price",
+    "classification": "direct_field",
+    "appearance_count": 114,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 5,
+      "value": "1300"
+    }
+  },
+  {
+    "section": "core",
+    "key": "maxHp",
+    "classification": "direct_field",
+    "appearance_count": 102,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 6,
+      "value": "450"
+    }
+  },
+  {
+    "section": "core",
+    "key": "mass",
+    "classification": "direct_field",
+    "appearance_count": 82,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 7,
+      "value": "4000"
+    }
+  },
+  {
+    "section": "core",
+    "key": "overrideAndReplace",
+    "classification": "direct_field",
+    "appearance_count": 23,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 12,
+      "value": "builder"
+    }
+  },
+  {
+    "section": "core",
+    "key": "displayText",
+    "classification": "direct_field",
+    "appearance_count": 13,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 15,
+      "value": "Mega Builder"
+    }
+  },
+  {
+    "section": "core",
+    "key": "displayDescription",
+    "classification": "direct_field",
+    "appearance_count": 13,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 16,
+      "value": "-Like a builder but better\\n-From the example mod"
+    }
+  },
+  {
+    "section": "core",
+    "key": "techLevel",
+    "classification": "direct_field",
+    "appearance_count": 99,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 18,
+      "value": "1"
+    }
+  },
+  {
+    "section": "core",
+    "key": "buildSpeed",
+    "classification": "direct_field",
+    "appearance_count": 98,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 20,
+      "value": "0.001"
+    }
+  },
+  {
+    "section": "core",
+    "key": "availableInDemo",
+    "classification": "direct_field",
+    "appearance_count": 22,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 21,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "radius",
+    "classification": "direct_field",
+    "appearance_count": 83,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 25,
+      "value": "17"
+    }
+  },
+  {
+    "section": "core",
+    "key": "displayRadius",
+    "classification": "direct_field",
+    "appearance_count": 36,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 26,
+      "value": "18"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isBio",
+    "classification": "direct_field",
+    "appearance_count": 75,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 28,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canRepairBuildings",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 37,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canRepairUnits",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 38,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "nanoRange",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 41,
+      "value": "95"
+    }
+  },
+  {
+    "section": "core",
+    "key": "nanoBuildSpeed",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 42,
+      "value": "2.5"
+    }
+  },
+  {
+    "section": "core",
+    "key": "nanoRepairSpeed",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 44,
+      "value": "0.3"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_1_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 10,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 46,
+      "value": "reclaim"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_1_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 47,
+      "value": "-1"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_3_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 50,
+      "value": "extractor"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_3_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 51,
+      "value": "3"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_4_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 53,
+      "value": "landFactory"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_4_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 54,
+      "value": "4"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_5_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 57,
+      "value": "airFactory"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_5_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 58,
+      "value": "5"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_6_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 61,
+      "value": "seaFactory"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_6_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 62,
+      "value": "6"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_7_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 65,
+      "value": "fabricator"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_7_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 66,
+      "value": "7"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_8_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 68,
+      "value": "repairBay"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_8_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 69,
+      "value": "8"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_10_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 72,
+      "value": "turret"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_10_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 73,
+      "value": "3.1"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_11_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 76,
+      "value": "antiAirTurret"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_11_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 77,
+      "value": "3.2"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_12_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 79,
+      "value": "laserDefence"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_12_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 80,
+      "value": "12"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_13_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 82,
+      "value": "experimentalLandFactory"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_13_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 83,
+      "value": "13"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_14_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 85,
+      "value": "antiNukeLaucher"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_14_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 86,
+      "value": "14"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_15_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 88,
+      "value": "mechFactory"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_15_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 89,
+      "value": "4.1"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "total_frames",
+    "classification": "direct_field",
+    "appearance_count": 86,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 95,
+      "value": "1"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "image",
+    "classification": "direct_field",
+    "appearance_count": 104,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 96,
+      "value": "builder.png"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "image_wreak",
+    "classification": "direct_field",
+    "appearance_count": 86,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 97,
+      "value": "builder_dead.png"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "image_turret",
+    "classification": "direct_field",
+    "appearance_count": 71,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 98,
+      "value": "SHARED:small_laser_turret.png"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "image_shadow",
+    "classification": "direct_field",
+    "appearance_count": 88,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 103,
+      "value": "AUTO"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "shadowOffsetX",
+    "classification": "direct_field",
+    "appearance_count": 88,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 104,
+      "value": "2"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "shadowOffsetY",
+    "classification": "direct_field",
+    "appearance_count": 88,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 105,
+      "value": "2"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "canAttack",
+    "classification": "direct_field",
+    "appearance_count": 106,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 112,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "canAttackFlyingUnits",
+    "classification": "direct_field",
+    "appearance_count": 106,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 113,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "canAttackLandUnits",
+    "classification": "direct_field",
+    "appearance_count": 106,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 114,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "canAttackUnderwaterUnits",
+    "classification": "direct_field",
+    "appearance_count": 106,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 115,
+      "value": "false"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "isFixedFiring",
+    "classification": "direct_field",
+    "appearance_count": 22,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 117,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "turretSize",
+    "classification": "direct_field",
+    "appearance_count": 89,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 119,
+      "value": "3"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "turretTurnSpeed",
+    "classification": "direct_field",
+    "appearance_count": 88,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 120,
+      "value": "3"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "maxAttackRange",
+    "classification": "direct_field",
+    "appearance_count": 93,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 122,
+      "value": "170"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "shootDelay",
+    "classification": "direct_field",
+    "appearance_count": 94,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 123,
+      "value": "50"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "x",
+    "classification": "direct_field",
+    "appearance_count": 193,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 129,
+      "value": "0"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "y",
+    "classification": "direct_field",
+    "appearance_count": 193,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 130,
+      "value": "5"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "invisible",
+    "classification": "direct_field",
+    "appearance_count": 77,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 131,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "warmup",
+    "classification": "direct_field",
+    "appearance_count": 88,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 132,
+      "value": "30"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "canShoot",
+    "classification": "direct_field",
+    "appearance_count": 79,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 134,
+      "value": "false"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "canAttackFlyingUnits",
+    "classification": "direct_field",
+    "appearance_count": 37,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 135,
+      "value": "false"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "canAttackLandUnits",
+    "classification": "direct_field",
+    "appearance_count": 38,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 136,
+      "value": "false"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "canAttackUnderwaterUnits",
+    "classification": "direct_field",
+    "appearance_count": 33,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 137,
+      "value": "false"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "shoot_sound",
+    "classification": "direct_field",
+    "appearance_count": 77,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 145,
+      "value": "plasma_fire"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "shoot_sound_vol",
+    "classification": "direct_field",
+    "appearance_count": 77,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 146,
+      "value": "0.05"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "shoot_flame",
+    "classification": "direct_field",
+    "appearance_count": 73,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 147,
+      "value": "small"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "shoot_light",
+    "classification": "direct_field",
+    "appearance_count": 76,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 148,
+      "value": "#FFccCCEE"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "directDamage",
+    "classification": "direct_field",
+    "appearance_count": 95,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 157,
+      "value": "30"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "life",
+    "classification": "direct_field",
+    "appearance_count": 118,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 158,
+      "value": "70"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "speed",
+    "classification": "direct_field",
+    "appearance_count": 97,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 159,
+      "value": "7"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "frame",
+    "classification": "direct_field",
+    "appearance_count": 75,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 160,
+      "value": "11"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "x",
+    "classification": "direct_field",
+    "appearance_count": 113,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 166,
+      "value": "-10"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "y",
+    "classification": "direct_field",
+    "appearance_count": 113,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 167,
+      "value": "10"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "attach_x",
+    "classification": "direct_field",
+    "appearance_count": 90,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 168,
+      "value": "-5"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "attach_y",
+    "classification": "direct_field",
+    "appearance_count": 90,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 169,
+      "value": "5"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "heightSpeed",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 171,
+      "value": "0.8"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "moveSpeed",
+    "classification": "direct_field",
+    "appearance_count": 20,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 172,
+      "value": "3.4"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "resetAngle",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 173,
+      "value": "20"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "image_leg",
+    "classification": "direct_field",
+    "appearance_count": 19,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 177,
+      "value": "SHARED:leg.png"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "image_foot",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 178,
+      "value": "SHARED:foot.png"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "dust_effect",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 182,
+      "value": "false"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "holdDisMin",
+    "classification": "direct_field",
+    "appearance_count": 19,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 184,
+      "value": "6"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "holdDisMax",
+    "classification": "direct_field",
+    "appearance_count": 19,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 185,
+      "value": "26"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "copyFrom",
+    "classification": "direct_field",
+    "appearance_count": 74,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 193,
+      "value": "1"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "movementType",
+    "classification": "direct_field",
+    "appearance_count": 87,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 212,
+      "value": "LAND"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "moveSpeed",
+    "classification": "direct_field",
+    "appearance_count": 91,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 213,
+      "value": "1.2"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "moveAccelerationSpeed",
+    "classification": "direct_field",
+    "appearance_count": 87,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 214,
+      "value": "0.03"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "moveDecelerationSpeed",
+    "classification": "direct_field",
+    "appearance_count": 87,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 215,
+      "value": "0.08"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "maxTurnSpeed",
+    "classification": "direct_field",
+    "appearance_count": 88,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 219,
+      "value": "3.5"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "turnAcceleration",
+    "classification": "direct_field",
+    "appearance_count": 85,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 220,
+      "value": "0.25"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "moveSlidingMode",
+    "classification": "direct_field",
+    "appearance_count": 57,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 222,
+      "value": "true"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "moveIgnoringBody",
+    "classification": "direct_field",
+    "appearance_count": 57,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 223,
+      "value": "true"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "moveSlidingDir",
+    "classification": "direct_field",
+    "appearance_count": 37,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 224,
+      "value": "181"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "useAsBuilder",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "line": 228,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "copyFrom",
+    "classification": "direct_field",
+    "appearance_count": 60,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 4,
+      "value": "turret_common_land.ini"
+    }
+  },
+  {
+    "section": "core",
+    "key": "displayLocaleKey",
+    "classification": "direct_field",
+    "appearance_count": 33,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 6,
+      "value": "turret"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "convertTo",
+    "classification": "direct_field",
+    "appearance_count": 57,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 17,
+      "value": "c_turret_t2_gun"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "price",
+    "classification": "direct_field",
+    "appearance_count": 61,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 18,
+      "value": "1000"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "text",
+    "classification": "direct_field",
+    "appearance_count": 70,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 19,
+      "value": "i:gui.actions.upgradeToGunT2"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "description",
+    "classification": "direct_field",
+    "appearance_count": 49,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 20,
+      "value": "-Increases HP, attack damage, and range"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "descriptionAddUnitStats",
+    "classification": "direct_field",
+    "appearance_count": 13,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 21,
+      "value": "${section.convertTo}"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "displayType",
+    "classification": "direct_field",
+    "appearance_count": 53,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 23,
+      "value": "Upgrade"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "buildSpeed",
+    "classification": "direct_field",
+    "appearance_count": 68,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 24,
+      "value": "0.001"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "iconExtraImage",
+    "classification": "direct_field",
+    "appearance_count": 28,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 26,
+      "value": "SHARED:icon_upgrade_top.png"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "iconExtraColor",
+    "classification": "direct_field",
+    "appearance_count": 29,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 27,
+      "value": "#AAFFFFFF"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "idleSweepAngle",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 117,
+      "value": "20"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "idleSweepDelay",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 118,
+      "value": "210"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "idleSweepSpeed",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 119,
+      "value": "0.2"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "recoilOffset",
+    "classification": "direct_field",
+    "appearance_count": 62,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 122,
+      "value": "-0.5"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "recoilOutTime",
+    "classification": "direct_field",
+    "appearance_count": 56,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 123,
+      "value": "6"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "recoilReturnTime",
+    "classification": "direct_field",
+    "appearance_count": 56,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "line": 124,
+      "value": "12"
+    }
+  },
+  {
+    "section": "comment_action_turnOn",
+    "key": "isVisible",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 32,
+      "value": "if self.hasFlag(id=0)"
+    }
+  },
+  {
+    "section": "comment_action_turnOn",
+    "key": "text",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 34,
+      "value": "i2:gui.actions.turnOn"
+    }
+  },
+  {
+    "section": "comment_action_turnOn",
+    "key": "displayType",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 36,
+      "value": "action"
+    }
+  },
+  {
+    "section": "comment_action_turnOn",
+    "key": "buildSpeed",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 37,
+      "value": "0"
+    }
+  },
+  {
+    "section": "comment_action_turnOn",
+    "key": "addResources",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 38,
+      "value": "unsetFlag=0"
+    }
+  },
+  {
+    "section": "comment_action_turnOn",
+    "key": "isGuiBlinking",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 39,
+      "value": "true"
+    }
+  },
+  {
+    "section": "comment_action_turnOff",
+    "key": "isVisible",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 42,
+      "value": "if not self.hasFlag(id=0)"
+    }
+  },
+  {
+    "section": "comment_action_turnOff",
+    "key": "text",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 44,
+      "value": "i2:gui.actions.turnOff"
+    }
+  },
+  {
+    "section": "comment_action_turnOff",
+    "key": "displayType",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 46,
+      "value": "action"
+    }
+  },
+  {
+    "section": "comment_action_turnOff",
+    "key": "buildSpeed",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 47,
+      "value": "0"
+    }
+  },
+  {
+    "section": "comment_action_turnOff",
+    "key": "addResources",
+    "classification": "inactive_comment_section",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 48,
+      "value": "setFlag=0"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "canAttackCondition",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 79,
+      "value": "if not self.hasFlag(id=0)"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "image_drawOffsetY",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 84,
+      "value": "9"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "idleSpin",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 86,
+      "value": "0.8"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "chargeEffectImage",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 98,
+      "value": "SHARED:lighting_charge.png"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "instant",
+    "classification": "direct_field",
+    "appearance_count": 23,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 115,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "lightingEffect",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 116,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "largeHitEffect",
+    "classification": "direct_field",
+    "appearance_count": 57,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 117,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "shieldDamageMultiplier",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 120,
+      "value": "1"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "shieldDefectionMultiplier",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 121,
+      "value": "0.1"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "buildingDamageMultiplier",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 123,
+      "value": "0.5"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "explodeEffect",
+    "classification": "direct_field",
+    "appearance_count": 15,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 125,
+      "value": "CUSTOM:lightningShock, CUSTOM:sparks*8"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "explodeEffectOnShield",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 128,
+      "value": "CUSTOM:lightningShock*1, CUSTOM:hitLightFlash"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "priority",
+    "classification": "direct_field",
+    "appearance_count": 54,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 132,
+      "value": "high"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "image",
+    "classification": "direct_field",
+    "appearance_count": 77,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 134,
+      "value": "SHARED:light_50.png"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "life",
+    "classification": "direct_field",
+    "appearance_count": 99,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 135,
+      "value": "17"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "fadeOut",
+    "classification": "direct_field",
+    "appearance_count": 82,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 136,
+      "value": "true"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "attachedToUnit",
+    "classification": "direct_field",
+    "appearance_count": 98,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 137,
+      "value": "false"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "color",
+    "classification": "direct_field",
+    "appearance_count": 73,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 138,
+      "value": "#63e6e8"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "scaleFrom",
+    "classification": "direct_field",
+    "appearance_count": 81,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 140,
+      "value": "1.8"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "scaleTo",
+    "classification": "direct_field",
+    "appearance_count": 81,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 141,
+      "value": "1.8"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "alpha",
+    "classification": "direct_field",
+    "appearance_count": 82,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 142,
+      "value": "0.6"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "drawUnderUnits",
+    "classification": "direct_field",
+    "appearance_count": 69,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 143,
+      "value": "false"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "hOffset",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 150,
+      "value": "0"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "dirOffset",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 151,
+      "value": "0"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "fadeInTime",
+    "classification": "direct_field",
+    "appearance_count": 41,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 153,
+      "value": "0"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "total_frames",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 160,
+      "value": "14"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "animateFrameStart",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 161,
+      "value": "0"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "animateFrameEnd",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 162,
+      "value": "13"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "animateFramePingPong",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 163,
+      "value": "false"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "animateFrameSpeed",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 164,
+      "value": "0.5"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "physics",
+    "classification": "direct_field",
+    "appearance_count": 16,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 171,
+      "value": "true"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "xSpeedRelativeRandom",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 172,
+      "value": "1.6"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "ySpeedRelativeRandom",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 173,
+      "value": "1.6"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "hSpeed",
+    "classification": "direct_field",
+    "appearance_count": 22,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "line": 174,
+      "value": "2"
+    }
+  },
+  {
+    "section": "core",
+    "key": "footprint",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 17,
+      "value": "0,0,1,1"
+    }
+  },
+  {
+    "section": "core",
+    "key": "constructionFootprint",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 19,
+      "value": "0,0,1,1"
+    }
+  },
+  {
+    "section": "core",
+    "key": "buildingToFootprintOffsetX",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 21,
+      "value": "20"
+    }
+  },
+  {
+    "section": "core",
+    "key": "buildingToFootprintOffsetY",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 22,
+      "value": "20"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_convertTo",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 25,
+      "value": "c_antiAirTurretT3"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_price",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 26,
+      "value": "11000"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_text",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 27,
+      "value": "i:gui.actions.upgradeToAAT3"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_description",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 28,
+      "value": "i:gui.actions.upgradeToAAT3.description"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_displayType",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 29,
+      "value": "Upgrade"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_buildSpeed",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 30,
+      "value": "0.0005"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_pos",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 31,
+      "value": "0.2"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_iconExtraImage",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 33,
+      "value": "SHARED:icon_upgrade_top.png"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_iconExtraColor",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 34,
+      "value": "#AAFFFFFF"
+    }
+  },
+  {
+    "section": "core",
+    "key": "buildingSelectionOffset",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 42,
+      "value": "-8"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isBuilding",
+    "classification": "direct_field",
+    "appearance_count": 22,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 45,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "shouldResetTurret",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 90,
+      "value": "false"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "attachedTo",
+    "classification": "direct_field",
+    "appearance_count": 32,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 104,
+      "value": "1"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "slave",
+    "classification": "direct_field",
+    "appearance_count": 25,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 105,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "copyFrom",
+    "classification": "direct_field",
+    "appearance_count": 51,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 123,
+      "value": "2"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "linkDelayWithTurret",
+    "classification": "direct_field",
+    "appearance_count": 39,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 124,
+      "value": "2"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "targetSpeed",
+    "classification": "direct_field",
+    "appearance_count": 40,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 134,
+      "value": "6"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "trailEffect",
+    "classification": "direct_field",
+    "appearance_count": 39,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 135,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "autoTargetingOnDeadTarget",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 144,
+      "value": "true"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "buildPriority",
+    "classification": "direct_field",
+    "appearance_count": 18,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 162,
+      "value": "0.2"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "noneInBaseExtraPriority",
+    "classification": "direct_field",
+    "appearance_count": 13,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 163,
+      "value": "0.15"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "maxEachBase",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 166,
+      "value": "5"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "upgradedFrom",
+    "classification": "direct_field",
+    "appearance_count": 15,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "line": 169,
+      "value": "c_antiAirTurret"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "barrelX",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_lightning.ini",
+      "line": 65,
+      "value": "-4"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "barrelOffsetX_onOddShots",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_lightning.ini",
+      "line": 66,
+      "value": "8"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "pos",
+    "classification": "direct_field",
+    "appearance_count": 32,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair.ini",
+      "line": 49,
+      "value": "0.2"
+    }
+  },
+  {
+    "section": "core",
+    "key": "fogOfWarSightRange",
+    "classification": "direct_field",
+    "appearance_count": 21,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 16,
+      "value": "26"
+    }
+  },
+  {
+    "section": "core",
+    "key": "fogOfWarSightRangeWhileNotBuilt",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 19,
+      "value": "15"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "turnSpeed",
+    "classification": "direct_field",
+    "appearance_count": 86,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 60,
+      "value": "1.7"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "turnSpeedAcceleration",
+    "classification": "direct_field",
+    "appearance_count": 58,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 61,
+      "value": "0.15"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "targetGround",
+    "classification": "direct_field",
+    "appearance_count": 30,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 84,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "areaDamage",
+    "classification": "direct_field",
+    "appearance_count": 41,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 86,
+      "value": "140"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "areaRadius",
+    "classification": "direct_field",
+    "appearance_count": 39,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 87,
+      "value": "55"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "drawType",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 96,
+      "value": "2"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "drawSize",
+    "classification": "direct_field",
+    "appearance_count": 40,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 98,
+      "value": "0.9"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "color",
+    "classification": "direct_field",
+    "appearance_count": 20,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 99,
+      "value": "#e0ac63"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "lightColor",
+    "classification": "direct_field",
+    "appearance_count": 38,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 106,
+      "value": "#e0ac63"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "targetGroundSpread",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 110,
+      "value": "10"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "initialUnguidedSpeedHeight",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 111,
+      "value": "1.2"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "gravity",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 112,
+      "value": "0.18"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "lightCastOnGround",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "line": 113,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "dont_load",
+    "classification": "direct_field",
+    "appearance_count": 10,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_common_land.ini",
+      "line": 4,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "maxShield",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_flakgun.ini",
+      "line": 12,
+      "value": "800"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "size",
+    "classification": "direct_field",
+    "appearance_count": 69,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_flakgun.ini",
+      "line": 95,
+      "value": "0"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "lightSize",
+    "classification": "direct_field",
+    "appearance_count": 36,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_antiair_flakgun.ini",
+      "line": 145,
+      "value": "0.4"
+    }
+  },
+  {
+    "section": "core",
+    "key": "selfRegenRate",
+    "classification": "direct_field",
+    "appearance_count": 34,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t3_gun.ini",
+      "line": 15,
+      "value": "0.10"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "aimOffsetSpread",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 48,
+      "value": "0"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "warmupNoReset",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 67,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "warmupCallDownRate",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 68,
+      "value": "0.05"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "targetSpeedAcceleration",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 77,
+      "value": "0.3"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "speedSpread",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 79,
+      "value": "1"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "flameWeapon",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 84,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "hitSound",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 85,
+      "value": "false"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "deflectionPower",
+    "classification": "direct_field",
+    "appearance_count": 21,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 90,
+      "value": "-1"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "frameIndex",
+    "classification": "direct_field",
+    "appearance_count": 19,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 102,
+      "value": "3"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "stripIndex",
+    "classification": "direct_field",
+    "appearance_count": 22,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 103,
+      "value": "projectiles"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "liveAfterAttachedDies",
+    "classification": "direct_field",
+    "appearance_count": 15,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 117,
+      "value": "false"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "ySpeedRelative",
+    "classification": "direct_field",
+    "appearance_count": 24,
+    "first_appearance": {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "line": 156,
+      "value": "0.4"
+    }
+  },
+  {
+    "section": "core",
+    "key": "softCollisionOnAll",
+    "classification": "direct_field",
+    "appearance_count": 48,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 18,
+      "value": "24"
+    }
+  },
+  {
+    "section": "core",
+    "key": "builtFrom_1_name",
+    "classification": "legacy_builtFrom_prefix",
+    "appearance_count": 51,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 24,
+      "value": "AirFactory"
+    }
+  },
+  {
+    "section": "core",
+    "key": "builtFrom_1_pos",
+    "classification": "legacy_builtFrom_prefix",
+    "appearance_count": 48,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 25,
+      "value": "6"
+    }
+  },
+  {
+    "section": "core",
+    "key": "energyMax",
+    "classification": "direct_field",
+    "appearance_count": 13,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 28,
+      "value": "6"
+    }
+  },
+  {
+    "section": "core",
+    "key": "energyRegen",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 29,
+      "value": "0.003"
+    }
+  },
+  {
+    "section": "comment_action_groundStrike",
+    "key": "fireTurretXAtGround",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 33,
+      "value": "1"
+    }
+  },
+  {
+    "section": "comment_action_groundStrike",
+    "key": "text",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 34,
+      "value": "Ground Strike"
+    }
+  },
+  {
+    "section": "comment_action_groundStrike",
+    "key": "iconImage",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 35,
+      "value": "SHARED:icon_attack_point.png"
+    }
+  },
+  {
+    "section": "comment_action_groundStrike",
+    "key": "buildSpeed",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 37,
+      "value": "0s"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "lock_body_rotation_with_main_turret",
+    "classification": "direct_field",
+    "appearance_count": 27,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 56,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "turretRotateWithBody",
+    "classification": "direct_field",
+    "appearance_count": 26,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 59,
+      "value": "false"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "idleDir",
+    "classification": "direct_field",
+    "appearance_count": 89,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 80,
+      "value": "0"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "projectile",
+    "classification": "direct_field",
+    "appearance_count": 85,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 89,
+      "value": "1"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "delay",
+    "classification": "direct_field",
+    "appearance_count": 16,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 92,
+      "value": "110"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "energyUsage",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 94,
+      "value": "1"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "wobbleAmplitude",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 123,
+      "value": "0.4"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "wobbleFrequency",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 124,
+      "value": "0.8s"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "landOnGround",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 132,
+      "value": "false"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "reverseSpeedPercentage",
+    "classification": "direct_field",
+    "appearance_count": 46,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 134,
+      "value": "0"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "slowDeathFall",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "line": 145,
+      "value": "true"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_moving_start",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 20,
+    "first_appearance": {
+      "file": "assets/units/laser_tank/laser_tank.ini",
+      "line": 45,
+      "value": "0"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_moving_end",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 20,
+    "first_appearance": {
+      "file": "assets/units/laser_tank/laser_tank.ini",
+      "line": 46,
+      "value": "2"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_moving_speed",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 20,
+    "first_appearance": {
+      "file": "assets/units/laser_tank/laser_tank.ini",
+      "line": 47,
+      "value": "2.75"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "dustEffect",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/laser_tank/laser_tank.ini",
+      "line": 50,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "image",
+    "classification": "direct_field",
+    "appearance_count": 27,
+    "first_appearance": {
+      "file": "assets/units/laser_tank/laser_tank.ini",
+      "line": 76,
+      "value": "laser_tank_barrel.png"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "laserEffect",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/laser_tank/laser_tank.ini",
+      "line": 121,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "instantReuseLast",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/laser_tank/laser_tank.ini",
+      "line": 123,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "shieldRegen",
+    "classification": "direct_field",
+    "appearance_count": 10,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 9,
+      "value": "0.15"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "teamColorsOnTurret",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 31,
+      "value": "true"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "movementEffect",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 38,
+      "value": "CUSTOM:projectileTrail"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "movementEffectRate",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 39,
+      "value": "8"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "warmupShootDelayTransfer",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 88,
+      "value": "10"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "createWhenZoomedOut",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 110,
+      "value": "false"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "atmospheric",
+    "classification": "direct_field",
+    "appearance_count": 20,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 124,
+      "value": "true"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "targetHeight",
+    "classification": "direct_field",
+    "appearance_count": 28,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 139,
+      "value": "20"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "targetHeightDrift",
+    "classification": "direct_field",
+    "appearance_count": 24,
+    "first_appearance": {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "line": 140,
+      "value": "1"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "fireTurretXAtGround",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 15,
+      "value": "dummyBlink"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "fireTurretXAtGround_withProjectile",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 16,
+      "value": "dummyBlink"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "fireTurretXAtGround_onlyOverPassableTileOf",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 17,
+      "value": "HOVER"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "whenBuilding_cannotMove",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 20,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "highPriorityQueue",
+    "classification": "direct_field",
+    "appearance_count": 10,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 28,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "onlyOneUnitAtATime",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 29,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "iconImage",
+    "classification": "direct_field",
+    "appearance_count": 24,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 31,
+      "value": "SHARED:icon_attack_point.png"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "allowMultipleInQueue",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 33,
+      "value": "false"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "addActionCooldownTime",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 34,
+      "value": "30s"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "sendMessageTo",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 37,
+      "value": "parent"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "sendMessageWithTags",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 38,
+      "value": "blink"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "sendMessageWithData",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 39,
+      "value": "blinkTarget=thisActionTarget"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "limitingRange",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 49,
+      "value": "700"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "drawLayer",
+    "classification": "direct_field",
+    "appearance_count": 15,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/blink.ini",
+      "line": 84,
+      "value": "bottom"
+    }
+  },
+  {
+    "section": "core",
+    "key": "tags",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/speed_incomplete.ini",
+      "line": 7,
+      "value": "${baseTags}, modularSpider_speedIncompleteSlot"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "autoTrigger",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/speed_incomplete.ini",
+      "line": 12,
+      "value": "if self.completed"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "alsoTriggerAction",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/speed_incomplete.ini",
+      "line": 14,
+      "value": "tellChangeToParent"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isLockedIfGameModeNoNuke",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 8,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "isActive",
+    "classification": "direct_field",
+    "appearance_count": 26,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 20,
+      "value": "if self.ammoIncludingQueued(lessThan=12)"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "addResources",
+    "classification": "direct_field",
+    "appearance_count": 24,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 21,
+      "value": "ammo=1"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "ai_isDisabled",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 23,
+      "value": "if self.ammo(greaterThan=3)"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "displayRemainingStockpile",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 36,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "isVisible",
+    "classification": "direct_field",
+    "appearance_count": 35,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 41,
+      "value": "if self.ammo(greaterThan=0) and not self.hasFlag(id=1)"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "isGuiBlinking",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 63,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "canPlayerCancel",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 102,
+      "value": "false"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "alwaysSinglePress",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 105,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "interceptProjectiles_withTags",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 153,
+      "value": "nuke"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "interceptProjectiles_andTargetingGroundUnderDistance",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 154,
+      "value": "1000"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "interceptProjectiles_andUnderDistance",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 156,
+      "value": "1500"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "interceptProjectiles_andOverHeight",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 157,
+      "value": "50"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "resourceUsage",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 169,
+      "value": "ammo=1, hasMissingFlag=1"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "ballistic",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 189,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "ballistic_delaymove_height",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 190,
+      "value": "80"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "ballistic_height",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 191,
+      "value": "110"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "areaExpandTime",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 201,
+      "value": "75"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "alwaysVisibleInFog",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 209,
+      "value": "true"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "ai_upgradePriority",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "line": 231,
+      "value": "0.4"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "takeResources",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/shieldGen.ini",
+      "line": 13,
+      "value": "shield=-30"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "takeResources_includeParent",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/shieldGen.ini",
+      "line": 14,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "takeResources_discardCollected",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/shieldGen.ini",
+      "line": 15,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isPickableStartingUnit",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 16,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "startFallingWhenStartingUnit",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 17,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "experimental",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 21,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "transportSlotsNeeded",
+    "classification": "direct_field",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 35,
+      "value": "14"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isBuilder",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 38,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "generation_credits",
+    "classification": "direct_field",
+    "appearance_count": 15,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 47,
+      "value": "30"
+    }
+  },
+  {
+    "section": "core",
+    "key": "generation_delay",
+    "classification": "direct_field",
+    "appearance_count": 15,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 48,
+      "value": "40"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canReclaimResources",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 63,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "autoRepair",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 65,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "nukeOnDeath",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 72,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "nukeOnDeathRange",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 73,
+      "value": "200"
+    }
+  },
+  {
+    "section": "core",
+    "key": "nukeOnDeathDamage",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 74,
+      "value": "4400"
+    }
+  },
+  {
+    "section": "core",
+    "key": "nukeOnDeathDisableWhenNoNuke",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 75,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "autoTriggerOnEvent",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 104,
+      "value": "newMessage(withTag='attachmentChange'),created"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "setUnitStats",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 106,
+      "value": "moveSpeed= ${newMoveSpeed}"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "requireConditional",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 114,
+      "value": "if self.queueSize(withActionTag='blink')==0"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "alsoQueueAction",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 116,
+      "value": "blinkQueued"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "alsoTriggerOrQueueActionWithTarget",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 117,
+      "value": "eventData('blinkTarget', type='unit')"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "tags",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 120,
+      "value": "blink"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "whenBuilding_playAnimation",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 131,
+      "value": "blink"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "teleportSource",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 153,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "shouldRevealFog",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 160,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "effectOnCreate",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 163,
+      "value": "CUSTOM:blinkFlash,CUSTOM:blinkGlow, CUSTOM:blinkEnter_displacement"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "drawType",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 208,
+      "value": "displacement"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "alwayStartDirAtZero",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 225,
+      "value": "true"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "lifeRandom",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 272,
+      "value": "5"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "xOffsetRelativeRandom",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 285,
+      "value": "50"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "yOffsetRelativeRandom",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 286,
+      "value": "50"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "xSpeedAbsoluteRandom",
+    "classification": "direct_field",
+    "appearance_count": 10,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 288,
+      "value": "1.7"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "ySpeedAbsoluteRandom",
+    "classification": "direct_field",
+    "appearance_count": 10,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 289,
+      "value": "1.7"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "delayedStartTimer",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 291,
+      "value": "30"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "delayedStartTimerRandom",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 292,
+      "value": "30"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "physicsGravity",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 295,
+      "value": "-0.4"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_0.1s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 302,
+      "value": "{x:0, y:0, name:CUSTOM|blinkSpark*3}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_0.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 303,
+      "value": "{x:0, y:0, name:CUSTOM|blinkSpark*5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_0.6s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 305,
+      "value": "{x:0, y:0, name:CUSTOM|blinkPreGlow}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_1.0s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 307,
+      "value": "{x:0, y:0, name:CUSTOM|blinkSpark*10}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_1.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 309,
+      "value": "{x:0, y:0, name:CUSTOM|blinkSpark*16}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_2.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 311,
+      "value": "{x:0, y:0, name:CUSTOM|blinkSpark*16}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_2.9s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 313,
+      "value": "{x:0, y:0, name:CUSTOM|blinkSpark*16}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_3.2s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 315,
+      "value": "{x:0, y:0, name:CUSTOM|blinkChargeIn_displacement}"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "textAddUnitName",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 324,
+      "value": "unitRef self.attachment(slot=\"unitSlot${slotId}\")"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "textPostFix",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 325,
+      "value": "]"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "descriptionAddFromUnit",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 327,
+      "value": "unitRef self.attachment(slot=\"unitSlot${slotId}\")"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "unitShownInUI",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 333,
+      "value": "unitRef self.attachment(slot=\"unitSlot${slotId}\")"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "iconExtraIsVisible",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 336,
+      "value": "if self.hasFlag(id=${slotId})"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "extraLagHidingInUI",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 352,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "x",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 396,
+      "value": "-11"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "y",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 397,
+      "value": "32"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "idleDir",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 399,
+      "value": "0"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "idleDirReversing",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 400,
+      "value": "0"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "onCreateSpawnUnitOf",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 402,
+      "value": "modularSpider_emptySlot(addResources=slotid:${slotId})"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "addTransportedUnits",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 403,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "setDrawLayerOnTop",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 404,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "lockLegMovement",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 405,
+      "value": "false"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "canBeAttackedAndDamaged",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 407,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "isUnselectable",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 408,
+      "value": "false"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "showAllActionsFrom",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 410,
+      "value": "if self.hasFlag(id=${slotId})"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "lockRotation",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 413,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "createIncompleteIfParentIs",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 415,
+      "value": "false"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "redirectDamageToParent",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 417,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attachment_NAME",
+    "key": "redirectDamageToParent_shieldOnly",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 418,
+      "value": "true"
+    }
+  },
+  {
+    "section": "canBuild_NAME",
+    "key": "name",
+    "classification": "direct_field",
+    "appearance_count": 43,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 477,
+      "value": "builder, builderShip, combatEngineer, heavyTank, hovercraft, heavyHoverTank, artillery, scout, turret, turret_artillery, antiAirTurret, extractor, fabricatorT1, landFactory, mechFactory, airFactory, seaFactory, laserDefence, repairBay, bomber"
+    }
+  },
+  {
+    "section": "canBuild_NAME",
+    "key": "pos",
+    "classification": "direct_field",
+    "appearance_count": 37,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 478,
+      "value": "30"
+    }
+  },
+  {
+    "section": "canBuild_NAME",
+    "key": "forceNano",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 479,
+      "value": "true"
+    }
+  },
+  {
+    "section": "canBuild_NAME",
+    "key": "isVisible",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 481,
+      "value": "if self.hasFlag(id=10)"
+    }
+  },
+  {
+    "section": "canBuild_NAME",
+    "key": "isLocked",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 484,
+      "value": "false"
+    }
+  },
+  {
+    "section": "canBuild_NAME",
+    "key": "extraLagHidingInUI",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 486,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "turretMultiTargeting",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 522,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "idleDirReversing",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 533,
+      "value": "0"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "isMainNanoTurret",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 547,
+      "value": "true"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "moveWarmUp",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 559,
+      "value": "4"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "image_foot_shadow",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 568,
+      "value": "SHADOW:CORE:experimental_spider/foot.png"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "favourOppositeSideNeighbours",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 572,
+      "value": "true"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "drawLegWhenZoomedOut",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 575,
+      "value": "true"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "drawFootWhenZoomedOut",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 576,
+      "value": "true"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "holdDisMin_maxMovingLegs",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 578,
+      "value": "5"
+    }
+  },
+  {
+    "section": "resource_NAME / global_resource_NAME",
+    "key": "hidden",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "line": 674,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "showInEditor",
+    "classification": "direct_field",
+    "appearance_count": 21,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 14,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "showOnMinimap",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 30,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isUnrepairableUnit",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 33,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "ignoreInUnitCapCalculation",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 35,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "disableDeathOnZeroHp",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 37,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isUnselectable",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 40,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isUnselectableAsTarget",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 41,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "selfBuildRate",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 45,
+      "value": "0.001"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "isVisible",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 50,
+      "value": "false"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "setBuilt",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 57,
+      "value": "1"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "addAllActionCooldownsTime",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 96,
+      "value": "2s"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "teamColoringMode",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 111,
+      "value": "disabled"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "icon_zoomed_out_neverShow",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/common_slot.ini",
+      "line": 113,
+      "value": "true"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "image",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 11,
+      "value": "body_ui.png"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "layer",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 13,
+      "value": "beforeBody"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "frame_width",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 15,
+      "value": "41"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "frame_height",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 16,
+      "value": "38"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "alwaysStartDirAtZero",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 17,
+      "value": "true"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "frame",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 21,
+      "value": "self.resource.slotid-1"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "onlyInPreview",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 22,
+      "value": "true"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "imageScale",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 27,
+      "value": "0.2"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "color",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 28,
+      "value": "#BBFFFFFF"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "yOffsetAbsolute",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 31,
+      "value": "-15"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "includeParentsSelection",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 33,
+      "value": "true"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "onlyWhenSelectedByAnyPlayer",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 34,
+      "value": "true"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "onlyPlayersWithUnitControl",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/baseSlot.ini",
+      "line": 35,
+      "value": "true"
+    }
+  },
+  {
+    "section": "comment_action_fireArtillery",
+    "key": "buildSpeed",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "line": 16,
+      "value": "1s"
+    }
+  },
+  {
+    "section": "comment_action_fireArtillery",
+    "key": "text",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "line": 17,
+      "value": "Fire artillery at ground"
+    }
+  },
+  {
+    "section": "comment_action_fireArtillery",
+    "key": "whenBuilding_rotateTo_aimAtActionTarget",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "line": 18,
+      "value": "true"
+    }
+  },
+  {
+    "section": "comment_action_fireArtillery",
+    "key": "whenBuilding_rotateTo_waitTillRotated",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "line": 19,
+      "value": "true"
+    }
+  },
+  {
+    "section": "comment_action_fireArtillery",
+    "key": "fireTurretXAtGround",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "line": 21,
+      "value": "mainCannon"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "image_applyTeamColors",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "line": 90,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "trailEffectRate",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "line": 153,
+      "value": "2"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "yOffsetRelative",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "line": 205,
+      "value": "-41"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "laserDefenceEnergyUse",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/laser_defense.ini",
+      "line": 28,
+      "value": "0.05"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canNotBeDirectlyAttacked",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 38,
+      "value": "true"
+    }
+  },
+  {
+    "section": "template_buildTurret",
+    "key": "text",
+    "classification": "template_requires_destination_context",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 53,
+      "value": "Add"
+    }
+  },
+  {
+    "section": "template_buildTurret",
+    "key": "textAddUnitName",
+    "classification": "template_requires_destination_context",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 54,
+      "value": "${section.convertTo}"
+    }
+  },
+  {
+    "section": "template_buildTurret",
+    "key": "descriptionAddFromUnit",
+    "classification": "template_requires_destination_context",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 55,
+      "value": "${section.convertTo}"
+    }
+  },
+  {
+    "section": "template_buildTurret",
+    "key": "descriptionAddUnitStats",
+    "classification": "template_requires_destination_context",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 56,
+      "value": "${section.convertTo}"
+    }
+  },
+  {
+    "section": "template_buildTurret",
+    "key": "isActive",
+    "classification": "template_requires_destination_context",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 58,
+      "value": "if self.queueSize(empty=true)"
+    }
+  },
+  {
+    "section": "template_buildTurret",
+    "key": "setBuilt",
+    "classification": "template_requires_destination_context",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 60,
+      "value": "0"
+    }
+  },
+  {
+    "section": "template_buildTurret",
+    "key": "buildSpeed",
+    "classification": "template_requires_destination_context",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 61,
+      "value": "0s"
+    }
+  },
+  {
+    "section": "template_buildTurret",
+    "key": "alsoTriggerAction",
+    "classification": "template_requires_destination_context",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 63,
+      "value": "tellChangeToParent"
+    }
+  },
+  {
+    "section": "comment_action_buildNano",
+    "key": "convertTo",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 93,
+      "value": "modularSpider_nano"
+    }
+  },
+  {
+    "section": "comment_action_buildNano",
+    "key": "price",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "line": 94,
+      "value": "1000"
+    }
+  },
+  {
+    "section": "canBuild_NAME",
+    "key": "tech",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/mech_engineer/mech_engineer.ini",
+      "line": 68,
+      "value": "2"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "imageScale",
+    "classification": "direct_field",
+    "appearance_count": 15,
+    "first_appearance": {
+      "file": "assets/units/mech_engineer/mech_engineer.ini",
+      "line": 86,
+      "value": "1"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "barrelY",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/mech_engineer/mech_engineer.ini",
+      "line": 128,
+      "value": "7"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "rotateSpeed",
+    "classification": "direct_field",
+    "appearance_count": 12,
+    "first_appearance": {
+      "file": "assets/units/mech_engineer/mech_engineer.ini",
+      "line": 187,
+      "value": "9"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "hardLimit",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/mech_engineer/mech_engineer.ini",
+      "line": 203,
+      "value": "65"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "endDirOffset",
+    "classification": "direct_field",
+    "appearance_count": 10,
+    "first_appearance": {
+      "file": "assets/units/mech_engineer/mech_engineer.ini",
+      "line": 205,
+      "value": "135"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "estimatingPositionMultiplier",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/mech_engineer/mech_engineer.ini",
+      "line": 214,
+      "value": "0.8"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "resourceAmount",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 17,
+      "value": "energy"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "resourceAmount_setValue",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 18,
+      "value": "6"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "createWhenZoomedOut",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 62,
+      "value": "false"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "priority",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 63,
+      "value": "low"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "image",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 65,
+      "value": "SHARED:light_50.png"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "life",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 66,
+      "value": "30"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "fadeOut",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 67,
+      "value": "true"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "attachedToUnit",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 68,
+      "value": "false"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "color",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 71,
+      "value": "#fcbe03"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "fadeInTime",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 73,
+      "value": "2"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "scaleFrom",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 74,
+      "value": "0.7"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "scaleTo",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 75,
+      "value": "1.2"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "alpha",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 76,
+      "value": "0.4"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "drawUnderUnits",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 77,
+      "value": "true"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "ySpeedRelative",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 78,
+      "value": "-0.4"
+    }
+  },
+  {
+    "section": "comment_effect_projectileTrail",
+    "key": "atmospheric",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 79,
+      "value": "true"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "xOffsetRelative",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "line": 100,
+      "value": "10"
+    }
+  },
+  {
+    "section": "core",
+    "key": "energyRegenWhenRecharging",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 30,
+      "value": "0.05"
+    }
+  },
+  {
+    "section": "core",
+    "key": "energyNeedsToRechargeToFull",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 31,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "aimOffsetSpread",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 103,
+      "value": "0"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "instantReuseLast_alsoChangeTurretAim",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 116,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "moveWithParent",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 117,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "beamImage",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 119,
+      "value": "SHARED:beam3.png"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "beamImageEnd",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 120,
+      "value": "SHARED:beam1_end.png"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "beamImageStart",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 121,
+      "value": "SHARED:beam1_start.png"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "beamImageOffsetRate",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 123,
+      "value": "2"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "sweepOffsetFromTargetRadius",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 130,
+      "value": "0.4"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "sweepSpeed",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 132,
+      "value": "10"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "teamColorRatio_sourceRatio",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 142,
+      "value": "0.8"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "teamColorRatio",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "line": 144,
+      "value": "0.5"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "splastEffect",
+    "classification": "direct_field",
+    "appearance_count": 10,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_heavyMissile.ini",
+      "line": 42,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_whenBuilding_cannotMove",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_flying_landed.ini",
+      "line": 37,
+      "value": "true"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_attack_start",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_minigun.ini",
+      "line": 60,
+      "value": "0"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_attack_end",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_minigun.ini",
+      "line": 61,
+      "value": "1"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_attack_speed",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_minigun.ini",
+      "line": 62,
+      "value": "2"
+    }
+  },
+  {
+    "section": "core",
+    "key": "builtFrom_2_name",
+    "classification": "legacy_builtFrom_prefix",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_artillery.ini",
+      "line": 36,
+      "value": "mechFactoryT2"
+    }
+  },
+  {
+    "section": "core",
+    "key": "builtFrom_2_pos",
+    "classification": "legacy_builtFrom_prefix",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_artillery.ini",
+      "line": 37,
+      "value": "7"
+    }
+  },
+  {
+    "section": "core",
+    "key": "startShieldAtZero",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_bunker_deployed.ini",
+      "line": 29,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "turnSpeedDeceleration",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_lightning.ini",
+      "line": 81,
+      "value": "0.3"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "dirOffsetRandom",
+    "classification": "direct_field",
+    "appearance_count": 13,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_lightning.ini",
+      "line": 234,
+      "value": "180"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "animateFrameStartRandomAdd",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_lightning.ini",
+      "line": 245,
+      "value": "2"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "animateFrameSpeedRandom",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_lightning.ini",
+      "line": 249,
+      "value": "0.2"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "limitingAngle",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_flame.ini",
+      "line": 106,
+      "value": "45"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "spawnChance",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_flame.ini",
+      "line": 254,
+      "value": "0.3"
+    }
+  },
+  {
+    "section": "core",
+    "key": "action_1_isActive",
+    "classification": "legacy_action_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_flying_takeoff.ini",
+      "line": 20,
+      "value": "if self.isOverOpenLand()"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "lock_leg_rotation_with_main_turret",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_flying_takeoff.ini",
+      "line": 35,
+      "value": "true"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "lockMovement",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_flying_takeoff.ini",
+      "line": 66,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "whenBuilding_rotateTo",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_bunker.ini",
+      "line": 49,
+      "value": "0"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "whenBuilding_rotateTo_orBackwards",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_bunker.ini",
+      "line": 50,
+      "value": "true"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "idleSweepAddRandomDelay",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_bunker.ini",
+      "line": 154,
+      "value": "50"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "idleSweepCondition",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/mechs_large/mech_bunker.ini",
+      "line": 155,
+      "value": "if not self.isMoving()"
+    }
+  },
+  {
+    "section": "core",
+    "key": "exit_x",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 39,
+      "value": "0"
+    }
+  },
+  {
+    "section": "core",
+    "key": "exit_y",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 40,
+      "value": "-1"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "image_back",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 98,
+      "value": "antinuke_launcher_back.png"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "onlyWhileActive",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 130,
+      "value": "true"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "onlyWhileAlive",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 131,
+      "value": "true"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "onlyOnNonPreview",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 132,
+      "value": "true"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "onlyWithZoomLevelOrMore",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 134,
+      "value": "0.7"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "alpha",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 140,
+      "value": "0.3+cos( ${timer_2s} * 360) * 0.2"
+    }
+  },
+  {
+    "section": "decal_NAME",
+    "key": "teamColors",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 143,
+      "value": "false"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "onShoot_playAnimation",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 182,
+      "value": "fireNuke"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "image_end",
+    "classification": "direct_field",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 220,
+      "value": "antinuke_launcher_door_r.png"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "image_end_teamColors",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 221,
+      "value": "true"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "blendIn",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 237,
+      "value": "0.5s"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "blendOut",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 238,
+      "value": "3.5s"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_0",
+    "classification": "animation_keyframe",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 240,
+      "value": "{x:5, y:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_0",
+    "classification": "animation_keyframe",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 241,
+      "value": "{x:-5, y:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_1.2s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 243,
+      "value": "{x:3, y:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_1.2s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 244,
+      "value": "{x:-3, y:0}"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "noneGlobalExtraPriority",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 266,
+      "value": "0.1"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "maxGlobal",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "line": 270,
+      "value": "2"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "aiUse",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 55,
+      "value": "launchAmmo"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "fireTurretXAtGround_showGuideDecals",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 81,
+      "value": "targetGuide"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "limitingMinRange",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 164,
+      "value": "260"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "tags",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 168,
+      "value": "nuke"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "shadowFrame",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 183,
+      "value": "1"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "areaHitAirAndLandAtSameTime",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 193,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "nukeWeapon",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 204,
+      "value": "true"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "friendlyFire",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 209,
+      "value": "true"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "shadow",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 235,
+      "value": "true"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "xOffsetAbsoluteRandom",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 252,
+      "value": "10"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "yOffsetAbsoluteRandom",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 253,
+      "value": "10"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "spawnUnit",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 297,
+      "value": "tank"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "aiTags",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "line": 371,
+      "value": "nukeLauncher, launcher"
+    }
+  },
+  {
+    "section": "core",
+    "key": "nanoFactorySpeed",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "line": 40,
+      "value": "2"
+    }
+  },
+  {
+    "section": "core",
+    "key": "exit_dirOffset",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "line": 64,
+      "value": "0"
+    }
+  },
+  {
+    "section": "core",
+    "key": "exit_moveAwayAmount",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "line": 65,
+      "value": "140"
+    }
+  },
+  {
+    "section": "core",
+    "key": "exit_heightOffset",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "line": 66,
+      "value": "5"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "isLocked",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "line": 79,
+      "value": "if not game.nukesEnabled()"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "isLockedMessage",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "line": 80,
+      "value": "i:gui.actions.nukesDisabled"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "image",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "line": 364,
+      "value": "projectile.png"
+    }
+  },
+  {
+    "section": "core",
+    "key": "generation_resources",
+    "classification": "direct_field",
+    "appearance_count": 8,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT2.ini",
+      "line": 9,
+      "value": "credits=7"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "onActions",
+    "classification": "direct_field",
+    "appearance_count": 9,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT2.ini",
+      "line": 30,
+      "value": "idle"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0s",
+    "classification": "animation_keyframe",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT2.ini",
+      "line": 31,
+      "value": "{frame:2}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0.3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT2.ini",
+      "line": 32,
+      "value": "{frame:2}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT2.ini",
+      "line": 33,
+      "value": "{frame:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0.6s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT2.ini",
+      "line": 34,
+      "value": "{frame:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_1.0s",
+    "classification": "animation_keyframe",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT2.ini",
+      "line": 35,
+      "value": "{frame:2}"
+    }
+  },
+  {
+    "section": "core",
+    "key": "fireTurretXAtSelfOnDeath",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT1.ini",
+      "line": 29,
+      "value": "explode"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0.4s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT1.ini",
+      "line": 50,
+      "value": "{frame:2}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0.8s",
+    "classification": "animation_keyframe",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT1.ini",
+      "line": 52,
+      "value": "{frame:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_1.3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT1.ini",
+      "line": 53,
+      "value": "{frame:2}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0.2s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT3.ini",
+      "line": 24,
+      "value": "{frame:2}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0.7s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/fabricator/fabricatorT3.ini",
+      "line": 27,
+      "value": "{frame:2}"
+    }
+  },
+  {
+    "section": "core",
+    "key": "numBitsOnDeath",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/laboratory/laboratory.ini",
+      "line": 39,
+      "value": "20"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_0s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/laboratory/laboratory.ini",
+      "line": 70,
+      "value": "{alpha:0.4}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_1.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/laboratory/laboratory.ini",
+      "line": 71,
+      "value": "{alpha:0.7}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_2.6s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/laboratory/laboratory.ini",
+      "line": 72,
+      "value": "{alpha:0.6}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_3.9s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/laboratory/laboratory.ini",
+      "line": 73,
+      "value": "{alpha:0.4}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "KeyframeTimeScale",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/laboratory/laboratory.ini",
+      "line": 75,
+      "value": "0.5"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "drawOverBody",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/laboratory/laboratory.ini",
+      "line": 84,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "stayNeutral",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/resource_deposits/crystal_mid.ini",
+      "line": 26,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "createNeutral",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/resource_deposits/crystal_mid.ini",
+      "line": 27,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "resourceRate",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/resource_deposits/crystal_mid.ini",
+      "line": 30,
+      "value": "0.1"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "whenBuilding_temporarilyConvertTo",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet_underwater.ini",
+      "line": 34,
+      "value": "c_amphibiousJet_transition"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "canAttackNotTouchingWaterUnits",
+    "classification": "direct_field",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet_underwater.ini",
+      "line": 46,
+      "value": "false"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 53,
+      "value": "{x:0, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 54,
+      "value": "{x:0, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_.7s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 55,
+      "value": "{x:0, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_.7s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 56,
+      "value": "{x:0, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 62,
+      "value": "{x:-4, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 63,
+      "value": "{x:4, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_0s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 72,
+      "value": "{x:4, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_0.8s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 77,
+      "value": "{x:0, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_0.8s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 78,
+      "value": "{x:0, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_1.1s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 80,
+      "value": "{x:0, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_1.1s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 81,
+      "value": "{x:0, y:-5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_1.3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 83,
+      "value": "{x:0, y:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_1.3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 84,
+      "value": "{x:0, y:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm1_99s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 86,
+      "value": "{x:0, y:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm2_99s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 87,
+      "value": "{x:0, y:0}"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "image_end_shadow",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "line": 295,
+      "value": "SHADOW:amphibious_jet_p1.png"
+    }
+  },
+  {
+    "section": "core",
+    "key": "explodeTypeOnDeath",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/mech_factory/mechFactory.ini",
+      "line": 25,
+      "value": "building"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_2_name",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 6,
+    "first_appearance": {
+      "file": "assets/units/mech_factory/mechFactory.ini",
+      "line": 39,
+      "value": "builder"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canBuild_2_pos",
+    "classification": "legacy_canBuild_prefix",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/mech_factory/mechFactory.ini",
+      "line": 40,
+      "value": "1"
+    }
+  },
+  {
+    "section": "core",
+    "key": "builtFrom_3_name",
+    "classification": "legacy_builtFrom_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/mech_factory/mechFactory.ini",
+      "line": 57,
+      "value": "experimentalSpider"
+    }
+  },
+  {
+    "section": "core",
+    "key": "builtFrom_3_pos",
+    "classification": "legacy_builtFrom_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/mech_factory/mechFactory.ini",
+      "line": 58,
+      "value": "0.5"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "onActionsQueuedUnitPlayAt",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/mech_factory/mechFactory.ini",
+      "line": 122,
+      "value": "0.8"
+    }
+  },
+  {
+    "section": "core",
+    "key": "explodeOnDeath",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 31,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "explodeOnDeathGroundCollosion",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 35,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "effectOnDeathGroundCollosion",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 36,
+      "value": "CUSTOM:lightningShock*2, CUSTOM:fireSmall*3"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "turretImageScale",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 54,
+      "value": "0.7"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_idle_start",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 63,
+      "value": "0"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_idle_end",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 17,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 64,
+      "value": "1"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_idle_speed",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 16,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 65,
+      "value": "6"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "frameIndexRandom",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 172,
+      "value": "2"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "slowDeathFallSmoke",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "line": 227,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "isBug",
+    "classification": "direct_field",
+    "appearance_count": 14,
+    "first_appearance": {
+      "file": "assets/units/bug_melee/bug_melee_t31.ini",
+      "line": 24,
+      "value": "true"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_idle_scale_start",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/bug_melee/bug_melee_t31.ini",
+      "line": 51,
+      "value": "1"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_idle_scale_end",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/bug_melee/bug_melee_t31.ini",
+      "line": 52,
+      "value": "1.02"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_idle_pingPong",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 11,
+    "first_appearance": {
+      "file": "assets/units/bug_melee/bug_melee_t31.ini",
+      "line": 53,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "isMelee",
+    "classification": "direct_field",
+    "appearance_count": 7,
+    "first_appearance": {
+      "file": "assets/units/bug_melee/bug_melee_t31.ini",
+      "line": 62,
+      "value": "true"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "joinsGroupFormations",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/bug_melee/bug_melee_t31.ini",
+      "line": 134,
+      "value": "true"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "attackMovement",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/bomber/bomber.ini",
+      "line": 57,
+      "value": "bomber"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "createWhenOverLiquid",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/scout/scout.ini",
+      "line": 108,
+      "value": "false"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "canAttackNotTouchingWaterUnits",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilusLand.ini",
+      "line": 64,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "transportUnitsCanUnloadUnits",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilusSurface.ini",
+      "line": 11,
+      "value": "if self.isOverLiquid()"
+    }
+  },
+  {
+    "section": "core",
+    "key": "transportUnitsRequireTag",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilusSurface.ini",
+      "line": 12,
+      "value": ""
+    }
+  },
+  {
+    "section": "core",
+    "key": "transportUnitsKeepBuiltUnits",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilusSurface.ini",
+      "line": 13,
+      "value": "false"
+    }
+  },
+  {
+    "section": "core",
+    "key": "maxTransportingUnits",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 43,
+      "value": "3"
+    }
+  },
+  {
+    "section": "core",
+    "key": "transportUnitsRequireMovementType",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 44,
+      "value": "WATER, HOVER, OVER_CLIFF_WATER"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "spawnEffects",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 79,
+      "value": "CUSTOM:displacement_ripples, CUSTOM:ripples*3, CUSTOM:largeRipples"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "id",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 106,
+      "value": "launchScoutBot"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "spawnProjectilesOnEndOfLife",
+    "classification": "direct_field",
+    "appearance_count": 5,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 373,
+      "value": "scoutBotProjectileSplit(offsetDir=15), scoutBotProjectileSplit(offsetDir=-180)"
+    }
+  },
+  {
+    "section": "projectile_NAME",
+    "key": "turnSpeed",
+    "classification": "direct_field",
+    "appearance_count": 4,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 411,
+      "value": "4"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "heightChangeRate",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 511,
+      "value": "0.005"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "useAsTransport",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 515,
+      "value": "false"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "dirSpeed",
+    "classification": "direct_field",
+    "appearance_count": 3,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 540,
+      "value": "1"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "dirSpeedRandom",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "line": 561,
+      "value": "0.5"
+    }
+  },
+  {
+    "section": "core",
+    "key": "altNames",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/tanks/heavy_artillery.ini",
+      "line": 7,
+      "value": "heavy_artillery"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "ai_isHighPriority",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/miscellaneous/example_faction_picker.ini",
+      "line": 25,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "canNotBeDamaged",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/miscellaneous/flare_10s.ini",
+      "line": 17,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "disableAllUnitCollisions",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/miscellaneous/flare_10s.ini",
+      "line": 18,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "autoTriggerCooldownTime",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/miscellaneous/flare_10s.ini",
+      "line": 23,
+      "value": "0.1s"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "deleteSelf",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/miscellaneous/flare_10s.ini",
+      "line": 28,
+      "value": "true"
+    }
+  },
+  {
+    "section": "effect_NAME",
+    "key": "imageShadow",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/miscellaneous/flare_10s.ini",
+      "line": 61,
+      "value": "SHADOW:SHARED:glow_sharp.png"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "addEnergy",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 129,
+      "value": "0"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg1_0.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 566,
+      "value": "{dir:90}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg2_0.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 568,
+      "value": "{dir:90}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg2_3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 569,
+      "value": "{x:20}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg2_3.0s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 570,
+      "value": "{dir:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg2_3.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 571,
+      "value": "{dir:-45}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg2_4.0s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 572,
+      "value": "{dir:45}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg2_4.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 573,
+      "value": "{dir:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg3_0.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 575,
+      "value": "{x:-10, y:20}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg3_3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 577,
+      "value": "{x:-10, dir:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg3_4s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 578,
+      "value": "{x:45, dir:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg3_5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 579,
+      "value": "{x:0, dir:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg5_2.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 581,
+      "value": "{x:-20, y:18}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg6_3.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 582,
+      "value": "{x:20, y:18}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg3_1s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 612,
+      "value": "{x:0, dir:0, height:5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg4_0.5s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 616,
+      "value": "{x:0, y:20}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg4_1s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 618,
+      "value": "{x:0, dir:0, height:5}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "leg4_3s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "line": 619,
+      "value": "{x:-35, dir:9000}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "pingPong",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractor.ini",
+      "line": 34,
+      "value": "true"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "image_offsetY",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractorT3_overclocked.ini",
+      "line": 36,
+      "value": "-7"
+    }
+  },
+  {
+    "section": "core",
+    "key": "placeOnlyOnResPool",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractor_common.ini",
+      "line": 25,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "hideScorchMark",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractor_common.ini",
+      "line": 28,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "effectOnDeath",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractor_common.ini",
+      "line": 30,
+      "value": "resourcePoolSmoke"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "image_back_always_use_full_image",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractor_common.ini",
+      "line": 46,
+      "value": "true"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "recommendedInEachBasePriorityIfUnmet",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractor_common.ini",
+      "line": 69,
+      "value": "0.55"
+    }
+  },
+  {
+    "section": "ai",
+    "key": "recommendedInEachBaseNum",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractor_common.ini",
+      "line": 70,
+      "value": "2"
+    }
+  },
+  {
+    "section": "core",
+    "key": "shieldRenderRadius",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/extractor/extractorT3_reinforced.ini",
+      "line": 15,
+      "value": "24"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "buildSpeed_ignoreFactorySpeedModifiers",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "line": 62,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "isLockedAlt",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "line": 71,
+      "value": "false"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "isLockedAltMessage",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "line": 75,
+      "value": "Must be undeployed"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm3_0",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "line": 145,
+      "value": "{x:29, y:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "arm4_0",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "line": 146,
+      "value": "{x:34, y:0}"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "fallingAcceleration",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "line": 158,
+      "value": "0.01"
+    }
+  },
+  {
+    "section": "movement",
+    "key": "ignoreMoveOrders",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "line": 161,
+      "value": "true"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "effect_1.05s",
+    "classification": "animation_keyframe",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship.ini",
+      "line": 367,
+      "value": "{x:0, y:0, name:CUSTOM|blinkChargeIn_displacement}"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "drawDirOffset",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/experimental_gunship/experimental_gunship.ini",
+      "line": 766,
+      "value": "180"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "showRangeUIGuide",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/outpost/outpost.ini",
+      "line": 57,
+      "value": "true"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "spinRate",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/helicopter/helicopter.ini",
+      "line": 104,
+      "value": "30"
+    }
+  },
+  {
+    "section": "turret_NAME",
+    "key": "canAttackMaxAngle",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 82,
+      "value": "181"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "directDamage",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 133,
+      "value": "95"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "life",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 134,
+      "value": "250"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "speed",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 135,
+      "value": "1"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "targetSpeed",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 136,
+      "value": "2.0"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "targetSpeedAcceleration",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 137,
+      "value": "0.03"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "drawSize",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 139,
+      "value": "1"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "color",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 140,
+      "value": "#1E1E96"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "trailEffect",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 141,
+      "value": "true"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "largeHitEffect",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 142,
+      "value": "true"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "deflectionPower",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 144,
+      "value": "-1"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "wobbleAmplitude",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 146,
+      "value": "0.2"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "wobbleFrequency",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 147,
+      "value": "0.8s"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "turnSpeed",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 149,
+      "value": "3"
+    }
+  },
+  {
+    "section": "comment_projectile_torpedo_split",
+    "key": "lightSize",
+    "classification": "inactive_comment_section",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "line": 154,
+      "value": "0.2"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "movementEffectReverse",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_tank/experimental_tank.ini",
+      "line": 53,
+      "value": "CUSTOM:dustL, CUSTOM:dustR"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "movementEffectReverseFlipEffects",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/experimental_tank/experimental_tank.ini",
+      "line": 54,
+      "value": "true"
+    }
+  },
+  {
+    "section": "action_NAME / hiddenAction_NAME",
+    "key": "fireTurretXAtGround_withOffset",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_bee/bug_bee.ini",
+      "line": 35,
+      "value": "0,0"
+    }
+  },
+  {
+    "section": "attack",
+    "key": "dieOnAttack",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_bee/bug_bee.ini",
+      "line": 71,
+      "value": "true"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_0",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_generator/bug_generator.ini",
+      "line": 112,
+      "value": "{scale:0}"
+    }
+  },
+  {
+    "section": "animation_NAME",
+    "key": "body_1",
+    "classification": "animation_keyframe",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_generator/bug_generator.ini",
+      "line": 113,
+      "value": "{scale:1.2}"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_idle_blendIn",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_turret/bug_turret.ini",
+      "line": 43,
+      "value": "1s"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_attack_scale_start",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_turret/bug_turret.ini",
+      "line": 56,
+      "value": "1"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_attack_scale_end",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_turret/bug_turret.ini",
+      "line": 57,
+      "value": "1.05"
+    }
+  },
+  {
+    "section": "graphics",
+    "key": "animation_attack_pingPong",
+    "classification": "legacy_graphics_animation_prefix",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_turret/bug_turret.ini",
+      "line": 58,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "dieOnConstruct",
+    "classification": "direct_field",
+    "appearance_count": 2,
+    "first_appearance": {
+      "file": "assets/units/classic_bugs/bug_fly/bug_fly.ini",
+      "line": 28,
+      "value": "true"
+    }
+  },
+  {
+    "section": "core",
+    "key": "reclaimPrice",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nautilus/robotCrab/robotCrab.ini",
+      "line": 10,
+      "value": "0"
+    }
+  },
+  {
+    "section": "core",
+    "key": "energyStartingPercentage",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nautilus/robotCrab/robotCrab.ini",
+      "line": 42,
+      "value": "1"
+    }
+  },
+  {
+    "section": "core",
+    "key": "dieOnZeroEnergy",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nautilus/robotCrab/robotCrab.ini",
+      "line": 43,
+      "value": "true"
+    }
+  },
+  {
+    "section": "leg_N / arm_N",
+    "key": "holdDisMin_checkNeighbours",
+    "classification": "direct_field",
+    "appearance_count": 1,
+    "first_appearance": {
+      "file": "assets/units/nautilus/robotCrab/robotCrab.ini",
+      "line": 142,
+      "value": "true"
+    }
+  }
+]

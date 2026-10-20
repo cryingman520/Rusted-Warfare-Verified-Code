@@ -1,0 +1,31 @@
+{
+  "field_count": 984,
+  "logic_registration_groups": 121,
+  "logic_names_with_aliases": 143,
+  "mutable_stats": 19,
+  "map_properties": 88,
+  "mini_language_argument_counts": {
+    "spawnUnits": 23,
+    "spawnProjectiles": 15,
+    "price": 9,
+    "imageStack": 2,
+    "animationKeyframe": 8
+  },
+  "asset_field_categories": {
+    "direct_field": 497,
+    "asset_metadata_not_consumed_by_android_mod_reader": 2,
+    "legacy_canBuild_prefix": 28,
+    "inactive_comment_section": 50,
+    "legacy_action_prefix": 11,
+    "legacy_builtFrom_prefix": 6,
+    "legacy_graphics_animation_prefix": 16,
+    "animation_keyframe": 63,
+    "template_requires_destination_context": 8
+  },
+  "runtime_tested": false,
+  "manual_chars": 269874,
+  "manual_bytes": 409897,
+  "hardcoded_unit_types": 52,
+  "loaded_builtin_sounds": 29,
+  "builtin_effect_strips": 20
+}

@@ -1,0 +1,5 @@
+[mod]
+# 教程配套项目 / Tutorial project
+title: Field Academy
+description: A factory, a recon vehicle and a twin-turret tank, with a reinforcement trigger fragment
+minVersion: 1.15

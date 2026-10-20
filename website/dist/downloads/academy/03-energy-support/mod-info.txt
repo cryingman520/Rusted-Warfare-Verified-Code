@@ -1,0 +1,5 @@
+[mod]
+# 教程配套项目 / Tutorial project
+title: Energy and Repair Crew
+description: An energy-powered tank and an engineer that can build and repair it
+minVersion: 1.15

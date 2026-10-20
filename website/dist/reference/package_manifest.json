@@ -1,0 +1,27 @@
+{
+  "file_bytes": 26339080,
+  "sha256": "3f2da87c881ea0dd62d536066e62003fa14d434d265f47c6ba6d80ff5bb83d9e",
+  "entries": 1576,
+  "extensions": {
+    ".xml": 223,
+    ".png": 1001,
+    ".ini": 132,
+    ".txt": 3,
+    ".tmx": 73,
+    "": 6,
+    ".ogg": 36,
+    ".frag": 7,
+    ".vert": 2,
+    ".xcf": 1,
+    ".tsx": 67,
+    ".properties": 15,
+    ".template": 1,
+    ".jpg": 1,
+    ".wav": 3,
+    ".arsc": 1,
+    ".dex": 1,
+    ".SF": 1,
+    ".RSA": 1,
+    ".MF": 1
+  }
+}

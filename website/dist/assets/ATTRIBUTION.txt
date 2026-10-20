@@ -1,0 +1,7 @@
+Rusted Warfare application icon
+Copyright Corroding Games.
+Official listing: https://play.google.com/store/apps/details?id=com.corrodinggames.rts
+Used to identify the subject of this independent community modding site.
+No endorsement or affiliation is implied.
+
+Blockly 13.4.0 is distributed under Apache-2.0; license: ../vendor/blockly/LICENSE

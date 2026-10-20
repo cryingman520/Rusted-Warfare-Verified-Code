@@ -1,0 +1,515 @@
+[
+  {
+    "key": "activatedBy",
+    "classification": "parser_property",
+    "count": 10,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "baseWipedOut"
+    }
+  },
+  {
+    "key": "ai",
+    "classification": "parser_property",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o3]Cornered Stronghold.tmx",
+      "value": "survival"
+    }
+  },
+  {
+    "key": "allyGroup",
+    "classification": "parser_property",
+    "count": 26,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o4]Valley Arena (2p) [map_by_uber].tmx",
+      "value": "0"
+    }
+  },
+  {
+    "key": "cliff",
+    "classification": "parser_property",
+    "count": 816,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[p4]Magma Island (4p).tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "cliff-soft",
+    "classification": "parser_property",
+    "count": 1560,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[z;p10]Kingdoms (10p) [by Vulkan].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "credits",
+    "classification": "parser_property",
+    "count": 59,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o3]Cornered Stronghold.tmx",
+      "value": "10000"
+    }
+  },
+  {
+    "key": "deactivatedBy",
+    "classification": "parser_property",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/normal/l030;[demo]mission_3__-__Crossfire.tmx",
+      "value": "detect-anyUnit1"
+    }
+  },
+  {
+    "key": "delay",
+    "classification": "parser_property",
+    "count": 37,
+    "first_appearance": {
+      "file": "assets/maps/menu_background/menu2.tmx",
+      "value": "0"
+    }
+  },
+  {
+    "key": "dir",
+    "classification": "parser_property",
+    "count": 10,
+    "first_appearance": {
+      "file": "assets/maps/menu_background/menu1.tmx",
+      "value": "140"
+    }
+  },
+  {
+    "key": "disabledAI",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "fog",
+    "classification": "parser_property",
+    "count": 25,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o3]Cornered Stronghold.tmx",
+      "value": "map"
+    }
+  },
+  {
+    "key": "globalMessage",
+    "classification": "parser_property",
+    "count": 8,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "Located missing units"
+    }
+  },
+  {
+    "key": "globalMessage_delayPerChar",
+    "classification": "parser_property",
+    "count": 7,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "slow"
+    }
+  },
+  {
+    "key": "id",
+    "classification": "parser_property",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "reinforcementsReady"
+    }
+  },
+  {
+    "key": "includeIncomplete",
+    "classification": "parser_property",
+    "count": 2,
+    "first_appearance": {
+      "file": "assets/maps/normal/l030;[demo]mission_3__-__Crossfire.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "index",
+    "classification": "parser_property",
+    "count": 23,
+    "first_appearance": {
+      "file": "assets/maps/menu_background/menu2.tmx",
+      "value": "0"
+    }
+  },
+  {
+    "key": "introText",
+    "classification": "parser_property",
+    "count": 20,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o3]Cornered Stronghold.tmx",
+      "value": "See how long you can survive\\nYour command center must not be destroyed"
+    }
+  },
+  {
+    "key": "large-cliff",
+    "classification": "parser_property",
+    "count": 412,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[z;p10]Kingdoms (10p) [by Vulkan].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "large-rock",
+    "classification": "parser_property",
+    "count": 783,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[z;p10]Kingdoms (10p) [by Vulkan].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "lava",
+    "classification": "parser_property",
+    "count": 4,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[z;p10]Kingdoms (10p) [by Vulkan].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "lava-cliff",
+    "classification": "parser_property",
+    "count": 85,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[z;p10]Kingdoms (10p) [by Vulkan].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "lockAiDifficulty",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o4]Valley Arena (2p) [map_by_uber].tmx",
+      "value": "1"
+    }
+  },
+  {
+    "key": "loseCondition",
+    "classification": "observed_without_parser_read",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o3]Cornered Stronghold.tmx",
+      "value": "commandCenter"
+    }
+  },
+  {
+    "key": "maxUnits",
+    "classification": "parser_property",
+    "count": 7,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "0"
+    }
+  },
+  {
+    "key": "minUnits",
+    "classification": "parser_property",
+    "count": 3,
+    "first_appearance": {
+      "file": "assets/maps/normal/l030;[demo]mission_3__-__Crossfire.tmx",
+      "value": "1"
+    }
+  },
+  {
+    "key": "onlyAttackAir",
+    "classification": "parser_property",
+    "count": 2,
+    "first_appearance": {
+      "file": "assets/maps/normal/l050;mission_5__-__Desert_Base.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "onlyBuilders",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "onlyBuildings",
+    "classification": "parser_property",
+    "count": 4,
+    "first_appearance": {
+      "file": "assets/maps/normal/l030;[demo]mission_3__-__Crossfire.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "onlyEmptyQueue",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "onlyIdle",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "onlyIfEmpty",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "onlyMainBuildings",
+    "classification": "parser_property",
+    "count": 2,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "onlyOnResourcePool",
+    "classification": "parser_property",
+    "count": 2,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "onlyTechLevel",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "1"
+    }
+  },
+  {
+    "key": "res_pool",
+    "classification": "parser_property",
+    "count": 77,
+    "first_appearance": {
+      "file": "assets/tilesets/misc.tsx",
+      "value": ""
+    }
+  },
+  {
+    "key": "shareFogWithAllies",
+    "classification": "parser_property",
+    "count": 2,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o4]Valley Arena (2p) [map_by_uber].tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "showFog",
+    "classification": "parser_property",
+    "count": 72,
+    "first_appearance": {
+      "file": "assets/tilesets/units.tsx",
+      "value": "5"
+    }
+  },
+  {
+    "key": "showOnMap",
+    "classification": "parser_property",
+    "count": 8,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "small-cliff",
+    "classification": "observed_without_parser_read",
+    "count": 2,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[p4]Depth charges (4p) [by hxyy].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "small-rock",
+    "classification": "parser_property",
+    "count": 227,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[z;p10]Kingdoms (10p) [by Vulkan].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "spawnUnits",
+    "classification": "parser_property",
+    "count": 6,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "mechBunker*1(falling=true)"
+    }
+  },
+  {
+    "key": "style",
+    "classification": "parser_property",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/normal/l030;[demo]mission_3__-__Crossfire.tmx",
+      "value": "arrow"
+    }
+  },
+  {
+    "key": "survivalWavesClassic",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/maps/survival/[z;o1]Surrounded_(Classic_Waves).tmx",
+      "value": "true"
+    }
+  },
+  {
+    "key": "target",
+    "classification": "parser_property",
+    "count": 34,
+    "first_appearance": {
+      "file": "assets/maps/menu_background/menu2.tmx",
+      "value": "2"
+    }
+  },
+  {
+    "key": "team",
+    "classification": "parser_property",
+    "count": 2574,
+    "first_appearance": {
+      "file": "assets/tilesets/units.tsx",
+      "value": "0"
+    }
+  },
+  {
+    "key": "text",
+    "classification": "parser_property",
+    "count": 7,
+    "first_appearance": {
+      "file": "assets/maps/normal/l030;[demo]mission_3__-__Crossfire.tmx",
+      "value": "Boost income by building an extractor here"
+    }
+  },
+  {
+    "key": "textColor",
+    "classification": "parser_property",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/normal/l030;[demo]mission_3__-__Crossfire.tmx",
+      "value": "#DDdbdbdb"
+    }
+  },
+  {
+    "key": "textOffsetY",
+    "classification": "parser_property",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/normal/l030;[demo]mission_3__-__Crossfire.tmx",
+      "value": "-20"
+    }
+  },
+  {
+    "key": "tree",
+    "classification": "parser_property",
+    "count": 268,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[p4]Ice Lake (4p) [by hxyy].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "trees",
+    "classification": "parser_property",
+    "count": 1,
+    "first_appearance": {
+      "file": "assets/tilesets/terrain/Long Grass.tsx",
+      "value": ""
+    }
+  },
+  {
+    "key": "type",
+    "classification": "parser_property",
+    "count": 143,
+    "first_appearance": {
+      "file": "assets/tilesets/units.tsx",
+      "value": "gunT2"
+    }
+  },
+  {
+    "key": "unit",
+    "classification": "parser_property",
+    "count": 2454,
+    "first_appearance": {
+      "file": "assets/tilesets/units.tsx",
+      "value": "builderShip"
+    }
+  },
+  {
+    "key": "unitType",
+    "classification": "parser_property",
+    "count": 2,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "hoverCraft"
+    }
+  },
+  {
+    "key": "unload",
+    "classification": "parser_property",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "warmup",
+    "classification": "parser_property",
+    "count": 5,
+    "first_appearance": {
+      "file": "assets/maps/normal/l010;[demo]mission_1__-__Dividing_River.tmx",
+      "value": "3s"
+    }
+  },
+  {
+    "key": "water",
+    "classification": "parser_property",
+    "count": 1103,
+    "first_appearance": {
+      "file": "assets/maps/skirmish/[z;p10]Kingdoms (10p) [by Vulkan].tmx",
+      "value": ""
+    }
+  },
+  {
+    "key": "winCondition",
+    "classification": "parser_property",
+    "count": 25,
+    "first_appearance": {
+      "file": "assets/maps/survival/[o3]Cornered Stronghold.tmx",
+      "value": "none"
+    }
+  }
+]

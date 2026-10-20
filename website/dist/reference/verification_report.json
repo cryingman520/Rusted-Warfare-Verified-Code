@@ -1,0 +1,75 @@
+{
+  "runtime_tested": false,
+  "validation_scope_zh": "仅验证资料完整性、来源定位、样例字段与静态引用；没有调用游戏引擎。",
+  "checks": [
+    {
+      "check": "schema_integrity",
+      "status": "passed",
+      "detail": "984 个唯一节/键组合都有中文说明和有效的反编译来源定位；全部 JSON 可读取。"
+    },
+    {
+      "check": "dex_literal_crosscheck",
+      "status": "passed",
+      "detail": "984 个字段的名称/动态组成片段，以及 143 个函数/引用注册名，均可在本包 DEX 字符串表独立找到。仅字符串存在不能证明功能可用，功能证据另来自读取/实现。"
+    },
+    {
+      "check": "asset_ini_coverage",
+      "status": "passed",
+      "detail": {
+        "direct_field": 497,
+        "asset_metadata_not_consumed_by_android_mod_reader": 2,
+        "legacy_canBuild_prefix": 28,
+        "inactive_comment_section": 50,
+        "legacy_action_prefix": 11,
+        "legacy_builtFrom_prefix": 6,
+        "legacy_graphics_animation_prefix": 16,
+        "animation_keyframe": 63,
+        "template_requires_destination_context": 8
+      }
+    },
+    {
+      "check": "map_asset_coverage",
+      "status": "passed",
+      "detail": "57 种包内地图属性完成分类；55 种有解析记录，2 种作为观察到但未确认读取的字段明确记录。"
+    },
+    {
+      "check": "sample_static_check",
+      "status": "passed",
+      "detail": {
+        "ini_entries_checked": 56,
+        "memory_variables": [
+          "shots",
+          "powered"
+        ],
+        "shared_image": "assets/units/shared/debug_marker.png",
+        "references": "炮塔弹种、开火动作、内存变量、工厂类型均找到对应声明/注册；静态类型检查通过。"
+      }
+    },
+    {
+      "check": "xml_fragment",
+      "status": "passed",
+      "detail": "XML 可解析，所用属性都在地图解析属性表中；文件明确标注为非完整地图。"
+    },
+    {
+      "check": "manual_integrity",
+      "status": "passed",
+      "detail": {
+        "bytes": 409897,
+        "characters": 269874,
+        "field_entries": 984,
+        "logic_entries": 121,
+        "map_entries": 88,
+        "encoding": "UTF-8 BOM"
+      }
+    },
+    {
+      "check": "input_archive_integrity",
+      "status": "passed",
+      "detail": {
+        "sha256": "3f2da87c881ea0dd62d536066e62003fa14d434d265f47c6ba6d80ff5bb83d9e",
+        "zip_crc": "passed",
+        "entries": 1576
+      }
+    }
+  ]
+}

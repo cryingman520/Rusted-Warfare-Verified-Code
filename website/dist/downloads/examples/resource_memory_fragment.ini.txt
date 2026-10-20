@@ -1,0 +1,29 @@
+# 片段：合并到已有完整单位文件，不能作为独立单位导入。
+# 若原文件已有同名节/声明，应合并内容，避免重复键。
+
+[core]
+# 资源与内存是不同系统。声明内存用于记录本单位状态。
+defineUnitMemory: number collected
+
+[global_resource_data]
+# data 为全队共享资源的内部名。
+displayName: 数据
+# HUD 显示适用于此处的全局资源。
+displayInHUD: true
+
+[action_collectData]
+text: 收集数据
+# price 使用静态资源成本语法。
+price: credits=100
+buildSpeed: 1s
+# 同样的资源名称在资源表里使用，不能写 memory.data。
+addResources: data=1
+# 内存用 = 写入；计数增加 1。
+setUnitMemory: collected=memory.collected + 1
+
+[action_spendData]
+text: 消耗数据
+price: data=1
+buildSpeed: 0
+addResources: energy=10
+# 需要接收单位另有 energyMax 等能量配置才有实际恢复意义。

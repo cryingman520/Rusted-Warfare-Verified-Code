@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-20T01:37:36.105Z",
+  "policy": "Free-only, no paid fallback; public model metadata contains no credentials",
+  "selection": "Prioritize code-specialized free text models and reviewed pixel-art image presets, not a universal quality leaderboard",
+  "text": {
+    "provider": "OpenRouter",
+    "models": [
+      {
+        "id": "minimax/minimax-m3.1-flash:free",
+        "name": "MiniMax: MiniMax M3.1 Flash (free)",
+        "contextLength": 1000000,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "cohere/north-mini-code:free",
+        "name": "Cohere: North Mini Code (free)",
+        "contextLength": 256000,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "name": "NVIDIA: Nemotron 3 Ultra (free)",
+        "contextLength": 1000000,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "xingchen-agi/xing4.0-29b-a4b:free",
+        "name": "XingChen: Xing4.0 29B A4B (free)",
+        "contextLength": 262144,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "nvidia/nemotron-3.5-super-vl:free",
+        "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+        "contextLength": 1000000,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "dots-studio/dots-3-note-preview:free",
+        "name": "Dots Studio: Dots3-Note Preview (free)",
+        "contextLength": 512000,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "nvidia/nemotron-3.5-lightning:free",
+        "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+        "contextLength": 1000000,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "thinkingmachines/inkling-small:free",
+        "name": "Thinking Machines: Inkling Small (free)",
+        "contextLength": 1048576,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "poolside/laguna-s-2.1:free",
+        "name": "Poolside: Laguna S 2.1 (free)",
+        "contextLength": 262144,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      },
+      {
+        "id": "thinkingmachines/inkling:free",
+        "name": "Thinking Machines: Inkling (free)",
+        "contextLength": 1048576,
+        "pricing": {
+          "prompt": "0",
+          "completion": "0"
+        }
+      }
+    ]
+  },
+  "image": {
+    "provider": "AI Horde",
+    "models": [
+      {
+        "id": "AIO Pixel Art",
+        "labelZh": "像素精灵推荐",
+        "labelEn": "Pixel sprite preset",
+        "params": {
+          "steps": 20,
+          "cfg_scale": 7,
+          "sampler_name": "k_euler_a"
+        },
+        "onlineWorkers": 4
+      },
+      {
+        "id": "Pixel Illustrious",
+        "labelZh": "像素风备选",
+        "labelEn": "Pixel art alternative",
+        "params": {
+          "steps": 20,
+          "cfg_scale": 5,
+          "sampler_name": "k_euler_a"
+        },
+        "onlineWorkers": 5
+      },
+      {
+        "id": "Flux.1-Schnell fp8 (Compact)",
+        "labelZh": "通用绘图",
+        "labelEn": "General image model",
+        "params": {
+          "steps": 6,
+          "cfg_scale": 1,
+          "sampler_name": "k_euler",
+          "karras": true
+        },
+        "onlineWorkers": 5
+      },
+      {
+        "id": "PixelWave FLUX.1-schnell 04",
+        "labelZh": "通用风格备选",
+        "labelEn": "General style alternative",
+        "params": {
+          "steps": 8,
+          "cfg_scale": 1,
+          "sampler_name": "k_euler",
+          "karras": false
+        },
+        "onlineWorkers": 2
+      }
+    ]
+  },
+  "sources": [
+    "https://openrouter.ai/api/v1/models",
+    "https://openrouter.ai/pricing",
+    "https://aihorde.net/api/v2/status/models?type=image",
+    "https://github.com/Haidra-Org/AI-Horde-image-model-reference"
+  ],
+  "monthlyReview": "First day of each month, 11:17 Asia/Shanghai"
+}

@@ -1,0 +1,3917 @@
+[
+  {
+    "names": [
+      "memory"
+    ],
+    "description_zh": "已声明单位内存的命名空间；使用 memory.变量名，不能把 memory 单独当布尔值",
+    "return_type": "命名空间，不能独立求值",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 60
+    },
+    "evidence": "B",
+    "custom_syntax": "memory.已声明变量；不可单独求值",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "self.readUnitMemory"
+    ],
+    "description_zh": "按字符串名称读取当前上下文单位内存；type 决定结果类型，default 提供缺失时的值，index 用于数组",
+    "return_type": "由 type 参数决定",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "required": true,
+        "position": 0,
+        "description_zh": "内存变量或连接名称"
+      },
+      {
+        "name": "default",
+        "type": "类型随参数语境决定的表达式",
+        "required": false,
+        "description_zh": "未取得内存时的同类型回退值"
+      },
+      {
+        "name": "index",
+        "type": "类型随参数语境决定的表达式",
+        "required": false,
+        "description_zh": "数组索引"
+      },
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description_zh": "结果类型、资源名、命令类型或移动类型，按函数上下文"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 61
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "eventData"
+    ],
+    "description_zh": "读取本次事件携带的数据；通常由 sendMessageWithData 写入，只在有事件上下文时有意义",
+    "return_type": "由 type 参数决定",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "required": true,
+        "position": 0,
+        "description_zh": "内存变量或连接名称"
+      },
+      {
+        "name": "default",
+        "type": "类型随参数语境决定的表达式",
+        "required": false,
+        "description_zh": "未取得内存时的同类型回退值"
+      },
+      {
+        "name": "index",
+        "type": "类型随参数语境决定的表达式",
+        "required": false,
+        "description_zh": "数组索引"
+      },
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description_zh": "结果类型、资源名、命令类型或移动类型，按函数上下文"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 62
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.playername"
+    ],
+    "description_zh": "单位所属玩家名称",
+    "return_type": "string",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 63
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.teamname"
+    ],
+    "description_zh": "单位所属队伍名称",
+    "return_type": "string",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 64
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "debug"
+    ],
+    "description_zh": "把表达式及其求值信息格式化为调试文本",
+    "return_type": "string",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 65
+    },
+    "evidence": "B",
+    "custom_syntax": "debug(expression) -> string",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "debugPassthrough"
+    ],
+    "description_zh": "求值并输出调试信息，同时原样返回该表达式的结果类型和值；调试显示受游戏设置约束",
+    "return_type": "与被返回的输入表达式同类型",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 66
+    },
+    "evidence": "B",
+    "custom_syntax": "debugPassthrough(expression:T) -> T",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "select"
+    ],
+    "description_zh": "条件选择：第一个参数为 bool，第二、三个参数必须同类型；返回被选中的值",
+    "return_type": "与被返回的输入表达式同类型",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 67
+    },
+    "evidence": "B",
+    "custom_syntax": "select(condition:bool, valueIfTrue:T, valueIfFalse:T) -> T",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "str"
+    ],
+    "description_zh": "把一个表达式转成字符串",
+    "return_type": "string",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 68
+    },
+    "evidence": "B",
+    "custom_syntax": "str(expression) -> string",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "substring"
+    ],
+    "description_zh": "截取字符串；start 起始位置，end 结束边界，不含 end 位置；越界处理以实现为准",
+    "return_type": "string",
+    "parameters": [
+      {
+        "name": "text",
+        "type": "类型随参数语境决定的表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "字符串表达式"
+      },
+      {
+        "name": "start",
+        "type": "number表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "起始索引"
+      },
+      {
+        "name": "end",
+        "type": "number表达式",
+        "required": true,
+        "position": 2,
+        "description_zh": "结束索引（不包含）"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 69
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "lowercase"
+    ],
+    "description_zh": "将字符串转为小写",
+    "return_type": "string",
+    "parameters": [
+      {
+        "name": "text",
+        "type": "类型随参数语境决定的表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "字符串表达式"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 70
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "uppercase"
+    ],
+    "description_zh": "将字符串转为大写",
+    "return_type": "string",
+    "parameters": [
+      {
+        "name": "text",
+        "type": "类型随参数语境决定的表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "字符串表达式"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 71
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "int"
+    ],
+    "description_zh": "把数值截断成整数值，结果仍属于 number 类型",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 72
+    },
+    "evidence": "B",
+    "custom_syntax": "int(value:number) -> number",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "rnd"
+    ],
+    "description_zh": "在 min 与 max 之间取随机数；使用引擎的确定性随机路径，不能把它当持久变量",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "min",
+        "type": "number表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "随机下界"
+      },
+      {
+        "name": "max",
+        "type": "number表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "随机上界"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 73
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "max"
+    ],
+    "description_zh": "返回两个数值中的较大值",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "number表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "b",
+        "type": "number表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 74
+    },
+    "evidence": "B",
+    "custom_syntax": "max(a:number,b:number) -> number",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "min"
+    ],
+    "description_zh": "返回两个数值中的较小值",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "number表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "b",
+        "type": "number表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 75
+    },
+    "evidence": "B",
+    "custom_syntax": "min(a:number,b:number) -> number",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "length"
+    ],
+    "description_zh": "返回字符串长度；数组长度使用 .size 或 .length",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "string表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 76
+    },
+    "evidence": "B",
+    "custom_syntax": "length(text:string) -> number",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "squareRoot"
+    ],
+    "description_zh": "返回数值平方根",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 77
+    },
+    "evidence": "B",
+    "custom_syntax": "squareRoot(value:number) -> number",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "distanceSquared"
+    ],
+    "description_zh": "返回两组平面坐标间距离的平方，适合无需开方的范围比较",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "x1",
+        "type": "number表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "y1",
+        "type": "number表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "x2",
+        "type": "number表达式",
+        "required": true,
+        "position": 2,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "y2",
+        "type": "number表达式",
+        "required": true,
+        "position": 3,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 78
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "cos"
+    ],
+    "description_zh": "角度的余弦，角度使用度",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 79
+    },
+    "evidence": "B",
+    "custom_syntax": "cos(value:number) -> number",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "sin"
+    ],
+    "description_zh": "角度的正弦，角度使用度",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 80
+    },
+    "evidence": "B",
+    "custom_syntax": "sin(value:number) -> number",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "distance"
+    ],
+    "description_zh": "返回两组平面坐标间的距离",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "x1",
+        "type": "number表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "y1",
+        "type": "number表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "x2",
+        "type": "number表达式",
+        "required": true,
+        "position": 2,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "y2",
+        "type": "number表达式",
+        "required": true,
+        "position": 3,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 81
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "direction"
+    ],
+    "description_zh": "返回从坐标一指向坐标二的方向角",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "x1",
+        "type": "number表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "y1",
+        "type": "number表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "x2",
+        "type": "number表达式",
+        "required": true,
+        "position": 2,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "y2",
+        "type": "number表达式",
+        "required": true,
+        "position": 3,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 82
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "distanceBetweenSquared"
+    ],
+    "description_zh": "返回两个单位/标记位置之间平面距离的平方",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "unit1",
+        "type": "unit表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "unit2",
+        "type": "unit表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 83
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "distanceBetween"
+    ],
+    "description_zh": "返回两个单位/标记位置之间的平面距离",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "unit1",
+        "type": "unit表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "unit2",
+        "type": "unit表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 84
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "directionBetween"
+    ],
+    "description_zh": "返回从 unit1 指向 unit2 的方向角",
+    "return_type": "number",
+    "parameters": [
+      {
+        "name": "unit1",
+        "type": "unit表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "unit2",
+        "type": "unit表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 85
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "createMarker"
+    ],
+    "description_zh": "创建仅用于表达式传递位置/方向/队伍的标记引用，不会生成战斗单位",
+    "return_type": "unit",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "number表达式",
+        "required": true,
+        "position": 0,
+        "description_zh": "横向值/偏移"
+      },
+      {
+        "name": "y",
+        "type": "number表达式",
+        "required": true,
+        "position": 1,
+        "description_zh": "纵向值/偏移"
+      },
+      {
+        "name": "height",
+        "type": "number表达式",
+        "required": false,
+        "position": 2,
+        "description_zh": "高度或高度偏移"
+      },
+      {
+        "name": "dir",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "方向角"
+      },
+      {
+        "name": "teamId",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "标记所属队伍编号"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 86
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "true"
+    ],
+    "description_zh": "布尔常量真",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 87
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "false"
+    ],
+    "description_zh": "布尔常量假",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java",
+      "line": 88
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.underwater",
+      "self.isUnderwater"
+    ],
+    "description_zh": "判断当前单位是否处于水下高度",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "flying",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "ground",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "underwater",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 35
+    },
+    "evidence": "B",
+    "preset_parameters": "underwater=true"
+  },
+  {
+    "names": [
+      "self.gound",
+      "self.ground",
+      "self.isAtGroundHeight"
+    ],
+    "description_zh": "判断当前单位是否处于地面高度；gound 是历史拼写，ground 与 isAtGroundHeight 也是已注册别名",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "flying",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "ground",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "underwater",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 36
+    },
+    "evidence": "B",
+    "preset_parameters": "ground=true"
+  },
+  {
+    "names": [
+      "self.height",
+      "self.z"
+    ],
+    "description_zh": "当前单位高度，z 是别名",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 37
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.flying",
+      "self.isFlying"
+    ],
+    "description_zh": "判断当前单位是否处于飞行高度",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "flying",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "ground",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      },
+      {
+        "name": "underwater",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 38
+    },
+    "evidence": "B",
+    "preset_parameters": "flying=true"
+  },
+  {
+    "names": [
+      "self.isMoving"
+    ],
+    "description_zh": "判断当前单位是否正在移动",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 39
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.hasActiveWaypoint"
+    ],
+    "description_zh": "是否有当前执行的航点/命令；type 可限定命令类型",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": false,
+        "description_zh": "结果类型、资源名、命令类型或移动类型，按函数上下文"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 40
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.numberOfQueuedWaypoints"
+    ],
+    "description_zh": "命令队列中的航点数量；type 可限定类型",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "type",
+        "type": "String",
+        "required": false,
+        "description_zh": "结果类型、资源名、命令类型或移动类型，按函数上下文"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 41
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.speed"
+    ],
+    "description_zh": "当前实际移动速度",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 42
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.maxspeed",
+      "self.isAtTopSpeed"
+    ],
+    "description_zh": "判断是否达到最高移动速度；这是布尔判断，读取速度上限使用 self.maxMoveSpeed",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "atTopSpeed",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "对应函数的输入值；见函数作用与签名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 43
+    },
+    "evidence": "B",
+    "preset_parameters": "atTopSpeed=true"
+  },
+  {
+    "names": [
+      "self.isInMap"
+    ],
+    "description_zh": "判断单位位置是否位于地图有效边界内",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 44
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.inwater",
+      "self.isInWater"
+    ],
+    "description_zh": "判断单位是否接触水面/水域",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 45
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.overwater",
+      "self.isOverwater"
+    ],
+    "description_zh": "判断单位所在地块是否为水地形",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 46
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isOverLiquid"
+    ],
+    "description_zh": "判断当前位置是否属于液体地形，范围可包含水或熔岩",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 47
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isOverClift",
+      "self.isOverCliff"
+    ],
+    "description_zh": "判断当前位置是否为悬崖；isOverCliff 是兼容别名",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 48
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isOverPassableTile"
+    ],
+    "description_zh": "判断当前位置对指定移动类型是否可通行；type 是 LAND 等移动类型",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": false,
+        "description_zh": "结果类型、资源名、命令类型或移动类型，按函数上下文"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 49
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isOverOpenLand"
+    ],
+    "description_zh": "对 LAND 可通行性进行预设判断；该注册项已锁定参数",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 50
+    },
+    "evidence": "B",
+    "preset_parameters": "type='LAND'"
+  },
+  {
+    "names": [
+      "self.tags",
+      "self.hasTags"
+    ],
+    "description_zh": "检查单位标签是否与 includes 提供的标签匹配",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "includes",
+        "type": "String",
+        "required": false,
+        "description_zh": "需要匹配的标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 51
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.globalTeamTags",
+      "self.hasGlobalTeamTags"
+    ],
+    "description_zh": "检查所属队伍的全局标签",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "includes",
+        "type": "String",
+        "required": false,
+        "description_zh": "需要匹配的标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 52
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.hasFlag"
+    ],
+    "description_zh": "检查资源位标记 id 是否设置；id 使用 0 至 31",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "id",
+        "type": "number表达式",
+        "required": false,
+        "position": 0,
+        "description_zh": "位标记编号 0..31"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 53
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.energy"
+    ],
+    "description_zh": "当前能量",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 54
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.energyIncludingQueued"
+    ],
+    "description_zh": "考虑排队资源预留后的能量值",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 55
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isEnergyFull"
+    ],
+    "description_zh": "判断能量是否已满，预设 full=true",
+    "return_type": "bool（预设判断参数）",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 56
+    },
+    "evidence": "B",
+    "preset_parameters": "full=true"
+  },
+  {
+    "names": [
+      "self.isEnergyEmpty"
+    ],
+    "description_zh": "判断能量是否耗尽，预设 empty=true",
+    "return_type": "bool（预设判断参数）",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 57
+    },
+    "evidence": "B",
+    "preset_parameters": "empty=true"
+  },
+  {
+    "names": [
+      "self.transportingCount"
+    ],
+    "description_zh": "运输舱内符合过滤条件的单位数量；slot 与 withTag 可限制范围",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "slot",
+        "type": "int",
+        "required": false,
+        "description_zh": "运输槽索引或挂载槽名称（按本函数类型）"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 58
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.transportingUnitWithTags"
+    ],
+    "description_zh": "运输舱中是否有符合 includes 标签的单位",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "includes",
+        "type": "String",
+        "required": false,
+        "description_zh": "需要匹配的标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 59
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isTransportUnloading"
+    ],
+    "description_zh": "是否正在执行卸载运输单位",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 60
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.priceCredits"
+    ],
+    "description_zh": "当前单位造价中的 credits 数量，不包含全部自定义资源价值",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 61
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.hp"
+    ],
+    "description_zh": "当前生命值",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 62
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.maxHp"
+    ],
+    "description_zh": "当前生命上限",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 63
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.maxShield"
+    ],
+    "description_zh": "当前护盾上限",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 64
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.maxEnergy"
+    ],
+    "description_zh": "当前能量上限",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 65
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.id"
+    ],
+    "description_zh": "单位的引擎内部数字标识，不能当作单位类型名称",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 66
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.teamId"
+    ],
+    "description_zh": "所属队伍的数字编号",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 67
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.teamDefeatedTech"
+    ],
+    "description_zh": "所属队伍是否触发缺少关键发展能力的技术失败状态，具体判定由游戏队伍逻辑决定",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 68
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.teamWipedOut"
+    ],
+    "description_zh": "所属队伍是否被消灭",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 69
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.teamVictory"
+    ],
+    "description_zh": "所属队伍是否取得胜利",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 70
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isEnergyRecharging"
+    ],
+    "description_zh": "是否处于必须恢复能量的锁定充能状态",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 71
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.x"
+    ],
+    "description_zh": "当前平面横坐标",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 72
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.y"
+    ],
+    "description_zh": "当前平面纵坐标",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 73
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.dir"
+    ],
+    "description_zh": "当前朝向角度",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 74
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.maxMoveSpeed"
+    ],
+    "description_zh": "当前移动速度上限",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 75
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.builtAmount"
+    ],
+    "description_zh": "单位建造完成比例，完整单位通常为 1",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 76
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.completed"
+    ],
+    "description_zh": "单位是否完成建造",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 77
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.shield"
+    ],
+    "description_zh": "当前护盾量",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 78
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.ammo"
+    ],
+    "description_zh": "当前弹药资源数量",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 79
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isAmmoEmpty"
+    ],
+    "description_zh": "判断弹药是否耗尽，预设 empty=true",
+    "return_type": "bool（预设判断参数）",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 80
+    },
+    "evidence": "B",
+    "preset_parameters": "empty=true"
+  },
+  {
+    "names": [
+      "self.ammoIncludingQueued"
+    ],
+    "description_zh": "考虑排队资源预留后的弹药值",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 81
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.resource"
+    ],
+    "description_zh": "读取指定资源；可写 self.resource(type='资源名') 或 self.resource.资源名，资源须先存在",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": false,
+        "position": 0,
+        "description_zh": "结果类型、资源名、命令类型或移动类型，按函数上下文"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 82
+    },
+    "evidence": "B",
+    "custom_syntax": "self.resource(type='资源名') 或 self.resource.资源名"
+  },
+  {
+    "names": [
+      "self.queueSize"
+    ],
+    "description_zh": "生产/动作队列大小；withActionTag 可筛选动作标签",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "withActionTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "动作队列标签过滤"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 83
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.numberOfConnections"
+    ],
+    "description_zh": "注册存在的连接计数接口；本包未找到为普通 Mod 加载连接定义的入口，按内部/保留能力处理，不列为可直接依赖的普通功能",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "required": false,
+        "description_zh": "内存变量或连接名称"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 84
+    },
+    "evidence": "B",
+    "status": "registered_internal_or_reserved"
+  },
+  {
+    "names": [
+      "self.numberOfAttachedUnits"
+    ],
+    "description_zh": "挂载槽中的单位数量；可按标签或槽名过滤",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "slot",
+        "type": "String",
+        "required": false,
+        "description_zh": "运输槽索引或挂载槽名称（按本函数类型）"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 85
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.hasParent"
+    ],
+    "description_zh": "是否具有父单位；withTag 可检查父单位标签",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 86
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.hasResources"
+    ],
+    "description_zh": "按资源价格语法判断本单位/队伍是否拥有足量资源；参数不是普通函数参数注解表",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 87
+    },
+    "evidence": "B",
+    "custom_syntax": "self.hasResources(credits=100, energy=10) -> bool；使用资源列表语法",
+    "parameter_usage_note": "优先按 custom_syntax 的位置参数/专用语法使用；不能从注解缺失推断无需参数。"
+  },
+  {
+    "names": [
+      "self.isResourceLargerThan"
+    ],
+    "description_zh": "判断 source > multiplyTargetBy * (compareTarget + byMoreThan)；source 与 compareTarget 都必须提供资源名",
+    "return_type": "bool",
+    "parameters": [
+      {
+        "name": "byMoreThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "比较时的额外差额"
+      },
+      {
+        "name": "compareTarget",
+        "type": "String",
+        "required": false,
+        "description_zh": "比较目标资源名"
+      },
+      {
+        "name": "multiplyTargetBy",
+        "type": "float",
+        "required": false,
+        "description_zh": "目标资源乘数"
+      },
+      {
+        "name": "source",
+        "type": "String",
+        "required": false,
+        "description_zh": "源资源名"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 88
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.kills"
+    ],
+    "description_zh": "当前单位击杀计数",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 89
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.timeAlive"
+    ],
+    "description_zh": "出生以来经过的时间；无条件参数时返回秒数，可用 laterThanSeconds/withinSeconds 判断",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "laterThanSeconds",
+        "type": "float",
+        "required": false,
+        "description_zh": "经过时间大于指定秒数"
+      },
+      {
+        "name": "withinSeconds",
+        "type": "float",
+        "required": false,
+        "description_zh": "经过时间在指定秒数内"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 90
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.lastConverted"
+    ],
+    "description_zh": "上次转换单位类型以来经过的时间；可返回秒数或时间条件",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "laterThanSeconds",
+        "type": "float",
+        "required": false,
+        "description_zh": "经过时间大于指定秒数"
+      },
+      {
+        "name": "withinSeconds",
+        "type": "float",
+        "required": false,
+        "description_zh": "经过时间在指定秒数内"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 91
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.customTimer"
+    ],
+    "description_zh": "自定义计时器经过的时间，resetCustomTimer 可重置；可返回秒数或时间条件",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "laterThanSeconds",
+        "type": "float",
+        "required": false,
+        "description_zh": "经过时间大于指定秒数"
+      },
+      {
+        "name": "withinSeconds",
+        "type": "float",
+        "required": false,
+        "description_zh": "经过时间在指定秒数内"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 92
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.hasTakenDamage"
+    ],
+    "description_zh": "距离上次受伤的时间；支持时间条件，名称不代表无参数必然返回 bool",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "laterThanSeconds",
+        "type": "float",
+        "required": false,
+        "description_zh": "经过时间大于指定秒数"
+      },
+      {
+        "name": "withinSeconds",
+        "type": "float",
+        "required": false,
+        "description_zh": "经过时间在指定秒数内"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 93
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isAttacking"
+    ],
+    "description_zh": "当前是否有攻击目标并处于攻击状态",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 94
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isReversing"
+    ],
+    "description_zh": "是否正在倒车",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 95
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "self.isOnNeutralTeam"
+    ],
+    "description_zh": "所属队伍是否为中立队，预设 team=-1 且参数锁定",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 96
+    },
+    "evidence": "B",
+    "preset_parameters": "team=-1"
+  },
+  {
+    "names": [
+      "self.isControlledByAI"
+    ],
+    "description_zh": "当前队伍是否由 AI 控制",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 97
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "numberOfUnitsInTeam",
+      "self.numberOfUnitsInTeam"
+    ],
+    "description_zh": "统计本队单位；支持标签、半径、是否含未完成建筑及生产队列等过滤",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "aggressiveTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到特殊敌意中立队统计"
+      },
+      {
+        "name": "allTeams",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "跨全部队伍"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "factoryQueue",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入生产队列"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "neutralTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到中立队统计"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 98
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "hasUnitInTeam",
+      "self.hasUnitInTeam"
+    ],
+    "description_zh": "本队匹配单位数大于零的预设布尔判断",
+    "return_type": "bool（预设判断参数）",
+    "parameters": [
+      {
+        "name": "aggressiveTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到特殊敌意中立队统计"
+      },
+      {
+        "name": "allTeams",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "跨全部队伍"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "factoryQueue",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入生产队列"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "neutralTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到中立队统计"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 99
+    },
+    "evidence": "B",
+    "preset_parameters": "greaterThan=0, lessThan=-1"
+  },
+  {
+    "names": [
+      "noUnitInTeam",
+      "self.noUnitInTeam"
+    ],
+    "description_zh": "本队匹配单位数为零的预设布尔判断",
+    "return_type": "bool（预设判断参数）",
+    "parameters": [
+      {
+        "name": "aggressiveTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到特殊敌意中立队统计"
+      },
+      {
+        "name": "allTeams",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "跨全部队伍"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "factoryQueue",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入生产队列"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "neutralTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到中立队统计"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 100
+    },
+    "evidence": "B",
+    "preset_parameters": "greaterThan=-1, lessThan=1"
+  },
+  {
+    "names": [
+      "numberOfUnitsInNeutralTeam",
+      "self.numberOfUnitsInNeutralTeam"
+    ],
+    "description_zh": "统计中立队符合过滤条件的单位",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "aggressiveTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到特殊敌意中立队统计"
+      },
+      {
+        "name": "allTeams",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "跨全部队伍"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "factoryQueue",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入生产队列"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "neutralTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到中立队统计"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 101
+    },
+    "evidence": "B",
+    "preset_parameters": "neutralTeam=true"
+  },
+  {
+    "names": [
+      "numberOfUnitsInAggressiveTeam",
+      "self.numberOfUnitsInAggressiveTeam"
+    ],
+    "description_zh": "统计具有敌意的特殊中立队符合过滤条件的单位",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "aggressiveTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到特殊敌意中立队统计"
+      },
+      {
+        "name": "allTeams",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "跨全部队伍"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "factoryQueue",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入生产队列"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "neutralTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到中立队统计"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 102
+    },
+    "evidence": "B",
+    "preset_parameters": "aggressiveTeam=true"
+  },
+  {
+    "names": [
+      "numberOfUnitsInAllTeams",
+      "self.numberOfUnitsInAllTeams"
+    ],
+    "description_zh": "统计所有队伍符合过滤条件的单位",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "aggressiveTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到特殊敌意中立队统计"
+      },
+      {
+        "name": "allTeams",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "跨全部队伍"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "factoryQueue",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入生产队列"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "neutralTeam",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "切换到中立队统计"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 103
+    },
+    "evidence": "B",
+    "preset_parameters": "allTeams=true"
+  },
+  {
+    "names": [
+      "numberOfUnitsInEnemyTeam",
+      "self.numberOfUnitsInEnemyTeam"
+    ],
+    "description_zh": "统计敌对队伍符合过滤条件的单位",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "ally",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "在盟友/敌人统计间切换"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "factoryQueue",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入生产队列"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 104
+    },
+    "evidence": "B",
+    "preset_parameters": "ally=false"
+  },
+  {
+    "names": [
+      "numberOfUnitsInAllyTeam",
+      "self.numberOfUnitsInAllyTeam",
+      "numberOfUnitsInAllyNotOwnTeam",
+      "self.numberOfUnitsInAllyNotOwnTeam"
+    ],
+    "description_zh": "统计盟友队伍（不含本队）符合过滤条件的单位；AllyNotOwn 是明确含义的别名",
+    "return_type": "number/bool(取决于参数)",
+    "parameters": [
+      {
+        "name": "ally",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "在盟友/敌人统计间切换"
+      },
+      {
+        "name": "empty",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断为空/耗尽"
+      },
+      {
+        "name": "equalTo",
+        "type": "float",
+        "required": false,
+        "description_zh": "等于指定常量"
+      },
+      {
+        "name": "factoryQueue",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入生产队列"
+      },
+      {
+        "name": "full",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "判断达到满值（仅具有有效上限的实现有实际意义）"
+      },
+      {
+        "name": "greaterThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "大于指定常量"
+      },
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "lessThan",
+        "type": "float",
+        "required": false,
+        "description_zh": "小于指定常量"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 105
+    },
+    "evidence": "B",
+    "preset_parameters": "ally=true"
+  },
+  {
+    "names": [
+      "game.nukesEnabled"
+    ],
+    "description_zh": "判断当前对局规则是否允许核武；预设参数已锁定",
+    "return_type": "bool",
+    "parameters": [],
+    "parameters_locked": true,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 106
+    },
+    "evidence": "B",
+    "preset_parameters": "nukesEnabled=true"
+  },
+  {
+    "names": [
+      "game.mapWidth"
+    ],
+    "description_zh": "地图宽度，按世界坐标尺度返回",
+    "return_type": "number",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 107
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "game.mapHeight"
+    ],
+    "description_zh": "地图高度，按世界坐标尺度返回",
+    "return_type": "number",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 108
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "thisActionIndex",
+      "index"
+    ],
+    "description_zh": "alsoTriggerActionRepeat 等动作重复执行的当前索引；普通上下文不应依赖它",
+    "return_type": "number",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java",
+      "line": 109
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "attachment"
+    ],
+    "description_zh": "取得匹配槽名或标签的挂载单位；无匹配时可能为空",
+    "return_type": "unit",
+    "parameters": [
+      {
+        "name": "slot",
+        "type": "String",
+        "required": false,
+        "description_zh": "运输槽索引或挂载槽名称（按本函数类型）"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 43
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "parent"
+    ],
+    "description_zh": "取得当前单位的父级引用，常用于挂载或运输关系",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 44
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "transporting"
+    ],
+    "description_zh": "取得指定 slot 中的被运输单位，索引从 0 开始",
+    "return_type": "unit",
+    "parameters": [
+      {
+        "name": "slot",
+        "type": "int",
+        "required": false,
+        "description_zh": "运输槽索引或挂载槽名称（按本函数类型）"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 45
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "activeWaypointTarget"
+    ],
+    "description_zh": "取得当前命令所指向的目标单位/目标位置引用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 46
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "attacking"
+    ],
+    "description_zh": "取得当前攻击目标引用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 47
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "customTarget1"
+    ],
+    "description_zh": "取得动作 setCustomTarget1 保存的引用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 48
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "customTarget2"
+    ],
+    "description_zh": "取得动作 setCustomTarget2 保存的引用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 49
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "lastDamagedBy"
+    ],
+    "description_zh": "取得最近一次伤害来源单位引用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 50
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "nearestUnit"
+    ],
+    "description_zh": "在范围内寻找最近匹配单位；支持标签、排除标签、队伍关系和未完成建筑过滤",
+    "return_type": "unit",
+    "parameters": [
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "relation",
+        "type": "String",
+        "required": false,
+        "description_zh": "own/ally/allyNotOwn/enemy/neutral/any/notOwn"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      },
+      {
+        "name": "withinRange",
+        "type": "float",
+        "required": false,
+        "description_zh": "限定搜索半径"
+      },
+      {
+        "name": "withoutTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "排除匹配标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 51
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "globalSearchForFirstUnit"
+    ],
+    "description_zh": "全图寻找第一个匹配单位；顺序是内部遍历顺序，不保证最近，频繁调用成本较高",
+    "return_type": "unit",
+    "parameters": [
+      {
+        "name": "incompleteBuildings",
+        "type": "boolean",
+        "required": false,
+        "description_zh": "是否计入未建成建筑"
+      },
+      {
+        "name": "relation",
+        "type": "String",
+        "required": false,
+        "description_zh": "own/ally/allyNotOwn/enemy/neutral/any/notOwn"
+      },
+      {
+        "name": "withTag",
+        "type": "String",
+        "required": false,
+        "description_zh": "包括匹配标签"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 52
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "nullUnit"
+    ],
+    "description_zh": "空单位引用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 53
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "null"
+    ],
+    "description_zh": "空值/空单位引用；必须与接收位置的类型相容",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 54
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "getOffsetAbsolute"
+    ],
+    "description_zh": "以当前引用位置为基点，按世界坐标 x/y/height 偏移得到位置标记",
+    "return_type": "unit",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "number表达式",
+        "required": false,
+        "position": 0,
+        "description_zh": "横向值/偏移"
+      },
+      {
+        "name": "y",
+        "type": "number表达式",
+        "required": false,
+        "position": 1,
+        "description_zh": "纵向值/偏移"
+      },
+      {
+        "name": "height",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "高度或高度偏移"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 55
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "getOffsetRelative"
+    ],
+    "description_zh": "以当前引用位置和朝向为基点作局部偏移；dirOffset 可额外旋转",
+    "return_type": "unit",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "number表达式",
+        "required": false,
+        "position": 0,
+        "description_zh": "横向值/偏移"
+      },
+      {
+        "name": "y",
+        "type": "number表达式",
+        "required": false,
+        "position": 1,
+        "description_zh": "纵向值/偏移"
+      },
+      {
+        "name": "dirOffset",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "额外方向偏移"
+      },
+      {
+        "name": "height",
+        "type": "number表达式",
+        "required": false,
+        "description_zh": "高度或高度偏移"
+      }
+    ],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 56
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "getAsMarker"
+    ],
+    "description_zh": "把单位引用转换为保留位置等信息的标记引用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 57
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "thisActionTarget"
+    ],
+    "description_zh": "本次动作的目标引用；需在有动作目标的上下文使用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 58
+    },
+    "evidence": "B"
+  },
+  {
+    "names": [
+      "eventSource"
+    ],
+    "description_zh": "本次事件的来源单位引用；需在有事件的上下文使用",
+    "return_type": "unit",
+    "parameters": [],
+    "parameters_locked": false,
+    "source": {
+      "path": "com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java",
+      "line": 59
+    },
+    "evidence": "B"
+  }
+]

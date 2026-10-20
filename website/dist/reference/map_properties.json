@@ -1,0 +1,1281 @@
+[
+  {
+    "key": "activateIds",
+    "scope": "触发器通用",
+    "description_zh": "待激活的其他触发器 ID 列表；与 alsoActivate 为同向连接别名",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 379
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "activatedBy",
+    "scope": "触发器通用",
+    "description_zh": "依赖的上游触发器 ID 列表",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 402
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "add",
+    "scope": "changeCredits",
+    "description_zh": "增加资金的整数数量，可使用负数表示扣减",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 102
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 1143
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "addTeamTags",
+    "scope": "teamTags",
+    "description_zh": "给指定队伍增加全局标签列表",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 98
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 1125
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "ai",
+    "scope": "team_info",
+    "description_zh": "AI 类型提示；survival 启用生存相关队伍行为",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 269
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "allToActivate",
+    "scope": "触发器通用",
+    "description_zh": "要求所有激活依赖同时满足，而非任一满足",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 57
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "allyGroup",
+    "scope": "team_info",
+    "description_zh": "设置队伍所属同盟组编号",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 265
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "alsoActivate",
+    "scope": "触发器通用",
+    "description_zh": "本触发器激活时联动的目标 ID 列表",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 380
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "basicAI",
+    "scope": "team_info",
+    "description_zh": "键存在即请求基础 AI 行为；不是普通 true/false 开关",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 249
+      }
+    ],
+    "evidence": "B",
+    "note_zh": "地图属性与单位 INI 字段分别解析；存在性开关不能用 false 代替删除。"
+  },
+  {
+    "key": "comment",
+    "scope": "触发器通用",
+    "description_zh": "被解析器认可的备注，不是可执行脚本",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 111
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "credits",
+    "scope": "team_info",
+    "description_zh": "指定队伍的初始资金",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 246
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "deactivatedBy",
+    "scope": "触发器通用",
+    "description_zh": "会使本触发器失活的上游 ID 列表",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 415
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "debugMessage",
+    "scope": "触发器通用",
+    "description_zh": "激活时输出调试信息",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 116
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 983
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "delay",
+    "scope": "触发器通用",
+    "description_zh": "从地图开始计时的初始延迟；地图时间裸数是毫秒，也支持 ms 和 s",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 53
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "dir",
+    "scope": "rotate 初始对象",
+    "description_zh": "把区域内单位旋转到指定角度",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 286
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "disabledAI",
+    "scope": "team_info",
+    "description_zh": "键存在即请求禁用 AI；不要用 false 来表达关闭该请求，应删除该属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 261
+      }
+    ],
+    "evidence": "B",
+    "note_zh": "地图属性与单位 INI 字段分别解析；存在性开关不能用 false 代替删除。"
+  },
+  {
+    "key": "fog",
+    "scope": "map_info",
+    "description_zh": "迷雾模式：none、map 或 los；它是 map_info 属性，不是普通单位参数",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/b.java",
+        "line": 819
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "globalMessage",
+    "scope": "触发器通用",
+    "description_zh": "激活时显示给所有玩家的文本，支持地图文本本地化",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 60
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 113
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "globalMessage_delayPerChar",
+    "scope": "触发器通用",
+    "description_zh": "消息逐字出现的时间，支持 slow 预设或地图时间值",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 114
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 966
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 969
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "globalMessage_textColor",
+    "scope": "触发器通用",
+    "description_zh": "全局消息颜色",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 115
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 977
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "id",
+    "scope": "触发器通用",
+    "description_zh": "显式触发器 ID；未指定时使用对象名",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 20
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "includeIncomplete",
+    "scope": "unitDetect",
+    "description_zh": "把未建成单位也纳入检测",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 67
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "index",
+    "scope": "相机轨道对象",
+    "description_zh": "相机轨道顺序编号，配合 camera_pan 类型",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 779
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "introText",
+    "scope": "map_info",
+    "description_zh": "进入地图时的介绍文本，可使用本地化后缀及换行",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 220
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "lockAiDifficulty",
+    "scope": "team_info",
+    "description_zh": "锁定 AI 难度编号；须与当前游戏支持的难度范围匹配",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 253
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "maxUnits",
+    "scope": "unitDetect",
+    "description_zh": "匹配单位数允许的上限",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 36
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "minUnits",
+    "scope": "unitDetect",
+    "description_zh": "匹配单位数下限；无 maxUnits 时通常默认 1，设置 maxUnits 后默认 0",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 41
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyAttack",
+    "scope": "unitDetect",
+    "description_zh": "只计算具有攻击能力的单位",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 56
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyAttackAir",
+    "scope": "unitDetect",
+    "description_zh": "只计算能够攻击空中目标的单位",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 57
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyBuilders",
+    "scope": "unitDetect",
+    "description_zh": "只计算建造单位",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 54
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyEmptyQueue",
+    "scope": "unitDetect",
+    "description_zh": "只计算生产/动作队列为空的单位",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 55
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyIfEmpty",
+    "scope": "unitDetect / move / unitRemove",
+    "description_zh": "只匹配运输舱为空的单位；具体适用范围由对应触发器决定",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 120
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 125
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 58
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyMainBuildings",
+    "scope": "unitDetect",
+    "description_zh": "只计算主要建筑",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 50
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyOnResourcePool",
+    "scope": "unitDetect",
+    "description_zh": "只计算位于资源点的建筑/单位",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 51
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyTechLevel",
+    "scope": "unitDetect",
+    "description_zh": "限制单位科技等级",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 53
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyWithTag",
+    "scope": "unitDetect",
+    "description_zh": "限定单位标签",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 59
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlybuildings",
+    "scope": "unitDetect",
+    "description_zh": "只计算建筑；onlyBuildings 为可用别名",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 49
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyBuildings",
+    "scope": "unitDetect",
+    "description_zh": "onlybuildings 的兼容别名",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 49
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyidle",
+    "scope": "unitDetect",
+    "description_zh": "只计算空闲单位；onlyIdle 为可用别名",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 52
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "onlyIdle",
+    "scope": "unitDetect",
+    "description_zh": "onlyidle 的兼容别名",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 52
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "removeTeamTags",
+    "scope": "teamTags",
+    "description_zh": "从指定队伍移除全局标签列表",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 99
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 1129
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "repeatCount",
+    "scope": "触发器通用",
+    "description_zh": "最大激活次数",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 55
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "repeatDelay",
+    "scope": "触发器通用",
+    "description_zh": "重复激活间隔，使用地图时间语法",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 54
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "resetActivationAfter",
+    "scope": "触发器通用",
+    "description_zh": "激活后经过指定时间恢复可再次激活状态",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 56
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "set",
+    "scope": "changeCredits",
+    "description_zh": "把指定队伍资金直接设置为整数值",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 103
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 1140
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "shareFogWithAllies",
+    "scope": "map_info",
+    "description_zh": "是否共享同盟视野",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 195
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "showOnMap",
+    "scope": "触发器通用",
+    "description_zh": "激活时在地图上产生提示",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 117
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 991
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "spawnUnits",
+    "scope": "unitAdd",
+    "description_zh": "在对象位置生成单位列表；地图上下文没有单位 Mod 元数据，部分生成参数不能使用",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 88
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "startWithMusic",
+    "scope": "map_info",
+    "description_zh": "地图开始播放的音乐名/路径",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 187
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "style",
+    "scope": "mapText",
+    "description_zh": "文字样式；本包识别 arrow 箭头提示样式",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 77
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "survivalWaves",
+    "scope": "map_info",
+    "description_zh": "多行生存波次脚本，使用独立的 +时间 / !选项 语法",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 183
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "survivalWavesClassic",
+    "scope": "map_info",
+    "description_zh": "选择经典生存波次生成模式",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 155
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "target",
+    "scope": "move",
+    "description_zh": "移动目标对象的名称/ID；目标必须能在地图对象中找到",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 119
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 1049
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "team",
+    "scope": "多种对象",
+    "description_zh": "队伍编号；team_info、单位生成/检测/移动等分别解释，未加载的队伍会失败或被跳过",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 45
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 112
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 238
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 305
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/a.java",
+        "line": 129
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 94
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "teamTag",
+    "scope": "teamTagDetect",
+    "description_zh": "待检测的队伍标签表达式",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/b.java",
+        "line": 22
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "text",
+    "scope": "objective / mapText",
+    "description_zh": "目标说明或地图绘制文字",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 64
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 118
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "textColor",
+    "scope": "mapText",
+    "description_zh": "地图文字颜色",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 72
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "textOffsetX",
+    "scope": "mapText 相关绘制",
+    "description_zh": "文字相对对象位置的横向偏移",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 61
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "textOffsetY",
+    "scope": "mapText 相关绘制",
+    "description_zh": "文字相对对象位置的纵向偏移",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 62
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "textSize",
+    "scope": "mapText",
+    "description_zh": "文字字号",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 73
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "type",
+    "scope": "map_info / 单位对象",
+    "description_zh": "map_info 中指定 skirmish、survival 等模式；单位对象中用于单位子类型。触发器种类使用 XML object 的 type 属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 142
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 153
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 191
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/b.java",
+        "line": 818
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/a.java",
+        "line": 186
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/a.java",
+        "line": 187
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 154
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 155
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "unitType",
+    "scope": "unitDetect",
+    "description_zh": "按单位内部类型名筛选",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/a/c.java",
+        "line": 44
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "unload",
+    "scope": "move",
+    "description_zh": "到达目标时卸载运输单位；该分支按属性存在性判断",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 122
+      },
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 1078
+      }
+    ],
+    "evidence": "B",
+    "note_zh": "地图属性与单位 INI 字段分别解析；存在性开关不能用 false 代替删除。"
+  },
+  {
+    "key": "warmup",
+    "scope": "触发器通用",
+    "description_zh": "激活条件需要持续满足的时间，使用地图时间语法",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/c.java",
+        "line": 59
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "whenActivatedIds",
+    "scope": "触发器通用",
+    "description_zh": "activatedBy 的兼容依赖别名",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 400
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "winCondition",
+    "scope": "map_info",
+    "description_zh": "胜利判定：none、allUnitsAndBuildings、allBuildings、mainBuildings、commandCenter、requiredObjectives；mainBuilings 为历史别名",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 196
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "zoomTo",
+    "scope": "camera_start",
+    "description_zh": "地图初始镜头缩放值",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/gameFramework/n/p.java",
+        "line": 278
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "showFog",
+    "scope": "tile",
+    "description_zh": "在指定地块位置揭开一定范围迷雾",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 83
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "unit",
+    "scope": "tile / 单位对象",
+    "description_zh": "生成游戏内置单位的内部名称",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/a.java",
+        "line": 126
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 91
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "customUnit",
+    "scope": "tile / 单位对象",
+    "description_zh": "生成自定义单位的内部名称",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/a.java",
+        "line": 127
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 92
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "randomRotate",
+    "scope": "tile / 单位对象",
+    "description_zh": "为生成单位设置随机朝向；按属性存在性判断",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/a.java",
+        "line": 189
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 157
+      }
+    ],
+    "evidence": "B",
+    "note_zh": "地图属性与单位 INI 字段分别解析；存在性开关不能用 false 代替删除。"
+  },
+  {
+    "key": "water",
+    "scope": "tile",
+    "description_zh": "水地块通行属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 186
+      }
+    ],
+    "evidence": "B",
+    "note_zh": "地图属性与单位 INI 字段分别解析；存在性开关不能用 false 代替删除。"
+  },
+  {
+    "key": "water-bridge",
+    "scope": "tile",
+    "description_zh": "水面桥通行属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 189
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "lava",
+    "scope": "tile",
+    "description_zh": "熔岩地块属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 192
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "lava-cliff",
+    "scope": "tile",
+    "description_zh": "熔岩悬崖地块属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 192
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 194
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "cliff-soft",
+    "scope": "tile",
+    "description_zh": "软悬崖地形属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 198
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "cliff",
+    "scope": "tile",
+    "description_zh": "悬崖地形属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 201
+      }
+    ],
+    "evidence": "B",
+    "note_zh": "地图属性与单位 INI 字段分别解析；存在性开关不能用 false 代替删除。"
+  },
+  {
+    "key": "large-cliff",
+    "scope": "tile",
+    "description_zh": "大型悬崖地形属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 204
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "trees",
+    "scope": "tile",
+    "description_zh": "树木地形/通行属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 207
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "res_pool",
+    "scope": "tile",
+    "description_zh": "资源点标记，供采集建筑放置判断使用",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 210
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "tree",
+    "scope": "tile",
+    "description_zh": "读取后未见有效设置的旧字段，按保留项处理",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 213
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "small-rock",
+    "scope": "tile",
+    "description_zh": "小型石块阻挡/通行代价属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 214
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "large-rock",
+    "scope": "tile",
+    "description_zh": "大型石块阻挡属性",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 217
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "block-land",
+    "scope": "tile",
+    "description_zh": "阻挡地面单位通行",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 220
+      }
+    ],
+    "evidence": "B",
+    "note_zh": "地图属性与单位 INI 字段分别解析；存在性开关不能用 false 代替删除。"
+  },
+  {
+    "key": "block-buildings",
+    "scope": "tile",
+    "description_zh": "阻止在此建造建筑",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 223
+      }
+    ],
+    "evidence": "B",
+    "note_zh": "地图属性与单位 INI 字段分别解析；存在性开关不能用 false 代替删除。"
+  },
+  {
+    "key": "randomTileBy",
+    "scope": "tile",
+    "description_zh": "允许随机使用连续图块变体的数量",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 260
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 264
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 269
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 273
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "randomTileFixedOffset",
+    "scope": "tile",
+    "description_zh": "随机图块变体的固定索引偏移",
+    "sources": [
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 265
+      },
+      {
+        "path": "com/corrodinggames/rts/game/b/i.java",
+        "line": 267
+      }
+    ],
+    "evidence": "B",
+    "note_zh": ""
+  },
+  {
+    "key": "embedded_png",
+    "scope": "tileset",
+    "description_zh": "内嵌 PNG 图像数据的 tileset 属性",
+    "sources": [],
+    "evidence": "B",
+    "note_zh": ""
+  }
+]

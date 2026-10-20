@@ -1,0 +1,1350 @@
+{
+  "hardcoded_unit_types": [
+    {
+      "name": "extractor",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 113,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "landFactory",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 170,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "airFactory",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 217,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "seaFactory",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 264,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "commandCenter",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 316,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "turret",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 358,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "antiAirTurret",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 395,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "builder",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 432,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "tank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 485,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "hoverTank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 517,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "artillery",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 549,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "helicopter",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 581,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "airShip",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 613,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "gunShip",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 645,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "missileShip",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 682,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "gunBoat",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 714,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "megaTank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 746,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "laserTank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 778,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "hovercraft",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 815,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "ladybug",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 847,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "battleShip",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 879,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "tankDestroyer",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 911,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "heavyTank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 943,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "heavyHoverTank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 980,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "laserDefence",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1017,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "dropship",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1059,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "tree",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1096,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "repairbay",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1128,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "NukeLaucher",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1165,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "AntiNukeLaucher",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1202,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "mammothTank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1239,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "experimentalTank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1276,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "experimentalLandFactory",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1313,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "crystalResource",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1355,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "wall_v",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1392,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "fabricator",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1429,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "attackSubmarine",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1477,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "builderShip",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1509,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "amphibiousJet",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1556,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "supplyDepot",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1593,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "experimentalHoverTank",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1630,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "turret_artillery",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1667,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "turret_flamethrower",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1705,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "fogRevealer",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1743,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "spreadingFire",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1775,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "antiAirTurretT2",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1807,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "turretT2",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1845,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "turretT3",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1883,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "damagingBorder",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1921,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "zoneMarker",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1958,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "editorOrBuilder",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 1997,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    },
+    {
+      "name": "dummyNonUnitWithTeam",
+      "source": "com/corrodinggames/rts/game/units/cj.java",
+      "line": 2053,
+      "note_zh": "硬编码单位类型注册名；能否生产及编辑器可见性另受游戏规则控制"
+    }
+  ],
+  "asset_ini_declarations": [
+    {
+      "file": "assets/builtin_mods/mega_builders/mega_builder/mega_builder.ini",
+      "name": "megaBuilder",
+      "overrideAndReplace": "builder",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/helicopter/helicopter.ini",
+      "name": "c_helicopter",
+      "overrideAndReplace": "helicopter",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/experimental_tank/experimental_tank.ini",
+      "name": "c_experimentalTank",
+      "overrideAndReplace": "experimentalTank",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/heavy_battleship/heavy_battleship.ini",
+      "name": "heavyBattleship",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/test_tank/tank.ini",
+      "dont_load": "true",
+      "name": "custom_tank",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/extractor/extractorT3.ini",
+      "name": "extractorT3",
+      "copyFrom": "extractor_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/extractor/extractorT3_reinforced.ini",
+      "name": "extractorT3_reinforced",
+      "copyFrom": "extractor_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/extractor/extractor.ini",
+      "name": "extractorT1",
+      "copyFrom": "extractor_common.ini",
+      "overrideAndReplace": "extractor",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/extractor/extractorT2.ini",
+      "name": "extractorT2",
+      "copyFrom": "extractor_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/extractor/extractorT3_overclocked.ini",
+      "name": "extractorT3_overclocked",
+      "copyFrom": "extractor_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mammoth_tank/mammoth_tank.ini",
+      "name": "c_mammothTank",
+      "overrideAndReplace": "mammothTank",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/fire_bee/fire_bee.ini",
+      "name": "fireBee",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "name": "experimentalGunshipLanded",
+      "copyFrom": "experimental_gunship.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/experimental_gunship/experimental_gunship.ini",
+      "name": "experimentalGunship",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/spy_drone/spy_drone.ini",
+      "name": "spyDrone",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/nukes/antinuke_launcher.ini",
+      "name": "antiNukeLauncherC",
+      "overrideAndReplace": "AntiNukeLaucher",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/nukes/nuke_launcher.ini",
+      "name": "nukeLauncherC",
+      "overrideAndReplace": "NukeLaucher",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/light_sub/light_sub.ini",
+      "name": "lightSub",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/antiairT2.ini",
+      "name": "modularSpider_antiairT2",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/antiair.ini",
+      "name": "modularSpider_antiair",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/antiairFlak.ini",
+      "name": "modularSpider_antiairFlak",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/blink.ini",
+      "name": "modularSpider_blink",
+      "copyFrom": "common_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/laser_defense.ini",
+      "name": "modularSpider_laserdefense",
+      "copyFrom": "common_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/gunturretT2.ini",
+      "name": "modularSpider_gunturretT2",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/antinuke.ini",
+      "name": "modularSpider_antinuke",
+      "copyFrom": "common_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/modular_spider.ini",
+      "name": "modularSpider",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/speed_incomplete.ini",
+      "name": "modularSpider_speedIncomplete",
+      "copyFrom": "speed.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/speed.ini",
+      "name": "modularSpider_speed",
+      "copyFrom": "common_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/lightning.ini",
+      "name": "modularSpider_lightning",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/modular_spider_nonEmpty.ini",
+      "name": "modularSpider_nonEmpty",
+      "copyFrom": "modular_spider.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/fabricatorT2.ini",
+      "name": "modularSpider_fabricatorT2",
+      "copyFrom": "fabricator.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/fabricator.ini",
+      "name": "modularSpider_fabricator",
+      "copyFrom": "common_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/smallgun.ini",
+      "name": "modularSpider_smallgunturret",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/artillery.ini",
+      "name": "modularSpider_artillery",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/shieldGen.ini",
+      "name": "modularSpider_shieldGen",
+      "copyFrom": "common_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/smallgunT2.ini",
+      "name": "modularSpider_smallgunturretT2",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/gunturret.ini",
+      "name": "modularSpider_gunturret",
+      "copyFrom": "common_weapon_slot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/modular_spider/emptySlot.ini",
+      "name": "modularSpider_emptySlot",
+      "copyFrom": "baseSlot.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mech_factory/mechFactoryT2.ini",
+      "name": "mechFactoryT2",
+      "copyFrom": "mechFactory.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mech_factory/mechFactory.ini",
+      "name": "mechFactory",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/combat_engineer/combat_engineer.ini",
+      "name": "combatEngineer",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/scout/scout.ini",
+      "name": "scout",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/resource_deposits/crystal_mid.ini",
+      "name": "crystal_mid",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/resource_deposits/creditsCrate.ini",
+      "name": "creditsCrates",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/tanks/tank.ini",
+      "name": "c_tank",
+      "overrideAndReplace": "tank",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/tanks/artillery.ini",
+      "name": "c_artillery",
+      "overrideAndReplace": "artillery",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/tanks/heavy_artillery.ini",
+      "name": "heavyArtillery",
+      "altNames": "heavy_artillery",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/miscellaneous/example_faction_picker.ini",
+      "dont_load": "true",
+      "name": "example_faction_picker",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/miscellaneous/flare_10s.ini",
+      "name": "flare_10s",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/heavy_missile_ship/heavy_missile_ship.ini",
+      "name": "heavyMissileShip",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/bomber/bomber.ini",
+      "name": "bomber",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/outpost/outpost.ini",
+      "name": "outpostT1",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/outpost/outpostT2.ini",
+      "name": "outpostT2",
+      "copyFrom": "outpost.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "name": "heavyInterceptor",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/laser_tank/laser_tank.ini",
+      "name": "c_laserTank",
+      "overrideAndReplace": "laserTank",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "name": "aaBeamGunship_afterburn",
+      "copyFrom": "aa_beam_gunship.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "name": "aaBeamGunship",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/bug_melee/bug_melee_t31.ini",
+      "name": "bugMeleeT31",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_med_common.ini",
+      "name": "NULL",
+      "dont_load": "true",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_bunker.ini",
+      "name": "mechBunker",
+      "copyFrom": "mech_large_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_large_common.ini",
+      "name": "NULL",
+      "dont_load": "true",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_flying_landed.ini",
+      "name": "mechFlyingLanded",
+      "copyFrom": "mech_med_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_artillery.ini",
+      "name": "mechArtillery",
+      "copyFrom": "mech_med_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_minigun.ini",
+      "name": "mechMinigun",
+      "copyFrom": "mech_med_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_bunker_deployed.ini",
+      "name": "mechBunkerDeployed",
+      "copyFrom": "mech_bunker.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_heavyMissile.ini",
+      "name": "mechHeavyMissile",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_flying_takeoff.ini",
+      "name": "mechFlyingTakeoff",
+      "copyFrom": "mech_flying_landed.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_lightning.ini",
+      "name": "mechLightning",
+      "copyFrom": "mech_large_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_laser.ini",
+      "name": "mechLaser",
+      "copyFrom": "mech_large_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_large/mech_flame.ini",
+      "name": "mechFlame",
+      "copyFrom": "mech_large_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/amphibious_jet/amphibious_jet_underwater.ini",
+      "name": "c_amphibiousJet_underwater",
+      "copyFrom": "amphibious_jet.ini",
+      "overrideAndReplace": "NONE",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/amphibious_jet/amphibious_jet_transition.ini",
+      "name": "c_amphibiousJet_transition",
+      "copyFrom": "amphibious_jet.ini",
+      "overrideAndReplace": "NONE",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/amphibious_jet/amphibious_jet.ini",
+      "name": "c_amphibiousJet",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/experimental_dropship/experimental_dropship.ini",
+      "name": "experimentalDropship",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/missile_tank/missile_tank.ini",
+      "name": "missileTank",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/laboratory/laboratory.ini",
+      "name": "laboratory",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/light_gunship/light_gunship.ini",
+      "name": "lightGunship",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_t2_flame.ini",
+      "name": "c_turret_t2_flame",
+      "copyFrom": "turret_common_land.ini",
+      "overrideAndReplace": "turret_flamethrower",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_t2_artillery.ini",
+      "name": "c_turret_t2_artillery",
+      "copyFrom": "turret_common_land.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_t1_artillery.ini",
+      "name": "c_turret_t1_artillery",
+      "copyFrom": "turret_common_land.ini",
+      "overrideAndReplace": "turret_artillery",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_t2_gun.ini",
+      "name": "c_turret_t2_gun",
+      "copyFrom": "turret_common_land.ini",
+      "overrideAndReplace": "turretT2",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_t2_lightning.ini",
+      "name": "c_turret_t2_lightning",
+      "copyFrom": "turret_common_land.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_antiair.ini",
+      "name": "c_antiAirTurret",
+      "overrideAndReplace": "antiAirTurret",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_t1_lightning.ini",
+      "name": "c_turret_t1_lightning",
+      "copyFrom": "turret_common_land.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_antiair_flakgun.ini",
+      "name": "antiAirTurretFlak",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_antiair_t2.ini",
+      "name": "c_antiAirTurretT2",
+      "overrideAndReplace": "antiAirTurretT2",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_t3_gun.ini",
+      "name": "c_turret_t3_gun",
+      "copyFrom": "turret_common_land.ini",
+      "overrideAndReplace": "turretT3",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_t1.ini",
+      "name": "c_turret_t1",
+      "copyFrom": "turret_common_land.ini",
+      "overrideAndReplace": "turret",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/turrets/turret_antiair_t3.ini",
+      "name": "c_antiAirTurretT3",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/fabricator/fabricatorT1.ini",
+      "name": "fabricatorT1",
+      "overrideAndReplace": "fabricator",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/fabricator/fabricatorT2.ini",
+      "name": "fabricatorT2",
+      "copyFrom": "fabricatorT1.ini",
+      "overrideAndReplace": "NONE",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/fabricator/fabricatorT3.ini",
+      "name": "fabricatorT3",
+      "copyFrom": "fabricatorT1.ini",
+      "overrideAndReplace": "NONE",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/plasma_tank/plasma_tank.ini",
+      "name": "plasmaTank",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/heavy_sub/heavy_sub.ini",
+      "name": "heavySub",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "name": "experiementalCarrier",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/missing_unit/missing.ini",
+      "name": "missing",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/nautilus/nautilusSurface.ini",
+      "copyFrom": "nautilus.ini",
+      "name": "nautilusSubmarineSurface",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/nautilus/nautilusLand.ini",
+      "name": "nautilusSubmarineLand",
+      "copyFrom": "nautilus.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/nautilus/nautilus.ini",
+      "name": "nautilusSubmarine",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/interceptor/interceptor.ini",
+      "name": "c_interceptor",
+      "overrideAndReplace": "airShip",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_small/mechs_small_common.ini",
+      "name": "NULL",
+      "dont_load": "true",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_small/mech_gun.ini",
+      "name": "mechGun",
+      "copyFrom": "mechs_small_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mechs_small/mech_missile.ini",
+      "name": "mechMissile",
+      "copyFrom": "mechs_small_common.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/mech_engineer/mech_engineer.ini",
+      "name": "mechEngineer",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/heavy_aa_ship/heavy_aa_ship.ini",
+      "name": "heavyAAShip",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/experimental_spider/experimental_spider.ini",
+      "name": "experimentalSpider",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/missile_airship/missile_airship.ini",
+      "name": "missileAirship",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/bug_base/bug_generator/bug_generatorT2.ini",
+      "name": "bugGeneratorNT2",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/bug_base/bug_generator/bug_generator.ini",
+      "name": "bugGeneratorN",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/nautilus/robotCrab/robotCrabWater.ini",
+      "copyFrom": "robotCrab.ini",
+      "name": "robotCrabWater",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/nautilus/robotCrab/robotCrab.ini",
+      "name": "robotCrab",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bugs_t2/bug_ranged_t2.ini",
+      "name": "bugRangedT2",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bugs/bug_wasp.ini",
+      "name": "bugWasp",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bugs/bug_pickup.ini",
+      "name": "bugPickup",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_generator/bug_generatorT2.ini",
+      "name": "bugGeneratorT2",
+      "copyFrom": "bug_generator.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_generator/bug_generator.ini",
+      "name": "bugGenerator",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_fly/bug_fly.ini",
+      "name": "bugFly",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_melee/bug_melee.ini",
+      "name": "bugMelee",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_melee/bug_melee_small.ini",
+      "name": "bugMeleeSmall",
+      "copyFrom": "bug_melee.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_melee/bug_melee_large.ini",
+      "name": "bugMeleeLarge",
+      "copyFrom": "bug_melee.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_nest/bug_nest.ini",
+      "name": "bugNest",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_bee/bug_bee.ini",
+      "name": "bugBee",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_ranged/bug_ranged.ini",
+      "name": "bugRanged",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_turret/bug_turret.ini",
+      "name": "bugTurret",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_extractor/bug_extractorT2.ini",
+      "name": "bugExtractorT2",
+      "copyFrom": "bug_extractor.ini",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_extractor/bug_extractor.ini",
+      "name": "bugExtractor",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    },
+    {
+      "file": "assets/units/classic_bugs/bug_spore/bug_spore.ini",
+      "name": "bugSpore",
+      "note_zh": "包内 INI 直接声明；可能受 dont_load、继承、替换或是否启用内置 Mod 影响"
+    }
+  ],
+  "loaded_builtin_sounds": [
+    {
+      "name": "attack",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 73,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "attack2",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 76,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "move",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 77,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "click",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 78,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "click_add",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 79,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "click_remove",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 80,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "warning",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 81,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "message",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 82,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "missile_fire",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 83,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "missile_hit",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 84,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "unit_explode",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 85,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "buiding_explode",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 86,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "tank_firing",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 87,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "cannon_firing",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 88,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "gun_fire",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 89,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "lighting_burst",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 90,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "plasma_fire",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 91,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "plasma_fire2",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 92,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "firing3",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 93,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "firing4",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 94,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "large_gun_fire1",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 95,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "large_gun_fire2",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 96,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "bug_die",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 97,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "bug_attack",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 98,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "interface_error",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 99,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "nuke_explode",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 100,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "nuke_launch",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 101,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "laser_deflect",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 102,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    },
+    {
+      "name": "laser_deflect2",
+      "source": "com/corrodinggames/rts/gameFramework/a/e.java",
+      "line": 103,
+      "note_zh": "初始化时加载的内置音效名，可用于相应音效字段"
+    }
+  ],
+  "effect_strip_names": [
+    {
+      "name": "effects",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 369,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "explode_big",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 380,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "light_50",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 385,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "flame",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 395,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "dust",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 405,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "smoke_black",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 415,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "shockwave",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 426,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "fire",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 436,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "lava_bubble",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 444,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "effects2",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 454,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "plasma_shot",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 464,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "shockwave_large",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 474,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "explode_bits",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 484,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "explode_big2",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 495,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "explode_bits_bug",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 505,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "projectiles",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 516,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "projectiles2",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 527,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "effects3",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 538,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "smoke_white",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 548,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    },
+    {
+      "name": "shockwave2",
+      "source": "com/corrodinggames/rts/gameFramework/d/c.java",
+      "line": 559,
+      "note_zh": "effect 节 stripIndex 可引用的内置条带名，不是效果名"
+    }
+  ],
+  "builtin_effect_names": [
+    "small",
+    "medium",
+    "large",
+    "smoke",
+    "shockwave",
+    "largeExplosion",
+    "smallExplosion",
+    "resourcePoolSmoke",
+    "none"
+  ],
+  "builtin_effect_note_zh": "none 是输入名，内部 enum noneExplosion 不是对应可输入名称；CUSTOM:/CUSTOM| 与 BUILTIN:/BUILTIN| 可区分自定义和内置效果。"
+}

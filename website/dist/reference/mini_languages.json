@@ -1,0 +1,525 @@
+{
+  "spawnUnits": [
+    {
+      "key": "neutralTeam",
+      "type": "bool",
+      "description_zh": "生成单位属于中立队",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 77
+      }
+    },
+    {
+      "key": "setToTeamOfLastAttacker",
+      "type": "bool",
+      "description_zh": "生成单位归属上一次攻击者队伍",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 79
+      }
+    },
+    {
+      "key": "aggressiveTeam",
+      "type": "bool",
+      "description_zh": "生成单位属于敌意中立队",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 81
+      }
+    },
+    {
+      "key": "spawnChance",
+      "type": "float",
+      "description_zh": "本项生成概率",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 83
+      }
+    },
+    {
+      "key": "maxSpawnLimit",
+      "type": "int",
+      "description_zh": "本项生成数量上限",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 85
+      }
+    },
+    {
+      "key": "techLevel",
+      "type": "int",
+      "description_zh": "生成单位的科技等级",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 87
+      }
+    },
+    {
+      "key": "gridAlign",
+      "type": "bool",
+      "description_zh": "生成位置对齐地块网格",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 89
+      }
+    },
+    {
+      "key": "skipIfOverlapping",
+      "type": "bool",
+      "description_zh": "与其他单位/建筑冲突时跳过生成",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 91
+      }
+    },
+    {
+      "key": "falling",
+      "type": "bool",
+      "description_zh": "使用下落入场状态",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 93
+      }
+    },
+    {
+      "key": "transportedUnitsToTransfer",
+      "type": "int",
+      "description_zh": "从来源单位转移给新单位的乘员数量",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 95
+      }
+    },
+    {
+      "key": "alwaysStartDirAtZero",
+      "type": "bool",
+      "description_zh": "生成朝向以零方向为基准",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 97
+      }
+    },
+    {
+      "key": "alwayStartDirAtZero",
+      "type": "bool",
+      "description_zh": "alwaysStartDirAtZero 的历史拼写别名",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 99
+      }
+    },
+    {
+      "key": "offsetX",
+      "type": "float",
+      "description_zh": "世界横向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 101
+      }
+    },
+    {
+      "key": "offsetY",
+      "type": "float",
+      "description_zh": "世界纵向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 103
+      }
+    },
+    {
+      "key": "offsetRandomXY",
+      "type": "float",
+      "description_zh": "横纵随机偏移范围",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 105
+      }
+    },
+    {
+      "key": "offsetRandomX",
+      "type": "float",
+      "description_zh": "横向随机偏移范围",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 109
+      }
+    },
+    {
+      "key": "offsetRandomY",
+      "type": "float",
+      "description_zh": "纵向随机偏移范围",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 111
+      }
+    },
+    {
+      "key": "offsetHeight",
+      "type": "float",
+      "description_zh": "高度偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 113
+      }
+    },
+    {
+      "key": "offsetRandomDir",
+      "type": "float",
+      "description_zh": "随机方向偏移范围",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 115
+      }
+    },
+    {
+      "key": "offsetDir",
+      "type": "float",
+      "description_zh": "方向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 117
+      }
+    },
+    {
+      "key": "addResources",
+      "type": "资源价格列表",
+      "description_zh": "给生成单位附加资源；地图等无 Mod 元数据的上下文不支持",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 119
+      }
+    },
+    {
+      "key": "spawnSource",
+      "type": "unit表达式",
+      "description_zh": "改变生成来源单位",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 129
+      }
+    },
+    {
+      "key": "copyWaypointsFrom",
+      "type": "unit表达式",
+      "description_zh": "从该单位复制航点",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/ci.java",
+        "line": 131
+      }
+    }
+  ],
+  "spawnProjectiles": [
+    {
+      "key": "spawnChance",
+      "type": "float",
+      "description_zh": "本项生成概率",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 80
+      }
+    },
+    {
+      "key": "maxSpawnLimit",
+      "type": "int",
+      "description_zh": "本项生成数量上限",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 82
+      }
+    },
+    {
+      "key": "recursionLimit",
+      "type": "int",
+      "description_zh": "射弹连锁生成递归深度上限",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 84
+      }
+    },
+    {
+      "key": "offsetX",
+      "type": "float",
+      "description_zh": "世界横向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 86
+      }
+    },
+    {
+      "key": "xOffsetAbsolute",
+      "type": "float",
+      "description_zh": "offsetX 的世界横向偏移别名",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 86
+      }
+    },
+    {
+      "key": "offsetY",
+      "type": "float",
+      "description_zh": "世界纵向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 88
+      }
+    },
+    {
+      "key": "yOffsetAbsolute",
+      "type": "float",
+      "description_zh": "offsetY 的世界纵向偏移别名",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 88
+      }
+    },
+    {
+      "key": "xOffsetRelative",
+      "type": "float",
+      "description_zh": "以生成方向为基准的横向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 90
+      }
+    },
+    {
+      "key": "yOffsetRelative",
+      "type": "float",
+      "description_zh": "以生成方向为基准的纵向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 92
+      }
+    },
+    {
+      "key": "offsetRandomXY",
+      "type": "float",
+      "description_zh": "横纵随机偏移范围",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 94
+      }
+    },
+    {
+      "key": "offsetRandomX",
+      "type": "float",
+      "description_zh": "横向随机偏移范围",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 98
+      }
+    },
+    {
+      "key": "offsetRandomY",
+      "type": "float",
+      "description_zh": "纵向随机偏移范围",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 100
+      }
+    },
+    {
+      "key": "offsetHeight",
+      "type": "float",
+      "description_zh": "高度偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 102
+      }
+    },
+    {
+      "key": "offsetRandomDir",
+      "type": "float",
+      "description_zh": "随机方向偏移范围",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 104
+      }
+    },
+    {
+      "key": "offsetDir",
+      "type": "float",
+      "description_zh": "方向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/cb.java",
+        "line": 106
+      }
+    }
+  ],
+  "price": [
+    {
+      "key": "credits",
+      "type": "int",
+      "description_zh": "队伍基础资金",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 197
+      }
+    },
+    {
+      "key": "energy",
+      "type": "float",
+      "description_zh": "单位能量",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 210
+      }
+    },
+    {
+      "key": "hp",
+      "type": "float",
+      "description_zh": "单位生命资源",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 212
+      }
+    },
+    {
+      "key": "shield",
+      "type": "float",
+      "description_zh": "单位护盾资源",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 214
+      }
+    },
+    {
+      "key": "ammo",
+      "type": "int",
+      "description_zh": "单位弹药",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 216
+      }
+    },
+    {
+      "key": "hasFlag",
+      "type": "位号/范围",
+      "description_zh": "要求指定标记位存在",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 218
+      }
+    },
+    {
+      "key": "hasMissingFlag",
+      "type": "位号/范围",
+      "description_zh": "要求指定标记位缺失",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 220
+      }
+    },
+    {
+      "key": "setFlag",
+      "type": "位号/范围",
+      "description_zh": "设置标记位",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 222
+      }
+    },
+    {
+      "key": "unsetFlag",
+      "type": "位号/范围",
+      "description_zh": "清除标记位",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/d/b.java",
+        "line": 224
+      }
+    }
+  ],
+  "imageStack": [
+    {
+      "key": "teamColors",
+      "type": "bool",
+      "description_zh": "为该堆叠图像启用队伍色",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/b/c.java",
+        "line": 223
+      }
+    },
+    {
+      "key": "teamColor",
+      "type": "bool",
+      "description_zh": "teamColors 的兼容别名",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/b/c.java",
+        "line": 225
+      }
+    }
+  ],
+  "animationKeyframe": [
+    {
+      "key": "x",
+      "type": "float",
+      "description_zh": "关键帧横向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/f.java",
+        "line": 280
+      }
+    },
+    {
+      "key": "y",
+      "type": "float",
+      "description_zh": "关键帧纵向偏移",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/f.java",
+        "line": 282
+      }
+    },
+    {
+      "key": "dir",
+      "type": "float",
+      "description_zh": "腿/臂角度",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/f.java",
+        "line": 194
+      }
+    },
+    {
+      "key": "height",
+      "type": "float",
+      "description_zh": "腿/臂高度",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/f.java",
+        "line": 197
+      }
+    },
+    {
+      "key": "alpha",
+      "type": "float",
+      "description_zh": "腿/臂透明度",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/f.java",
+        "line": 200
+      }
+    },
+    {
+      "key": "scale",
+      "type": "float",
+      "description_zh": "身体缩放",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/f.java",
+        "line": 218
+      }
+    },
+    {
+      "key": "frame",
+      "type": "float",
+      "description_zh": "身体贴图帧位置",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/f.java",
+        "line": 221
+      }
+    },
+    {
+      "key": "name",
+      "type": "效果引用",
+      "description_zh": "效果关键帧发射的特效名",
+      "source": {
+        "path": "com/corrodinggames/rts/game/units/custom/f.java",
+        "line": 284
+      }
+    }
+  ]
+}

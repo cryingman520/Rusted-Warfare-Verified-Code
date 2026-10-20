@@ -1,0 +1,574 @@
+{
+  "scope": "Supplied Android 1.15 reference pack; static evidence only",
+  "modules": [
+    {
+      "id": "core",
+      "label": "单位核心",
+      "referenceSection": "core",
+      "pattern": "core",
+      "singleton": true,
+      "base": true
+    },
+    {
+      "id": "graphics",
+      "label": "图像与显示",
+      "referenceSection": "graphics",
+      "pattern": "graphics",
+      "singleton": true,
+      "base": true
+    },
+    {
+      "id": "attack",
+      "label": "攻击设置",
+      "referenceSection": "attack",
+      "pattern": "attack",
+      "singleton": true,
+      "base": true
+    },
+    {
+      "id": "movement",
+      "label": "移动设置",
+      "referenceSection": "movement",
+      "pattern": "movement",
+      "singleton": true,
+      "base": true
+    },
+    {
+      "id": "ai",
+      "label": "人工智能",
+      "referenceSection": "ai",
+      "pattern": "ai",
+      "singleton": true
+    },
+    {
+      "id": "turret",
+      "label": "炮塔",
+      "referenceSection": "turret_NAME",
+      "pattern": "turret_{name}"
+    },
+    {
+      "id": "projectile",
+      "label": "射弹",
+      "referenceSection": "projectile_NAME",
+      "pattern": "projectile_{name}"
+    },
+    {
+      "id": "action",
+      "label": "玩家动作",
+      "referenceSection": "action_NAME / hiddenAction_NAME",
+      "pattern": "action_{name}"
+    },
+    {
+      "id": "hiddenAction",
+      "label": "隐藏动作",
+      "referenceSection": "action_NAME / hiddenAction_NAME",
+      "pattern": "hiddenAction_{name}"
+    },
+    {
+      "id": "canBuild",
+      "label": "建造菜单",
+      "referenceSection": "canBuild_NAME",
+      "pattern": "canBuild_{name}"
+    },
+    {
+      "id": "animation",
+      "label": "动画",
+      "referenceSection": "animation_NAME",
+      "pattern": "animation_{name}"
+    },
+    {
+      "id": "effect",
+      "label": "特效",
+      "referenceSection": "effect_NAME",
+      "pattern": "effect_{name}"
+    },
+    {
+      "id": "leg",
+      "label": "步足",
+      "referenceSection": "leg_N / arm_N",
+      "pattern": "leg_{number}",
+      "numericName": true
+    },
+    {
+      "id": "arm",
+      "label": "机械臂",
+      "referenceSection": "leg_N / arm_N",
+      "pattern": "arm_{number}",
+      "numericName": true
+    },
+    {
+      "id": "attachment",
+      "label": "挂载槽",
+      "referenceSection": "attachment_NAME",
+      "pattern": "attachment_{name}"
+    },
+    {
+      "id": "decal",
+      "label": "贴花与图层",
+      "referenceSection": "decal_NAME",
+      "pattern": "decal_{name}"
+    },
+    {
+      "id": "resource",
+      "label": "本地资源",
+      "referenceSection": "resource_NAME / global_resource_NAME",
+      "pattern": "resource_{name}"
+    },
+    {
+      "id": "global_resource",
+      "label": "全队资源",
+      "referenceSection": "resource_NAME / global_resource_NAME",
+      "pattern": "global_resource_{name}"
+    },
+    {
+      "id": "placementRule",
+      "label": "建筑放置规则",
+      "referenceSection": "placementRule_NAME",
+      "pattern": "placementRule_{name}"
+    },
+    {
+      "id": "movement_random",
+      "label": "随机移动",
+      "referenceSection": "movement_random",
+      "pattern": "movement_random",
+      "singleton": true
+    },
+    {
+      "id": "movement_repelFromUnits",
+      "label": "单位排斥运动",
+      "referenceSection": "movement_repelFromUnits",
+      "pattern": "movement_repelFromUnits",
+      "singleton": true
+    },
+    {
+      "id": "mod",
+      "label": "模组信息",
+      "referenceSection": "mod",
+      "pattern": "mod",
+      "singleton": true,
+      "file": "mod-info.txt"
+    },
+    {
+      "id": "music",
+      "label": "模组音乐",
+      "referenceSection": "music",
+      "pattern": "music",
+      "singleton": true,
+      "file": "mod-info.txt"
+    }
+  ],
+  "preprocessor": {
+    "label": "节继承与预处理",
+    "referenceSection": "通用预处理",
+    "emitAsSection": false,
+    "field": "@copyFromSection"
+  },
+  "templates": [
+    {
+      "id": "button",
+      "label": "按钮动作",
+      "module": "action",
+      "fields": {
+        "text": "执行动作",
+        "buildSpeed": "0"
+      },
+      "note": "补充具体执行字段"
+    },
+    {
+      "id": "created",
+      "label": "出生初始化",
+      "module": "hiddenAction",
+      "fields": {
+        "autoTriggerOnEvent": "created"
+      },
+      "note": "补充已声明内存的初始赋值或其他执行字段"
+    },
+    {
+      "id": "conditional",
+      "label": "条件自动动作",
+      "module": "hiddenAction",
+      "fields": {
+        "autoTrigger": "self.hp < self.maxHp * 0.5"
+      },
+      "note": "补充执行内容并设计冷却或状态，防止持续重复触发"
+    },
+    {
+      "id": "countShot",
+      "label": "记录射击次数",
+      "module": "hiddenAction",
+      "fields": {
+        "setUnitMemory": "shots=memory.shots + 1"
+      },
+      "requirements": [
+        "在 core 中声明 number shots",
+        "在 created 事件初始化 shots=0",
+        "由 onShoot_triggerActions 或其他入口调用"
+      ]
+    },
+    {
+      "id": "toggleMode",
+      "label": "切换模式",
+      "module": "action",
+      "fields": {
+        "text": "切换模式",
+        "buildSpeed": "0",
+        "setUnitMemory": "powered=not memory.powered"
+      },
+      "requirements": [
+        "在 core 中声明 boolean powered",
+        "在 created 事件初始化 powered=false"
+      ]
+    },
+    {
+      "id": "pulse",
+      "label": "待机呼吸动画",
+      "module": "animation",
+      "fields": {
+        "onActions": "idle",
+        "pingPong": "true",
+        "body_0s": "{scale:1}",
+        "body_1s": "{scale:1.1}"
+      }
+    },
+    {
+      "id": "turret",
+      "label": "基础炮塔",
+      "module": "turret",
+      "fields": {
+        "x": "0",
+        "y": "0",
+        "projectile": "shell"
+      },
+      "requirements": [
+        "启用 attack 总体攻击和目标分类",
+        "创建 projectile_shell"
+      ]
+    },
+    {
+      "id": "projectile",
+      "label": "基础射弹",
+      "module": "projectile",
+      "fields": {
+        "directDamage": "18",
+        "life": "1.5s",
+        "speed": "4"
+      }
+    },
+    {
+      "id": "resource",
+      "label": "数据资源",
+      "module": "resource",
+      "fields": {
+        "displayName": "数据"
+      }
+    },
+    {
+      "id": "globalResource",
+      "label": "全队数据资源",
+      "module": "global_resource",
+      "fields": {
+        "displayName": "数据",
+        "displayInHud": "true"
+      }
+    },
+    {
+      "id": "random",
+      "label": "随机移动",
+      "module": "movement_random",
+      "fields": {
+        "enabled": "true",
+        "speed": "0.1"
+      }
+    },
+    {
+      "id": "repel",
+      "label": "同队单位排斥",
+      "module": "movement_repelFromUnits",
+      "fields": {
+        "enabled": "true",
+        "speed": "0.1",
+        "onlySameTeam": "true"
+      }
+    },
+    {
+      "id": "aiBasic",
+      "label": "基础 AI 建造建议",
+      "module": "ai",
+      "fields": {
+        "buildPriority": "0.2",
+        "maxEachBase": "5"
+      }
+    },
+    {
+      "id": "buildTank",
+      "label": "建造坦克菜单项",
+      "module": "canBuild",
+      "fields": {
+        "name": "tank",
+        "pos": "1"
+      }
+    },
+    {
+      "id": "effectBasic",
+      "label": "基础特效参数",
+      "module": "effect",
+      "fields": {
+        "life": "30",
+        "fadeOut": "true",
+        "scaleFrom": "1",
+        "scaleTo": "0.5"
+      },
+      "note": "继续选择图像或游戏内置特效条带，核对素材与视觉效果。"
+    },
+    {
+      "id": "legBasic",
+      "label": "基础步足",
+      "module": "leg",
+      "fields": {
+        "x": "-10",
+        "y": "10",
+        "attach_x": "-5",
+        "attach_y": "5",
+        "image_foot": "SHARED:foot.png",
+        "image_leg": "SHARED:leg.png",
+        "moveSpeed": "3"
+      }
+    },
+    {
+      "id": "armBasic",
+      "label": "固定机械臂",
+      "module": "arm",
+      "fields": {
+        "x": "0",
+        "y": "10",
+        "attach_x": "0",
+        "attach_y": "0",
+        "lockMovement": "true",
+        "image_foot": "SHARED:foot.png",
+        "image_leg": "SHARED:leg.png"
+      }
+    },
+    {
+      "id": "slotBasic",
+      "label": "空挂载槽",
+      "module": "attachment",
+      "fields": {
+        "x": "0",
+        "y": "0",
+        "rotateWithParent": "true"
+      },
+      "note": "按需要添加出生生成单位或运输挂载字段。"
+    },
+    {
+      "id": "decalBasic",
+      "label": "身体上方标记",
+      "module": "decal",
+      "fields": {
+        "layer": "afterBody",
+        "image": "SHARED:debug_marker.png",
+        "isVisible": "true"
+      }
+    },
+    {
+      "id": "placementBasic",
+      "label": "附近单位放置限制",
+      "module": "placementRule",
+      "fields": {
+        "searchTags": "factory",
+        "searchDistance": "200",
+        "minCount": "1",
+        "cannotPlaceMessage": "需要在工厂附近建造"
+      },
+      "note": "请给允许建造的目标单位添加 factory 标签，或修改搜索标签。"
+    },
+    {
+      "id": "musicBasic",
+      "label": "模组音乐目录",
+      "module": "music",
+      "fields": {
+        "sourceFolder": "music",
+        "addToNormalPlaylist": "true"
+      },
+      "note": "写入 mod-info.txt。音乐目录请在导出后手动放入 Mod 根目录；素材区文件打包到 units/。"
+    },
+    {
+      "id": "base_core",
+      "label": "基础模块参数",
+      "module": "core",
+      "fields": {
+        "name": "myUnit",
+        "maxHp": "220",
+        "mass": "2000",
+        "radius": "11"
+      }
+    },
+    {
+      "id": "base_graphics",
+      "label": "基础模块参数",
+      "module": "graphics",
+      "fields": {
+        "image": "SHARED:debug_marker.png"
+      }
+    },
+    {
+      "id": "base_attack",
+      "label": "基础模块参数",
+      "module": "attack",
+      "fields": {
+        "canAttack": "false",
+        "canAttackFlyingUnits": "false",
+        "canAttackLandUnits": "false",
+        "canAttackUnderwaterUnits": "false"
+      }
+    },
+    {
+      "id": "base_movement",
+      "label": "基础模块参数",
+      "module": "movement",
+      "fields": {
+        "movementType": "LAND",
+        "moveSpeed": "1"
+      }
+    },
+    {
+      "id": "base_mod",
+      "label": "基础模块参数",
+      "module": "mod",
+      "fields": {
+        "title": "我的铁锈模组",
+        "description": "我的单位作品",
+        "minVersion": "1.15"
+      }
+    }
+  ],
+  "restrictedFunctions": [
+    "self.numberOfConnections"
+  ],
+  "lockedParameterFunctions": [
+    "self.isOverOpenLand",
+    "self.isOnNeutralTeam",
+    "game.nukesEnabled"
+  ],
+  "contextualFunctions": {
+    "event": [
+      "eventData",
+      "eventSource"
+    ],
+    "actionTarget": [
+      "thisActionTarget"
+    ],
+    "actionRepeat": [
+      "thisActionIndex",
+      "index"
+    ]
+  },
+  "supportedWaypointTypes": [
+    "move",
+    "attackMove",
+    "guard",
+    "follow",
+    "loadInto",
+    "loadUp",
+    "attack",
+    "reclaim",
+    "repair",
+    "touchTarget",
+    "build"
+  ],
+  "reservedUnitNameRules": [
+    "self",
+    "self.*"
+  ],
+  "memoryTypes": [
+    "number",
+    "float",
+    "bool",
+    "boolean",
+    "string",
+    "text",
+    "unit",
+    "number[]",
+    "float[]",
+    "bool[]",
+    "boolean[]",
+    "unit[]"
+  ],
+  "events": [
+    "created",
+    "completeAndActive",
+    "destroyed",
+    "killedAnyUnit",
+    "queuedUnitFinished",
+    "queueItemAdded",
+    "queueItemCancelled",
+    "teleported",
+    "touchTargetSuccess",
+    "newWaypointGivenByPlayer",
+    "teamChanged",
+    "transportingNewUnit",
+    "transportUnloadedOrRemovedUnit",
+    "tookDamage",
+    "enteredTransport",
+    "leftTransport",
+    "newMessage",
+    "attachmentRemoved"
+  ],
+  "eventFilters": {
+    "tookDamage": [
+      "withTag",
+      "withProjectileTag"
+    ],
+    "newMessage": [
+      "withTag"
+    ],
+    "queueItemAdded": [
+      "withActionTag"
+    ],
+    "queueItemCancelled": [
+      "withActionTag"
+    ]
+  },
+  "assignmentOperators": {
+    "setUnitMemory": [
+      "="
+    ],
+    "sendMessageWithData": [
+      "="
+    ],
+    "setUnitStats": [
+      "=",
+      "+=",
+      "-="
+    ]
+  },
+  "animationTargets": {
+    "body": [
+      "scale",
+      "frame"
+    ],
+    "leg": [
+      "x",
+      "y",
+      "dir",
+      "height",
+      "alpha"
+    ],
+    "arm": [
+      "x",
+      "y",
+      "dir",
+      "height",
+      "alpha"
+    ],
+    "turret": [
+      "x",
+      "y"
+    ],
+    "effect": [
+      "name",
+      "x",
+      "y"
+    ]
+  },
+  "note": "Templates are editor scaffolds and do not establish standalone validity or game runtime testing. Preserve original key case; default_behavior_zh is explanatory text, not a value generator."
+}

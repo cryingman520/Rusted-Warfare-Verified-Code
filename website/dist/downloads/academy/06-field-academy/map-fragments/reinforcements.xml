@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 合并到已有地图的 triggers 对象组 / Merge into an existing map triggers layer -->
+<objectgroup name="triggers">
+  <object name="academy_reinforcements" type="unitAdd" x="200" y="200" width="20" height="20">
+    <properties>
+      <property name="team" value="0"/>
+      <property name="delay" value="10s"/>
+      <property name="repeatCount" value="1"/>
+      <property name="spawnUnits" value="rwa06Recon*2,rwa06Twin*1"/>
+      <property name="globalMessage" value="学院增援抵达 / Academy reinforcements arrived"/>
+    </properties>
+  </object>
+</objectgroup>

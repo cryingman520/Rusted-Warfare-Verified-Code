@@ -1,0 +1,1200 @@
+﻿Rusted Warfare 1.15 字段速查索引
+说明：这里是速查，不代替主手册中的类型限制、默认值和证据。
+
+[action_NAME / hiddenAction_NAME] addActionCooldownApplyToActions | Action名称列表 | 指定冷却要作用的动作名称列表
+[action_NAME / hiddenAction_NAME] addActionCooldownFor | 时间(转换为毫秒) | 给指定动作增加冷却时间
+[action_NAME / hiddenAction_NAME] addActionCooldownTime | 时间(转换为毫秒) | 给指定动作增加冷却时间的旧写法
+[action_NAME / hiddenAction_NAME] addAllActionCooldownsFor | 时间(转换为毫秒) | 给所有动作增加冷却时间
+[action_NAME / hiddenAction_NAME] addAllActionCooldownsTime | 时间(转换为毫秒) | 给所有动作增加冷却时间的旧写法
+[action_NAME / hiddenAction_NAME] addEnergy | float | 给自身增减能量
+[action_NAME / hiddenAction_NAME] addGlobalTeamTags | 标签列表 | 向所属队伍添加全局标签
+[action_NAME / hiddenAction_NAME] addResources | 资源价格列表 | 给自身增减资源，支持 hp/shield/energy/ammo/credits 及自定义资源
+[action_NAME / hiddenAction_NAME] addResourcesScaledByAIHandicaps | 资源价格列表 | 按 AI 难度/经济修正缩放资源变化
+[action_NAME / hiddenAction_NAME] addResourcesWithLogic | 动态资源赋值 | 使用动态表达式计算要增加的资源
+[action_NAME / hiddenAction_NAME] addUnitsIntoTransport | 单位生成列表 | 把新生成单位直接放入运输舱
+[action_NAME / hiddenAction_NAME] addWaypoint_maxTime | 时间(帧或s) | 新指令最多持续的时间；零可用于只搜索并触发回调
+[action_NAME / hiddenAction_NAME] addWaypoint_position_fromAction | bool | 使用本次动作传入的地面坐标
+[action_NAME / hiddenAction_NAME] addWaypoint_position_offsetFromSelf | 坐标(x,y) | 使用自身的世界坐标偏移作为位置
+[action_NAME / hiddenAction_NAME] addWaypoint_position_randomOffsetFromSelf | 坐标(x,y) | 给自身附近的目标位置增加随机偏移
+[action_NAME / hiddenAction_NAME] addWaypoint_position_relativeOffsetFromSelf | 坐标(x,y) | 使用随自身朝向旋转的偏移作为位置
+[action_NAME / hiddenAction_NAME] addWaypoint_prepend | bool | 把新指令插到队列最前
+[action_NAME / hiddenAction_NAME] addWaypoint_target_fromReference | unit表达式 | 通过单位引用表达式直接指定目标
+[action_NAME / hiddenAction_NAME] addWaypoint_target_mapMustBeReachable | bool | 搜索目标时要求地图上可达
+[action_NAME / hiddenAction_NAME] addWaypoint_target_nearestUnit_maxRange | float | 最近单位搜索距离上限
+[action_NAME / hiddenAction_NAME] addWaypoint_target_nearestUnit_tagged | 标签列表 | 寻找最近的匹配标签单位
+[action_NAME / hiddenAction_NAME] addWaypoint_target_nearestUnit_team | 枚举/限定值 | 最近单位搜索的队伍关系
+[action_NAME / hiddenAction_NAME] addWaypoint_target_randomUnit_maxRange | float | 随机目标搜索距离上限
+[action_NAME / hiddenAction_NAME] addWaypoint_target_randomUnit_tagged | 标签列表 | 随机选择匹配标签单位
+[action_NAME / hiddenAction_NAME] addWaypoint_target_randomUnit_team | 枚举/限定值 | 随机目标搜索的队伍关系
+[action_NAME / hiddenAction_NAME] addWaypoint_triggerActionIfFailed | Action名称列表 | 未找到目标时触发动作
+[action_NAME / hiddenAction_NAME] addWaypoint_triggerActionIfMatched | Action名称列表 | 找到目标/形成指令后触发动作
+[action_NAME / hiddenAction_NAME] addWaypoint_type | 枚举/限定值 | 添加路径指令的类型；可实际执行的子集见正文
+[action_NAME / hiddenAction_NAME] addWaypoint_unitType | 单位类型名 | build 指令建造的单位内部名
+[action_NAME / hiddenAction_NAME] ai_considerSameAsBuilding | 单位类型名 | AI 评估动作时，把它视为建造某个单位
+[action_NAME / hiddenAction_NAME] ai_isDisabled | bool表达式 | 禁止 AI 使用本动作
+[action_NAME / hiddenAction_NAME] ai_isHighPriority | bool表达式 | 供 AI 判定该动作高优先级的条件
+[action_NAME / hiddenAction_NAME] aiUse | 枚举/限定值 | AI 对动作的用途分类
+[action_NAME / hiddenAction_NAME] allowMultipleInQueue | bool | 允许相同动作在队列内出现多次
+[action_NAME / hiddenAction_NAME] alsoQueueAction | Action名称列表 | 把其他动作加入生产/动作队列
+[action_NAME / hiddenAction_NAME] alsoTriggerAction | Action名称列表 | 立刻触发其他动作名称列表
+[action_NAME / hiddenAction_NAME] alsoTriggerActionRepeat | number表达式 | 用数值表达式决定重复触发次数
+[action_NAME / hiddenAction_NAME] alsoTriggerOrQueueActionConditional | bool表达式 | 决定是否执行联动动作的条件
+[action_NAME / hiddenAction_NAME] alsoTriggerOrQueueActionWithTarget | unit表达式 | 为联动动作指定目标单位或 marker
+[action_NAME / hiddenAction_NAME] alwaysSinglePress | bool | 按钮使用单次点击执行方式
+[action_NAME / hiddenAction_NAME] attachments_addNewUnits | 单位生成列表 | 生成单位并加入挂载槽
+[action_NAME / hiddenAction_NAME] attachments_deleteNumUnits | int | 移除指定数量的挂载单位
+[action_NAME / hiddenAction_NAME] attachments_disconnect | bool | 断开挂载关系
+[action_NAME / hiddenAction_NAME] attachments_onlyOnSlots | 挂载槽名列表 | 仅操作指定名称的挂载槽
+[action_NAME / hiddenAction_NAME] attachments_unload | bool | 卸载挂载单位
+[action_NAME / hiddenAction_NAME] autoTrigger | bool表达式 | 周期检查的自动触发条件
+[action_NAME / hiddenAction_NAME] autoTriggerCheckRate | 枚举/限定值 | 自动触发条件检查频率：everyFrame/every4Frames/every8Frames
+[action_NAME / hiddenAction_NAME] autoTriggerOnEvent | 事件名列表(可带过滤参数) | 订阅指定游戏事件，事件列表见正文
+[action_NAME / hiddenAction_NAME] autoTriggerOnEventRecursionLimit | int | 事件动作递归触发深度限制
+[action_NAME / hiddenAction_NAME] buildSpeed | 建造速率(数值或s) | 建造进度速率；带 s 时按指定秒数换算，而裸数是每帧进度
+[action_NAME / hiddenAction_NAME] buildSpeed_ignoreFactorySpeedModifiers | bool | 动作执行速度不受工厂速度修正影响
+[action_NAME / hiddenAction_NAME] canPlayerCancel | bool | 允许玩家取消队列中的动作
+[action_NAME / hiddenAction_NAME] clearActiveWaypoint | bool | 只清除当前正在执行的路径/命令
+[action_NAME / hiddenAction_NAME] clearAllActionCooldowns | bool | 清空动作冷却
+[action_NAME / hiddenAction_NAME] clearAllWaypoints | bool | 清空所有路径/命令
+[action_NAME / hiddenAction_NAME] convertResource_from | 资源标识 | 资源转换的来源资源
+[action_NAME / hiddenAction_NAME] convertResource_maxAmount | double | 单次最多转换的来源资源数量
+[action_NAME / hiddenAction_NAME] convertResource_minAmount | double | 来源资源至少达到此数量才转换
+[action_NAME / hiddenAction_NAME] convertResource_multiplyAmountBy | float | 转换后的资源数量倍率
+[action_NAME / hiddenAction_NAME] convertResource_to | 资源标识 | 资源转换的目标资源
+[action_NAME / hiddenAction_NAME] convertTo | 单位类型名 | 把自己转换成另一单位类型
+[action_NAME / hiddenAction_NAME] convertTo_keepCurrentFields | 单位属性名列表 | 转换时保留允许保留的当前动态属性
+[action_NAME / hiddenAction_NAME] convertTo_keepCurrentTags | bool | 转换时保留当前标签
+[action_NAME / hiddenAction_NAME] debugMessage | 多语言文本 / 动态文本 | 调试模式下输出诊断文字，不应用作正常游戏界面
+[action_NAME / hiddenAction_NAME] deleteNumUnitsFromTransport | int | 从运输舱直接移除指定数量乘员
+[action_NAME / hiddenAction_NAME] deleteNumUnitsFromTransport_onlyWithTags | 标签列表 | 只移除具有指定标签的乘员
+[action_NAME / hiddenAction_NAME] deleteSelf | bool | 直接移除自身，不使用普通死亡爆炸流程
+[action_NAME / hiddenAction_NAME] description | 动态文本(动作)或普通说明文本(mod) | 说明文字
+[action_NAME / hiddenAction_NAME] descriptionAddFromUnit | 单位类型或单位引用 | 把指定单位的描述加入动作说明
+[action_NAME / hiddenAction_NAME] descriptionAddUnitStats | 单位类型或单位引用 | 把指定单位的属性说明加入动作描述
+[action_NAME / hiddenAction_NAME] disconnectFromParent | bool | 让自身脱离父单位的运输/挂载关系
+[action_NAME / hiddenAction_NAME] displayRemainingStockpile | bool | 显示剩余库存量的资源规则
+[action_NAME / hiddenAction_NAME] displayType | 枚举/限定值 | 按钮/动作的显示类别
+[action_NAME / hiddenAction_NAME] extraLagHidingInUI | bool | 额外的界面延迟隐藏/预测处理
+[action_NAME / hiddenAction_NAME] finishPlayingLastAnimation | bool | 让当前动画完成其退出/结束过程
+[action_NAME / hiddenAction_NAME] fireTurretXAtGround | 炮塔名 | 用指定炮塔向动作目标地面位置开火
+[action_NAME / hiddenAction_NAME] fireTurretXAtGround_count | int | 本动作发射次数
+[action_NAME / hiddenAction_NAME] fireTurretXAtGround_onlyOverPassableTileOf | string(随后可能有专用校验) | 落点必须对指定移动类型可通行
+[action_NAME / hiddenAction_NAME] fireTurretXAtGround_showGuideDecals | string(随后可能有专用校验) | 瞄准时展示指定 decal 引导图层
+[action_NAME / hiddenAction_NAME] fireTurretXAtGround_withOffset | 坐标(x,y) | 落点相对偏移
+[action_NAME / hiddenAction_NAME] fireTurretXAtGround_withProjectile | 射弹名 | 本次临时覆盖射弹类型
+[action_NAME / hiddenAction_NAME] fireTurretXAtGround_withTarget | unit表达式 | 用单位引用/marker 指定落点
+[action_NAME / hiddenAction_NAME] forceUnloadTransportNow | bool | 立即卸载运输乘员
+[action_NAME / hiddenAction_NAME] forceUnloadTransportNow_onlyOnSlot | int | 只卸载指定槽位，需同时启用强制卸载
+[action_NAME / hiddenAction_NAME] guiBuildUnit | 单位类型名 | 界面中以建造指定单位的方式显示此动作
+[action_NAME / hiddenAction_NAME] highPriorityQueue | bool | 把此动作作为高优先级队列项
+[action_NAME / hiddenAction_NAME] iconExtraColor | 颜色 | 附加图标的颜色
+[action_NAME / hiddenAction_NAME] iconExtraImage | 图片路径 | 附加图标路径
+[action_NAME / hiddenAction_NAME] iconExtraIsVisible | bool表达式 | 附加图标显示条件
+[action_NAME / hiddenAction_NAME] iconImage | 图片路径 / 支持的特殊值 | 图标资源路径
+[action_NAME / hiddenAction_NAME] id | string | 显式标识符
+[action_NAME / hiddenAction_NAME] isActive | bool表达式 | 动作是否可执行的动态条件
+[action_NAME / hiddenAction_NAME] isAlsoViewableByAllies | bool | 允许盟友看到该动作
+[action_NAME / hiddenAction_NAME] isAlsoViewableByEnemies | bool | 允许敌人看到该动作
+[action_NAME / hiddenAction_NAME] isGuiBlinking | bool表达式 | 界面按钮闪烁的动态条件
+[action_NAME / hiddenAction_NAME] isLocked | bool表达式 | 限制该单位的常规建造解锁
+[action_NAME / hiddenAction_NAME] isLockedAlt | bool表达式 | 第二组动作锁定条件
+[action_NAME / hiddenAction_NAME] isLockedAlt2 | bool表达式 | 第三组动作锁定条件
+[action_NAME / hiddenAction_NAME] isLockedAlt2Message | 多语言/动态文本 | 第三组锁定原因
+[action_NAME / hiddenAction_NAME] isLockedAltMessage | 多语言/动态文本 | 第二组锁定原因
+[action_NAME / hiddenAction_NAME] isLockedMessage | 多语言/动态文本 | 锁定时显示的原因
+[action_NAME / hiddenAction_NAME] isVisible | bool表达式 | 动态控制是否显示
+[action_NAME / hiddenAction_NAME] offsetSelfAbsolute | 坐标(x,y,height可选) | 在世界坐标中偏移自身位置
+[action_NAME / hiddenAction_NAME] onlyOneUnitAtATime | bool | 多选时限制该动作一次只由一个单位执行
+[action_NAME / hiddenAction_NAME] playAnimation | 动画名 | 执行时播放指定动画
+[action_NAME / hiddenAction_NAME] playAnimation_lowPriority | bool | 本次动画播放采用较低优先级
+[action_NAME / hiddenAction_NAME] playAnimationIfNotPlaying | 动画名 | 仅当该动画尚未播放时启动
+[action_NAME / hiddenAction_NAME] playSoundAtUnit | 音效列表 | 在单位位置播放空间音效
+[action_NAME / hiddenAction_NAME] playSoundGlobally | 音效列表 | 全局播放音效
+[action_NAME / hiddenAction_NAME] playSoundToPlayer | 音效列表 | 只向所属玩家播放音效
+[action_NAME / hiddenAction_NAME] playSoundToPlayerOnQueue | 音效列表 | 入队时只向所属玩家播放音效
+[action_NAME / hiddenAction_NAME] pos | float | 界面中的排序位置，数值小的通常靠前
+[action_NAME / hiddenAction_NAME] price | 资源价格列表 | 一次性支付的资源成本；不写资源名的数字表示 credits
+[action_NAME / hiddenAction_NAME] produceUnits | 单位生成列表 | 按生产出口逻辑生成单位
+[action_NAME / hiddenAction_NAME] refundAllQueuedItems | bool | 取消所有排队项并返还可退款成本
+[action_NAME / hiddenAction_NAME] removeAllQueuedItemsWithoutRefund | bool | 直接清除队列，不退款
+[action_NAME / hiddenAction_NAME] removeGlobalTeamTags | 标签列表 | 移除所属队伍的全局标签
+[action_NAME / hiddenAction_NAME] requireConditional | bool表达式 | 动作执行时必须满足的额外条件
+[action_NAME / hiddenAction_NAME] resetCustomTimer | bool表达式 | 满足给定条件时重置单位自定义计时器
+[action_NAME / hiddenAction_NAME] resetToDefaultTags | bool | 恢复单位类型定义的默认标签
+[action_NAME / hiddenAction_NAME] resetUnitStats | bool | 恢复为该单位类型的基础属性
+[action_NAME / hiddenAction_NAME] resourceAmount | 资源标识 | 指定单一资源，配合 setValue/addOtherResource/multiplyBy 使用
+[action_NAME / hiddenAction_NAME] resourceAmount_addOtherResource | 资源标识 | 把另一种资源的值加到指定资源
+[action_NAME / hiddenAction_NAME] resourceAmount_multiplyBy | float | 对指定资源应用倍率
+[action_NAME / hiddenAction_NAME] resourceAmount_setValue | double | 把指定资源设置为固定值
+[action_NAME / hiddenAction_NAME] sendMessageTo | unit表达式 | 给指定单位发送模组事件消息
+[action_NAME / hiddenAction_NAME] sendMessageWithData | 事件数据赋值列表(仅=) | 给模组消息附上数据，可由 eventData 读取
+[action_NAME / hiddenAction_NAME] sendMessageWithTags | 标签列表 | 给模组消息附上筛选标签
+[action_NAME / hiddenAction_NAME] setBodyRotation | number表达式 | 设置机体朝向
+[action_NAME / hiddenAction_NAME] setBuilt | float | 设置建造完成比例
+[action_NAME / hiddenAction_NAME] setCustomTarget1 | unit表达式 | 把单位引用保存到 customTarget1
+[action_NAME / hiddenAction_NAME] setCustomTarget2 | unit表达式 | 把单位引用保存到 customTarget2
+[action_NAME / hiddenAction_NAME] setHeight | number表达式 | 设置单位高度
+[action_NAME / hiddenAction_NAME] setResourcesWithLogic | 动态资源赋值 | 使用动态表达式直接设置资源值
+[action_NAME / hiddenAction_NAME] setUnitMemory | 内存赋值列表(仅=) | 给已声明的单位内存变量/数组元素赋值
+[action_NAME / hiddenAction_NAME] setUnitStats | 单位属性赋值列表(=、+=、-=) | 动态修改白名单内的单位属性；允许赋值与增减操作
+[action_NAME / hiddenAction_NAME] showMessageToAllEnemyPlayers | 多语言文本 / 动态文本 | 给敌方玩家显示消息
+[action_NAME / hiddenAction_NAME] showMessageToAllPlayers | 多语言文本 / 动态文本 | 给所有玩家显示消息
+[action_NAME / hiddenAction_NAME] showMessageToPlayer | 多语言文本 / 动态文本 | 给所属玩家显示聊天/消息文字
+[action_NAME / hiddenAction_NAME] showQuickWarLogToAllPlayers | 多语言文本 / 动态文本 | 给所有玩家显示快捷战报
+[action_NAME / hiddenAction_NAME] showQuickWarLogToPlayer | 多语言文本 / 动态文本 | 给所属玩家显示快捷战报
+[action_NAME / hiddenAction_NAME] shrinkArrays | 数组变量名列表 | 压缩指定内存数组，清理无效/空元素，具体类型规则见数组章节
+[action_NAME / hiddenAction_NAME] spawnEffects | 效果引用/列表 | 动作执行时发出特效
+[action_NAME / hiddenAction_NAME] spawnEffectsOnQueue | 效果引用/列表 | 动作入队时发出特效
+[action_NAME / hiddenAction_NAME] spawnUnits | 单位生成列表 | 在当前位置或给定偏移生成单位，参数使用单位生成小语言
+[action_NAME / hiddenAction_NAME] startUnloadingTransport | bool | 启动持续卸载流程
+[action_NAME / hiddenAction_NAME] stopLastAnimation | bool | 停止当前动画
+[action_NAME / hiddenAction_NAME] streamingCost | 资源价格列表 | 建造或排队期间逐步支付的资源成本
+[action_NAME / hiddenAction_NAME] swapCustomTarget1And2 | bool | 交换两项自定义目标引用
+[action_NAME / hiddenAction_NAME] switchPriceWithStreamingCost | bool | 将普通 price 转为流式成本，便于统一改变经济模型
+[action_NAME / hiddenAction_NAME] switchToAggressiveTeam | bool | 切换到对所有玩家敌对的特殊队伍
+[action_NAME / hiddenAction_NAME] switchToNeutralTeam | bool | 切换到中立队伍
+[action_NAME / hiddenAction_NAME] switchToTeam | number表达式 | 按动态编号切换队伍
+[action_NAME / hiddenAction_NAME] tags | 标签列表 | 逗号分隔的标签集合，供筛选与事件条件使用
+[action_NAME / hiddenAction_NAME] takeResources | 资源价格列表 | 从候选目标收取的资源列表
+[action_NAME / hiddenAction_NAME] takeResources_directTransferStoppingAtZero | bool | 直接转移资源，遇零停止，受额外组合限制
+[action_NAME / hiddenAction_NAME] takeResources_discardCollected | bool | 不把收集的资源加到自身
+[action_NAME / hiddenAction_NAME] takeResources_excludeUnitsWithoutAllResources | bool | 排除无法提供完整资源要求的目标
+[action_NAME / hiddenAction_NAME] takeResources_excludeUnitsWithoutCustomTarget1EqualTo | unit表达式 | 要求候选者的 customTarget1 等于指定引用
+[action_NAME / hiddenAction_NAME] takeResources_excludeUnitsWithoutTags | 标签列表 | 排除没有指定标签的目标
+[action_NAME / hiddenAction_NAME] takeResources_excludeUnitsWithTheseResources | 资源价格列表 | 排除已拥有指定资源条件的目标
+[action_NAME / hiddenAction_NAME] takeResources_includeParent | bool | 把父单位纳入候选
+[action_NAME / hiddenAction_NAME] takeResources_includeReference | unit表达式 | 把指定引用单位纳入候选
+[action_NAME / hiddenAction_NAME] takeResources_includeUnitsInTransport | bool | 把运输舱乘员纳入资源收取候选
+[action_NAME / hiddenAction_NAME] takeResources_includeUnitsWithinRange | float | 把此距离内单位纳入候选
+[action_NAME / hiddenAction_NAME] takeResources_includeUnitsWithinRange_team | 枚举/限定值 | 范围搜索采用的队伍关系
+[action_NAME / hiddenAction_NAME] takeResources_keepResourcesOnTarget | bool | 不从目标扣除资源，可与其他选项组合成复制/检测
+[action_NAME / hiddenAction_NAME] takeResources_maxUnits | int | 单次最多处理的候选单位数量
+[action_NAME / hiddenAction_NAME] takeResources_saveFirstUnitToCustomTarget1 | bool | 把首个匹配目标保存到 customTarget1
+[action_NAME / hiddenAction_NAME] takeResources_saveFirstUnitToCustomTarget2 | bool | 把首个匹配目标保存到 customTarget2
+[action_NAME / hiddenAction_NAME] takeResources_searchOnly | bool | 只进行匹配搜索，不真正转移资源
+[action_NAME / hiddenAction_NAME] takeResources_triggerActionForEach | Action名称列表 | 对每个匹配目标分别触发动作
+[action_NAME / hiddenAction_NAME] takeResources_triggerActionIfAnyCollected | Action名称列表 | 至少收取/匹配到一个目标时触发动作
+[action_NAME / hiddenAction_NAME] takeResources_triggerActionIfNoneCollected | Action名称列表 | 没有匹配目标时触发动作
+[action_NAME / hiddenAction_NAME] teleportTo | unit表达式 | 传送到指定单位或 marker 的坐标
+[action_NAME / hiddenAction_NAME] temporarilyAddTags | 标签列表 | 给自身当前标签集合添加标签
+[action_NAME / hiddenAction_NAME] temporarilyRemoveTags | 标签列表 | 从自身当前标签集合删除标签
+[action_NAME / hiddenAction_NAME] text | 动态文本(支持多语言) | 界面按钮或提示文本，部分读取路径支持动态替换
+[action_NAME / hiddenAction_NAME] textAddUnitName | 单位类型或单位引用 | 把指定单位的显示名附加到动作文本
+[action_NAME / hiddenAction_NAME] textPostFix | 多语言文本 | 动作显示文本的后缀
+[action_NAME / hiddenAction_NAME] transportTargetNow | unit表达式 | 立即把指定目标装入运输舱
+[action_NAME / hiddenAction_NAME] unitShownInUI | 单位类型或单位引用 | 在界面中显示指定单位的形象
+[action_NAME / hiddenAction_NAME] unitShownInUIWithHpBar | bool | 界面单位预览附带生命条
+[action_NAME / hiddenAction_NAME] unitShownInUIWithProgressBar | bool | 界面单位预览附带进度条
+[action_NAME / hiddenAction_NAME] whenBuilding_cannotMove | bool | 排队/执行本动作期间禁止移动
+[action_NAME / hiddenAction_NAME] whenBuilding_playAnimation | 动画名 | 执行本动作期间播放动画
+[action_NAME / hiddenAction_NAME] whenBuilding_rotateTo | float | 执行本动作期间转向指定角度
+[action_NAME / hiddenAction_NAME] whenBuilding_rotateTo_aimAtActionTarget | bool | 根据动作目标确定待旋转方向
+[action_NAME / hiddenAction_NAME] whenBuilding_rotateTo_orBackwards | bool | 允许以反向朝向满足旋转要求
+[action_NAME / hiddenAction_NAME] whenBuilding_rotateTo_rotateTurretX | 炮塔名 | 旋转指定炮塔而非整个机体
+[action_NAME / hiddenAction_NAME] whenBuilding_rotateTo_waitTillRotated | bool | 转到指定角度之前等待
+[action_NAME / hiddenAction_NAME] whenBuilding_temporarilyConvertTo | 单位类型名 | 执行期间临时转换单位类型
+[action_NAME / hiddenAction_NAME] whenBuilding_temporarilyConvertTo_keepFields | 单位属性名列表 | 临时转换时保留的动态属性
+[action_NAME / hiddenAction_NAME] whenBuilding_triggerAction | Action名称列表 | 执行本动作期间触发的联动动作
+[ai] ai_upgradePriority | float | AI 升级优先级
+[ai] aiTags | 标签列表 | 供 AI 决策使用的标签
+[ai] buildPriority | float | AI 建造此建筑/单位的基础优先级
+[ai] disableUse | bool | 禁止 AI 常规使用该单位
+[ai] lowPriorityTargetForOtherUnits | bool | 降低其他单位选择它作为攻击目标的优先级
+[ai] maxEachBase | int | AI 在每个基地的数量上限
+[ai] maxGlobal | int | AI 在全队的数量上限
+[ai] noneGlobalExtraPriority | float | 全队一个都没有时的额外建造优先级
+[ai] noneInBaseExtraPriority | float | 基地内一个都没有时的额外建造优先级
+[ai] nonGlobalExtraPriority | float | noneGlobalExtraPriority 的兼容拼写
+[ai] nonInBaseExtraPriority | float | noneInBaseExtraPriority 的兼容拼写
+[ai] notPassivelyTargetedByOtherUnits | bool | 不被其他单位被动索敌选中
+[ai] onlyUseAsHarvester_ifBaseHasUnitTagged | 标签列表 | 基地有指定标签单位时才作为采集者
+[ai] recommendedInEachBaseNum | int | 建议每基地拥有的数量
+[ai] recommendedInEachBasePriorityIfUnmet | float | 不足建议数量时的优先级
+[ai] upgradedFrom | string(随后可能有专用校验) | 告诉 AI 本单位由哪个单位升级而来
+[ai] useAsAttacker | bool | AI 把该单位作为进攻兵力
+[ai] useAsBuilder | bool | AI 把该单位作为工程建造者
+[ai] useAsHarvester | bool | AI 把该单位作为资源采集者
+[ai] useAsTransport | bool | AI 把该单位作为运输者
+[ai] whenUsingAsHarvester_includeOtherHarvesterCounts | bool | 统计采集者需求时包含其他类型采集者
+[ai] whenUsingAsHarvester_recommendedGlobal | int | 全队建议采集者数量
+[ai] whenUsingAsHarvester_recommendedInEachBase | int | 每基地建议采集者数量
+[animation_NAME] blendIn | 建造速率(数值或s) | 进入动画的混合参数，按其特殊速率/时间解析器处理
+[animation_NAME] blendOut | 建造速率(数值或s) | 退出动画的混合参数，按其特殊速率/时间解析器处理
+[animation_NAME] direction_starting | float | 方向帧起始偏移
+[animation_NAME] direction_strideX | int | 方向帧在横向的步进
+[animation_NAME] direction_strideY | int | 方向帧在纵向的步进
+[animation_NAME] direction_units | float | 多方向贴图的方向数量/角度划分参数
+[animation_NAME] direction_useMainTurret | bool | 多方向帧根据主炮塔朝向选择
+[animation_NAME] end | int | 旧式帧动画结束帧
+[animation_NAME] KeyframeTimeScale | float | 所有关键帧时间的整体倍率；首字母大小写必须保持
+[animation_NAME] onActions | 枚举/限定值列表 | 在指定单位行为发生时播放此动画
+[animation_NAME] onActionsQueuedUnitPlayAt | float | 生产队列进度达到指定点时播放动画
+[animation_NAME] pingPong | bool | 动画往返播放
+[animation_NAME] playbackRate | number表达式 | 动态动画播放倍率
+[animation_NAME] scale_end | float | 动画结束缩放
+[animation_NAME] scale_start | float | 动画起始缩放
+[animation_NAME] speed | float | 速度；在不同节中分别用于移动、弹速或动画帧速
+[animation_NAME] start | int | 旧式帧动画起始帧
+[attachment_NAME] addTransportedUnits | bool | 把运输舱里的乘员填入挂载槽
+[attachment_NAME] alwaysAllowedToAttackParentsMainTarget | bool | 对父单位主目标应用更宽松的攻击许可
+[attachment_NAME] canAttack | bool | 启用攻击能力
+[attachment_NAME] canBeAttackedAndDamaged | bool | 挂载单位是否能单独被攻击与受伤
+[attachment_NAME] createIncompleteIfParentIs | bool | 父单位未建完时，挂载单位也以未完成状态创建
+[attachment_NAME] deattachIfWantingToMove | bool | 挂载单位试图移动时脱离；deattach 是实际拼写
+[attachment_NAME] freezeLegMovement | bool | 暂停挂载单位腿部动画/移动
+[attachment_NAME] height | float | 相对高度
+[attachment_NAME] hidden | bool | 隐藏对象或其界面显示
+[attachment_NAME] hideHp | bool | 隐藏挂载单位生命显示
+[attachment_NAME] idleDir | float | 空闲朝向
+[attachment_NAME] idleDirReversing | float | 倒车时空闲朝向
+[attachment_NAME] isUnselectable | bool | 禁止常规玩家选择
+[attachment_NAME] isUnselectableAsTarget | bool | 禁止作为玩家常规点选的目标
+[attachment_NAME] isVisible | bool | 动态控制是否显示
+[attachment_NAME] keepAliveWhenParentDies | bool | 父单位死亡后保留挂载单位
+[attachment_NAME] keepWaypointsNeedingMovement | bool | 保留需要移动的路径命令
+[attachment_NAME] lockDir | bool | 锁定挂载单位方向
+[attachment_NAME] lockLegMovement | bool | 锁定挂载单位腿部移动
+[attachment_NAME] lockRotation | bool | 禁止挂载单位自行转动
+[attachment_NAME] onConvertKeepExistingUnitInSameSlot | bool | 父单位变形时保留同名槽中的原挂载单位
+[attachment_NAME] onCreateSpawnUnitOf | 单位生成列表(最多1个) | 创建挂载槽时生成的单位
+[attachment_NAME] onlyAttackParentsMainTarget | bool | 只攻击父单位主目标
+[attachment_NAME] onParentTeamChangeKeepCurrentTeam | bool | 父单位换队后保留挂载单位原队伍
+[attachment_NAME] prioritizeParentsMainTarget | bool | 优先攻击父单位主目标
+[attachment_NAME] redirectDamageToParent | bool | 把所受伤害转交父单位
+[attachment_NAME] redirectDamageToParent_shieldOnly | bool | 只把护盾可承担的伤害转交父单位
+[attachment_NAME] resetRotationWhenNotAttacking | bool | 未攻击时恢复挂载默认方向
+[attachment_NAME] rotateWithParent | bool | 随父单位方向旋转
+[attachment_NAME] setDrawLayerOnBottom | bool | 把挂载图层置于父单位下方
+[attachment_NAME] setDrawLayerOnTop | bool | 把挂载图层置于父单位上方
+[attachment_NAME] showAllActionsFrom | bool表达式 | 满足条件时把挂载单位的动作展示到父单位界面
+[attachment_NAME] showMiniHp | bool | 挂载单位使用小型生命条
+[attachment_NAME] smoothlyBlendPositionWhenExistingUnitAdded | bool | 已有单位加入挂载槽时平滑过渡位置
+[attachment_NAME] unloadInCurrentPosition | bool | 卸载时保留挂载单位当前位置
+[attachment_NAME] x | float | 相对所属对象的横向坐标
+[attachment_NAME] y | float | 相对所属对象的纵向坐标
+[attack] aimOffsetSpread | float | 瞄准偏移散布
+[attack] attackMovement | 枚举/限定值 | 攻击时的移动行为模式
+[attack] attackMovementSpeed | float | 攻击机动时使用的移动速度系数
+[attack] attackMovementSpread | float | 攻击机动散布距离
+[attack] canAttack | bool | 启用攻击能力
+[attack] canAttackFlyingUnits | bool表达式 | 对空攻击条件
+[attack] canAttackLandUnits | bool表达式 | 对地/水面攻击条件
+[attack] canAttackNotTouchingWaterUnits | bool表达式 | 允许攻击未接触水面的目标的条件
+[attack] canAttackUnderwaterUnits | bool表达式 | 对水下攻击条件
+[attack] canOnlyAttackUnitsWithoutTags | 标签列表 | 排除匹配标签的目标
+[attack] canOnlyAttackUnitsWithTags | 标签列表 | 只攻击匹配标签的目标
+[attack] dieOnAttack | bool | 攻击后死亡
+[attack] disablePassiveTargeting | bool | 不主动索敌
+[attack] isFixedFiring | bool | 固定机体朝向射击模式
+[attack] isMelee | bool | 近战行为标记
+[attack] maxAttackRange | float | 单位最大索敌/攻击范围
+[attack] meleeEngangementDistance | float | 近战接敌距离；Engangement 是游戏实际拼写
+[attack] removeOnAttack | bool | 攻击后直接移除
+[attack] setMainTurretAs | 炮塔名 | 指定主炮塔，供朝向和其他主炮塔规则使用
+[attack] shootDamageMultiplier | float | 射弹伤害倍率
+[attack] shootDelay | 时间(帧或s) | 默认两次射击间隔
+[attack] shootDelayMultiplier | float | 射击间隔倍率
+[attack] showRangeUIGuide | bool | 显示射程提示圈
+[attack] stopTargetingAfterFiring | bool | 射击后清除单位目标
+[attack] turretMultiTargeting | bool | 各炮塔可以分别选择目标
+[attack] turretRotateWithBody | bool | 机体转向时让炮塔一起旋转
+[attack] turretSize | float | 默认炮口距炮塔中心的距离
+[attack] turretTurnSpeed | float | 默认炮塔转速
+[canBuild_NAME] addResources | 资源价格列表 | 给自身增减资源，支持 hp/shield/energy/ammo/credits 及自定义资源
+[canBuild_NAME] extraLagHidingInUI | bool | 额外的界面延迟隐藏/预测处理
+[canBuild_NAME] forceNano | bool | 强制按工程/纳米建造方式处理
+[canBuild_NAME] isGuiBlinking | bool表达式 | 界面按钮闪烁的动态条件
+[canBuild_NAME] isLocked | bool表达式 | 限制该单位的常规建造解锁
+[canBuild_NAME] isLockedAlt | bool表达式 | 第二组动作锁定条件
+[canBuild_NAME] isLockedAlt2 | bool表达式 | 第三组动作锁定条件
+[canBuild_NAME] isLockedAlt2Message | 多语言/动态文本 | 第三组锁定原因
+[canBuild_NAME] isLockedAltMessage | 多语言/动态文本 | 第二组锁定原因
+[canBuild_NAME] isLockedMessage | 多语言/动态文本 | 锁定时显示的原因
+[canBuild_NAME] isVisible | bool表达式 | 动态控制是否显示
+[canBuild_NAME] name | string(随后可能有专用校验) | 此建造项生产的单位内部名列表，或 reclaim 等被识别的特殊命令
+[canBuild_NAME] pos | float | 界面中的排序位置，数值小的通常靠前
+[canBuild_NAME] price | 资源价格列表 | 一次性支付的资源成本；不写资源名的数字表示 credits
+[canBuild_NAME] tech | int | 建造选项要求的科技级别
+[canBuild_NAME] type | string(随后可能有专用校验) | 当前功能使用的类型标识，具体可选值依所属节而定
+[core] allowCaptureWhenNeutralByAI | bool | 允许 AI 接管处于中立状态的单位
+[core] altNames | string(随后可能有专用校验) | 备用内部名称，作为较低优先级的匹配别名
+[core] armour | float | 每次受击的固定护甲减伤量
+[core] armourMinDamageToKeep | float | 护甲减伤后保留的最小伤害
+[core] autoRepair | bool | 自动搜索并维修合适的友方目标
+[core] autoTriggerCheckRate | 枚举/限定值 | 自动触发条件检查频率：everyFrame/every4Frames/every8Frames
+[core] autoTriggerCheckWhileNotBuilt | bool | 未完成建造时也检查自动触发条件
+[core] autoTriggerCooldownTime | 时间(帧或s) | 单位自动触发系统的公共冷却时间
+[core] autoTriggerCooldownTime_allowDangerousHighCPU | bool | 允许设置更短自动触发冷却，代价是更高 CPU 消耗
+[core] availableInDemo | bool | 是否允许试玩版使用的兼容字段
+[core] borrowResourcesWhileAlive | 资源价格列表 | 创建时借占资源，单位销毁/移除时返还
+[core] borrowResourcesWhileBuilt | 资源价格列表 | 建造完成后借占资源，可用于容量/人口等机制
+[core] buildingSelectionOffset | int | 建筑选择显示的纵向偏移
+[core] buildingToFootprintOffsetX | float | 建筑图像/中心到占地网格的横向偏移
+[core] buildingToFootprintOffsetY | float | 建筑图像/中心到占地网格的纵向偏移
+[core] buildSpeed | 建造速率(数值或s) | 建造进度速率；带 s 时按指定秒数换算，而裸数是每帧进度
+[core] builtFrom_{N}_forceNano | bool | 旧式反向添加工厂建造项：强制按工程/纳米建造方式处理
+[core] builtFrom_{N}_isLocked | bool表达式 | 旧式反向添加工厂建造项：限制该单位的常规建造解锁
+[core] builtFrom_{N}_isLockedMessage | 多语言文本 | 旧式反向添加工厂建造项：锁定时显示的原因
+[core] builtFrom_{N}_name | string(随后可能有专用校验) | 旧式反向添加工厂建造项：内部标识名；被其他单位、工厂、射弹或动作引用时使用
+[core] builtFrom_{N}_pos | float | 旧式反向添加工厂建造项：界面中的排序位置，数值小的通常靠前
+[core] canBuild_{N}_name | string(随后可能有专用校验) | 旧式建造列表第 N 项的单位内部名称；N 为 0 到 50
+[core] canNotBeDamaged | bool | 禁止受到伤害
+[core] canNotBeDirectlyAttacked | bool | 不能被直接锁定攻击；不等同于完全免伤
+[core] canNotBeGivenOrdersByPlayer | bool | 阻止玩家直接下达命令
+[core] canOnlyBeAttackedByUnitsWithTags | 标签列表 | 仅允许具有相应标签的攻击者攻击
+[core] canReclaimResources | bool | 允许回收资源类目标
+[core] canReclaimResourcesNextSearchRange | int | 当前资源耗尽后继续寻找资源的范围
+[core] canReclaimResourcesOnlyWithTags | 标签列表 | 限制可回收资源目标的标签
+[core] canReclaimUnitsOnlyWithTags | 标签列表 | 限制可拆解普通单位的标签
+[core] canRepairBuildings | bool | 允许维修建筑
+[core] canRepairUnits | bool | 允许维修单位
+[core] canRepairUnitsOnlyWithTags | 标签列表 | 只维修匹配标签的单位
+[core] class | 兼容字符串 | 兼容保留字段；通常填 CustomUnitMetadata，并不能加载任意 Java 类
+[core] constructionFootprint | 矩形(x1,y1,x2,y2) | 放置/施工阶段使用的占地矩形
+[core] convertToNeutralIfNotTransporting | bool | 没有运输乘员时转为中立
+[core] copyFrom | 文件列表或同类定义引用(按节区分) | 继承配置；core 中为文件列表，炮塔/腿部中为同类对象的名称或编号
+[core] createNeutral | bool | 创建时置于中立队伍的兼容开关
+[core] createOnAggressiveTeam | bool | 创建在对所有普通玩家敌对的特殊队伍
+[core] createOnNeutralTeam | bool | 创建时放入中立队伍
+[core] defineUnitMemory | 内存类型声明列表 | 声明单位自定义变量和数组及其类型
+[core] dieOnConstruct | bool | 完成对应施工行为后牺牲建造者
+[core] dieOnZeroEnergy | bool | 能量耗尽时死亡
+[core] disableAllUnitCollisions | bool | 禁用该单位与其他单位的常规碰撞
+[core] disableDeathOnZeroHp | bool | 生命为零时仍不自动死亡，需要自行设计移除逻辑
+[core] displayDescription | 图片路径 | 单位说明文字，支持本地化和换行
+[core] displayFootprint | 矩形(x1,y1,x2,y2) | 建筑占地显示矩形
+[core] displayLocaleKey | string(随后可能有专用校验) | 使用游戏翻译字典中的名称/描述条目
+[core] displayRadius | int | 选择圈显示半径
+[core] displayText | 图片路径 | 单位显示名称，支持本地化后缀
+[core] dont_load | bool | 把文件仅作为可继承模板，不实例化成单位
+[core] effectOnDeath | 效果引用/列表 | 死亡时发出的特效
+[core] effectOnDeathGroundCollision | 效果引用/列表 | 尸体/残骸坠地时的特效
+[core] effectOnDeathGroundCollosion | 效果引用/列表 | effectOnDeathGroundCollision 的历史拼写别名
+[core] effectOnDeathIfUnbuilt | 效果引用/列表 | 未完成建造就被摧毁时的特效
+[core] energyDisplayName | 图片路径 | 能量条的显示名称
+[core] energyMax | float | maxEnergy 的配置端写法，设置能量上限
+[core] energyNeedsToRechargeToFull | bool | 能量耗尽后，需要充满才能恢复使用能量的武器
+[core] energyRegen | float | 正常状态下的能量恢复速率
+[core] energyRegenWhenRecharging | float | 处于充能锁定状态时使用的恢复速率
+[core] energyStartingPercentage | float | 出生时能量占上限的比例
+[core] exit_dirOffset | float | 出场方向偏移
+[core] exit_heightOffset | float | 出场高度偏移
+[core] exit_moveAwayAmount | float | 出场后远离出口的距离
+[core] exit_x | float | 乘员/生产单位离开时的横向出口偏移
+[core] exit_y | float | 乘员/生产单位离开时的纵向出口偏移
+[core] exitHeightIgnoreParent | bool | 出场高度不继承父单位高度
+[core] experimental | bool | 实验级单位标记
+[core] explodeOnDeath | bool | 死亡时产生普通爆炸
+[core] explodeOnDeathGroundCollision | bool | 坠地时产生爆炸
+[core] explodeOnDeathGroundCollosion | bool | explodeOnDeathGroundCollision 的历史拼写别名
+[core] explodeTypeOnDeath | 枚举/限定值 | 死亡爆炸样式
+[core] extraBuildRangeWhenBuildingThis | float | 建造此单位时额外增加的施工距离
+[core] fireOnDeath | int | 死亡时产生火焰
+[core] fireTurretXAtSelfOnDeath | 炮塔名 | 死亡时用指定炮塔向自身位置开火
+[core] fogOfWarSightRange | int | 战争迷雾视野范围，按地图格处理
+[core] fogOfWarSightRangeWhileNotBuilt | int | 未建造完成时的视野范围
+[core] footprint | 矩形(x1,y1,x2,y2) | 建筑占地格矩形，使用逗号分隔四个整数
+[core] generation_active | bool(兼容别名) | 是否允许周期性产生资源的动态条件
+[core] generation_credits | int | 按生成周期增加的基础资金数量
+[core] generation_delay | int | 资源生成周期，基础单位是引擎帧
+[core] generation_resources | 资源价格列表 | 按生成周期增加的资源列表
+[core] globalScale | float | 整体缩放系数，同时影响若干尺寸与移动参数
+[core] hideScorchMark | bool | 不留下焦痕
+[core] ignoreInUnitCapCalculation | bool | 不计入常规单位人口统计
+[core] isBio | bool | 生物单位标记，影响部分死亡、音效等默认行为
+[core] isBug | bool | 虫族标记，影响死亡默认设置及编辑器分类
+[core] isBuilder | bool | 是否作为建造单位
+[core] isBuilding | bool | 作为建筑处理，影响占地、移动和建造规则
+[core] isLocked | bool | 限制该单位的常规建造解锁
+[core] isLockedIfGameModeNoNuke | bool | 关闭核武模式时锁定该单位
+[core] isPickableStartingUnit | bool | 允许作为对局初始单位配置
+[core] isUnrepairableUnit | bool | 禁止普通维修
+[core] isUnselectable | bool | 禁止常规玩家选择
+[core] isUnselectableAsTarget | bool | 禁止作为玩家常规点选的目标
+[core] logIfCreditResourceUsed | bool | 使用 credits 资源时输出诊断信息
+[core] mass | int | 碰撞质量，影响单位之间的推挤
+[core] maxHp | int | 最大生命值
+[core] maxShield | int | 护盾容量上限
+[core] maxTransportingUnits | int | 运输容量
+[core] name | string | 内部标识名；被其他单位、工厂、射弹或动作引用时使用
+[core] nanoBuildSpeed | float | 工程单位施工速度系数
+[core] nanoFactorySpeed | float | 工厂队列生产速度系数
+[core] nanoRange | int | 建造/维修纳米作用范围
+[core] nanoRangeForReclaim | int | 专门覆盖回收作用范围
+[core] nanoRangeForReclaimIsMelee | bool | 回收是否必须贴近目标
+[core] nanoRangeForRepair | int | 专门覆盖维修作用范围
+[core] nanoRangeForRepairIsMelee | bool | 维修是否必须贴近目标
+[core] nanoReclaimSpeed | float | 回收资源单位时的速度
+[core] nanoRepairSpeed | float | 维修生命速度
+[core] nanoUnbuildSpeed | float | 拆解/回收普通单位的速度
+[core] nukeOnDeath | bool | 死亡时触发核爆式伤害
+[core] nukeOnDeathDamage | float | 死亡核爆伤害
+[core] nukeOnDeathDisableWhenNoNuke | bool | 禁核模式下禁用死亡核爆
+[core] nukeOnDeathRange | float | 死亡核爆影响半径
+[core] numBitsOnDeath | int | 死亡碎片数量
+[core] onNewMapSpawn | 枚举/限定值 | 新建对局时自动放置此单位的规则
+[core] overrideAndReplace | string(随后可能有专用校验) | 替换已有单位类型；引用被替换类型时导向本单位
+[core] overrideResourceLoadPath | string(随后可能有专用校验) | 重定义本单位资源文件的加载位置
+[core] placeOnlyOnResPool | bool | 仅允许建在资源池上
+[core] price | 资源价格列表 | 一次性支付的资源成本；不写资源名的数字表示 credits
+[core] radius | int | 单位的碰撞/选取基础半径
+[core] reclaimPrice | 资源价格列表 | 该单位被拆解回收时返还的资源
+[core] resourceMaxConcurrentReclaimingThis | int | 同一时间允许采集本资源的单位数量
+[core] resourceRate | float | 该资源单位被采集时的基础速率
+[core] resourceReclaimMultiplier | float | 回收收益倍率
+[core] selfBuildRate | 建造速率(数值或s) | 自身施工进度的自动变化速率
+[core] selfRegenRate | float | 持续恢复自身生命的速率
+[core] shieldDeflectionDisplayRate | float | 护盾受击视觉效果的衰减速率
+[core] shieldDisplayOnlyDeflection | bool | 仅在护盾挡住攻击时显示护盾视觉
+[core] shieldRegen | float | 护盾被动恢复速率
+[core] shieldRenderRadius | int | 护盾视觉半径
+[core] showActionsWithMixedSelectionIfOtherUnitsHaveTag | 标签列表 | 混选带指定标签的其他单位时仍显示动作
+[core] showInEditor | bool | 是否出现在沙盒单位列表
+[core] showOnMinimap | bool | 是否显示在小地图
+[core] showOnMinimapToEnemies | bool | 是否允许敌方在小地图看到该单位，仍受可见性规则限制
+[core] similarResourcesHaveTag | 标签列表 | 把带有这些标签的资源视为同类，辅助继续采集
+[core] softCollisionOnAll | int | 软碰撞范围设置
+[core] soundOnAttackOrder | 音效列表 | 收到攻击命令时播放的音效
+[core] soundOnDeath | 音效列表 | 死亡音效
+[core] soundOnMoveOrder | 音效列表 | 收到移动命令时播放的音效
+[core] soundOnNewSelection | 音效列表 | 被新选中时播放的音效
+[core] startEnergyAtZero | bool | 旧式出生能量为零开关，注意与初始比例的冲突
+[core] startFallingWhenStartingUnit | bool | 作为初始单位时使用下落入场
+[core] startShieldAtZero | bool | 创建时护盾从零开始
+[core] stayNeutral | bool | 保持中立状态
+[core] streamingCost | 资源价格列表 | 建造或排队期间逐步支付的资源成本
+[core] strictLevel | int | 严格校验级别；设为 1 可拒绝重复键等问题
+[core] switchPriceWithStreamingCost | bool | 将普通 price 转为流式成本，便于统一改变经济模型
+[core] tags | 标签列表 | 逗号分隔的标签集合，供筛选与事件条件使用
+[core] techLevel | int | 单位科技等级
+[core] transportSlotsNeeded | int | 被运输时需要占用的槽位数
+[core] transportUnitsAddUnloadOption | bool | 显示卸载操作按钮
+[core] transportUnitsBlockAirAndWaterUnits | bool | 排除空中和水上单位的默认装载规则
+[core] transportUnitsBlockOtherTransports | bool | 禁止装载其他运输单位
+[core] transportUnitsCanUnloadUnits | bool表达式 | 允许卸载乘员的动态条件
+[core] transportUnitsEachUnitAlwaysUsesSingleSlot | bool | 所有乘员固定只占一个槽位
+[core] transportUnitsHealBy | float | 对运输舱内乘员施加的生命恢复速率
+[core] transportUnitsKeepBuiltUnits | bool(兼容别名) | 把自己生产完成的单位保留在运输舱内
+[core] transportUnitsKeepWaypoints | bool(兼容别名) | 乘员进入运输状态时保留其路径命令的动态条件
+[core] transportUnitsKillOnDeath | bool(兼容别名) | 运输者死亡时是否同时杀死舱内乘员
+[core] transportUnitsOnTeamChangeKeepCurrentTeam | bool | 运输者换队时保留乘员原队伍
+[core] transportUnitsRequireMovementType | string(随后可能有专用校验) | 只装载匹配移动类型的单位
+[core] transportUnitsRequireTag | 标签列表 | 只装载匹配标签的单位
+[core] transportUnitsUnloadDelayBetweenEachUnit | 时间(帧或s) | 连续卸载不同乘员之间的间隔
+[core] uiTargetRadius | float | 点击攻击、回收等目标操作时的 UI 判定半径
+[core] unitsSpawnedOnDeath | 单位生成列表 | 死亡时生成的单位列表
+[core] unitsSpawnedOnDeath_setToTeamOfLastAttacker | bool | 死亡产物归最后攻击者队伍
+[core] updateUnitMemory | 内存赋值列表(仅=) | 定期更新自定义内存的赋值列表
+[core] updateUnitMemoryRate | 时间(帧或s) | 自动更新自定义内存的周期
+[core] whileNeutralConvertToTransportedTeam | bool | 中立运输者随所载单位改变所属队伍
+[core] whileNeutralTransportAnyTeam | bool | 中立状态下允许装载任意队伍
+[decal_NAME] addBodyFrameMultipliedBy | int | 根据主体动画帧给 decal 帧号添加偏移
+[decal_NAME] alpha | number表达式 | 透明度，通常以 0 到 1 为范围
+[decal_NAME] alwaysStartDirAtZero | bool | 创建时方向不继承源单位
+[decal_NAME] alwaysStartHeightAtZero | bool | 创建时高度从零开始
+[decal_NAME] alwayStartDirAtZero | bool(兼容别名) | alwaysStartDirAtZero 的旧拼写别名
+[decal_NAME] basePosition | unit表达式 | 使用单位引用或 marker 作为绘制原点
+[decal_NAME] basePositionFromLegEnd | string(随后可能有专用校验) | 把腿端坐标作为原点
+[decal_NAME] basePositionFromTurret | string(随后可能有专用校验) | 把炮塔坐标作为原点
+[decal_NAME] color | 颜色 | 颜色；使用颜色解析器时可用 #RRGGBB 或 #AARRGGBB
+[decal_NAME] dirOffset | float | 相对基础朝向的角度偏移
+[decal_NAME] drawLineTo | unit表达式 | 从原点到指定单位/marker 画线
+[decal_NAME] frame | number表达式 | 显示的贴图帧索引
+[decal_NAME] frame_height | int | 单帧图像高度
+[decal_NAME] frame_verticalOrdering | bool | 图像帧按纵向优先排列
+[decal_NAME] frame_width | int | 单帧图像宽度
+[decal_NAME] hOffset | float | 高度方向偏移
+[decal_NAME] image | 图片路径 | 主图像资源路径
+[decal_NAME] image_shadow | 图片路径 / 支持的特殊值 | 阴影图像，支持对应加载器提供的特殊值
+[decal_NAME] imageScale | number表达式 | 图像整体缩放
+[decal_NAME] imageScaleX | number表达式 | 图像横向缩放
+[decal_NAME] imageScaleY | number表达式 | 图像纵向缩放
+[decal_NAME] imageStack | 图像堆叠列表 | 多层图像堆叠列表，可逐层偏移生成立体外观
+[decal_NAME] includeParentsSelection | bool | 把父单位是否被选中也计入显示判断
+[decal_NAME] isVisible | bool表达式 | 动态控制是否显示
+[decal_NAME] layer | 枚举/限定值 | decal 的绘制层
+[decal_NAME] lineWidth | float | 线条宽度
+[decal_NAME] onlyInPreview | bool | 只在预览场景中绘制
+[decal_NAME] onlyOnBodyFrameOf | int | 仅主体显示指定帧时绘制
+[decal_NAME] onlyOnNonPreview | bool | 只在正常游戏场景中绘制
+[decal_NAME] onlyPlayersWithUnitControl | bool | 只向拥有控制权的玩家显示
+[decal_NAME] onlyTeam | 枚举/限定值 | 按观看者与所属队伍的关系限制显示
+[decal_NAME] onlyWhenSelectedByAllyNotOwnPlayer | bool | 仅被其他盟友玩家选中时显示
+[decal_NAME] onlyWhenSelectedByAnyPlayer | bool | 被任意玩家选中时显示
+[decal_NAME] onlyWhenSelectedByEnemyPlayer | bool | 仅被敌方玩家选中时显示
+[decal_NAME] onlyWhenSelectedByOwnPlayer | bool | 仅被本方玩家选中时显示
+[decal_NAME] onlyWhileActive | bool | 仅单位处于完成并激活状态时显示
+[decal_NAME] onlyWhileAlive | bool | 仅单位存活时显示
+[decal_NAME] onlyWithZoomLevelOrMore | float | 缩放级别达到阈值时显示
+[decal_NAME] order | float | 同层绘制顺序
+[decal_NAME] pivotOffset | float | 旋转基准方向/轴的偏移
+[decal_NAME] shadowOffsetX | float | 阴影横向偏移
+[decal_NAME] shadowOffsetY | float | 阴影纵向偏移
+[decal_NAME] stack_drawInReverseOrder | bool | 反转图层绘制顺序
+[decal_NAME] stack_frameOffset | int | 相邻图层之间的帧索引差
+[decal_NAME] stack_hOffset | float | 相邻图层之间的高度差
+[decal_NAME] stack_indexCount | number表达式 | 要绘制的堆叠层数
+[decal_NAME] stack_indexStart | number表达式 | 开始绘制的堆叠索引
+[decal_NAME] teamColors | bool | 是否应用队伍色
+[decal_NAME] total_frames | int | 图像总帧数
+[decal_NAME] xOffsetAbsolute | number表达式 | 世界坐标横向偏移
+[decal_NAME] xOffsetRelative | float | 随源对象方向旋转的局部横向偏移
+[decal_NAME] yOffsetAbsolute | number表达式 | 世界坐标纵向偏移
+[decal_NAME] yOffsetRelative | float | 随源对象方向旋转的局部纵向偏移
+[effect_NAME] alpha | float | 透明度，通常以 0 到 1 为范围
+[effect_NAME] alsoEmitEffects | 效果引用/列表 | 创建此特效时额外创建其他特效
+[effect_NAME] alsoEmitEffectsOnDeath | 效果引用/列表 | 此特效结束时创建其他特效
+[effect_NAME] alsoPlaySound | 音效列表 | 创建特效时同时播放音效
+[effect_NAME] alwaysStartDirAtZero | bool | 创建时方向不继承源单位
+[effect_NAME] alwayStartDirAtZero | bool(兼容别名) | alwaysStartDirAtZero 的旧拼写别名
+[effect_NAME] animateFrameEnd | int | 帧动画末帧
+[effect_NAME] animateFrameLooping | bool | 帧动画循环
+[effect_NAME] animateFramePingPong | bool | 帧动画往返播放
+[effect_NAME] animateFrameSpeed | 时间(帧或s) | 帧动画速度
+[effect_NAME] animateFrameSpeedRandom | 时间(帧或s) | 帧动画速度的随机幅度
+[effect_NAME] animateFrameStart | int | 帧动画起始帧
+[effect_NAME] animateFrameStartRandomAdd | int | 起始帧随机附加值
+[effect_NAME] atmospheric | bool | 特效受气流/衰减模拟影响
+[effect_NAME] attachedToUnit | bool | 特效跟随源单位
+[effect_NAME] color | 颜色 | 颜色；使用颜色解析器时可用 #RRGGBB 或 #AARRGGBB
+[effect_NAME] createWhenOffscreen | bool | 屏幕外也创建特效
+[effect_NAME] createWhenOverLand | bool | 位于陆地时允许创建特效
+[effect_NAME] createWhenOverLiquid | bool | 位于液体地形时允许创建特效
+[effect_NAME] createWhenZoomedOut | bool | 缩小视图时也创建特效
+[effect_NAME] delayedStartTimer | 时间(帧或s) | 延迟开始的时间
+[effect_NAME] delayedStartTimerRandom | float | 延迟开始时间的随机幅度
+[effect_NAME] dirOffset | float | 相对基础朝向的角度偏移
+[effect_NAME] dirOffsetRandom | float | 方向偏移的随机幅度
+[effect_NAME] dirSpeed | float | 持续旋转角速度
+[effect_NAME] dirSpeedRandom | float | 角速度的随机幅度
+[effect_NAME] drawType | 枚举/限定值 | 指定特殊特效绘制方式；本包额外识别 displacement 位移效果
+[effect_NAME] drawUnderUnits | bool | 把该对象绘制在单位下方
+[effect_NAME] fadeInTime | float | 淡入所需时间
+[effect_NAME] fadeOut | bool | 生命末期淡出
+[effect_NAME] frame_height | int | 单帧图像高度
+[effect_NAME] frame_width | int | 单帧图像宽度
+[effect_NAME] frameIndex | int | 特效起始图像帧
+[effect_NAME] frameIndexRandom | int | 起始帧的随机变化范围
+[effect_NAME] hOffset | float | 高度方向偏移
+[effect_NAME] hOffsetRandom | float | 高度偏移的随机幅度
+[effect_NAME] hSpeed | float | 高度方向运动速度
+[effect_NAME] hSpeedRandom | float | 高度速度的随机幅度
+[effect_NAME] ifSpawnFailsEmitEffects | 效果引用/列表 | 此特效未成功创建时发出的替代特效
+[effect_NAME] image | 图片路径 | 主图像资源路径
+[effect_NAME] imageShadow | 图片路径 / 支持的特殊值 | 特效的阴影贴图
+[effect_NAME] life | float | 对象寿命，按其解析器的时间单位填写
+[effect_NAME] lifeRandom | float | 寿命随机变化幅度
+[effect_NAME] liveAfterAttachedDies | bool | 源单位死亡后特效继续存在
+[effect_NAME] physics | bool | 启用特效物理运动
+[effect_NAME] physicsGravity | float | 特效重力
+[effect_NAME] pivotOffset | float | 旋转基准方向/轴的偏移
+[effect_NAME] pivotOffsetRandom | float | 旋转基准偏移的随机幅度
+[effect_NAME] priority | 枚举/限定值 | 资源/特效的优先级，具体类型依所属节
+[effect_NAME] scaleFrom | float | 特效起始缩放
+[effect_NAME] scaleTo | float | 特效结束缩放
+[effect_NAME] shadow | bool | 绘制特效阴影
+[effect_NAME] showInFog | bool | 迷雾中显示特效
+[effect_NAME] spawnChance | float | 创建概率
+[effect_NAME] stripIndex | 内置特效条带的编号或名称 | 使用内置特效图条编号
+[effect_NAME] teamColorRatio | float | 混入所属队伍颜色的比例
+[effect_NAME] total_frames | int | 图像总帧数
+[effect_NAME] trailEffect | 效果引用或专用布尔值(按节区分) | 飞行/运动轨迹特效
+[effect_NAME] trailEffectRate | 时间(帧或s) | 轨迹特效生成间隔
+[effect_NAME] xOffsetAbsolute | float | 世界坐标横向偏移
+[effect_NAME] xOffsetAbsoluteRandom | float | 世界横向偏移的随机幅度
+[effect_NAME] xOffsetRelative | float | 随源对象方向旋转的局部横向偏移
+[effect_NAME] xOffsetRelativeRandom | float | 局部横向偏移的随机幅度
+[effect_NAME] xSpeedAbsolute | float | 世界坐标横向速度
+[effect_NAME] xSpeedAbsoluteRandom | float | 世界横向速度的随机幅度
+[effect_NAME] xSpeedRelative | float | 局部坐标横向速度
+[effect_NAME] xSpeedRelativeRandom | float | 局部横向速度的随机幅度
+[effect_NAME] yOffsetAbsolute | float | 世界坐标纵向偏移
+[effect_NAME] yOffsetAbsoluteRandom | float | 世界纵向偏移的随机幅度
+[effect_NAME] yOffsetRelative | float | 随源对象方向旋转的局部纵向偏移
+[effect_NAME] yOffsetRelativeRandom | float | 局部纵向偏移的随机幅度
+[effect_NAME] ySpeedAbsolute | float | 世界坐标纵向速度
+[effect_NAME] ySpeedAbsoluteRandom | float | 世界纵向速度的随机幅度
+[effect_NAME] ySpeedRelative | float | 局部坐标纵向速度
+[effect_NAME] ySpeedRelativeRandom | float | 局部纵向速度的随机幅度
+[graphics] default_frame | int | 默认显示的帧号
+[graphics] disableLowHpFire | bool | 取消低生命值冒火效果
+[graphics] disableLowHpSmoke | bool | 取消低生命值冒烟效果
+[graphics] drawLayer | 枚举/限定值 | 渲染层级
+[graphics] dustEffect | bool | 移动时产生扬尘
+[graphics] dustEffectReverse | bool | 倒车时产生扬尘
+[graphics] frame_height | int | 单帧图像高度
+[graphics] frame_width | int | 单帧图像宽度
+[graphics] icon_build | 图片路径 | 建造列表使用的图标
+[graphics] icon_zoomed_out | 图片路径 | 缩小视图使用的战略图标
+[graphics] icon_zoomed_out_neverShow | bool | 不显示缩小视图战略图标
+[graphics] image | string | 主图像资源路径
+[graphics] image_back | 图片路径 | 背景/底座图像
+[graphics] image_back_always_use_full_image | bool | 背景使用完整贴图而非跟随帧切分
+[graphics] image_floatingPointSize | bool | 图像尺寸计算使用浮点精度
+[graphics] image_offsetH | float | 机体图像高度偏移
+[graphics] image_offsetX | int | 机体图像横向偏移
+[graphics] image_offsetY | int | 机体图像纵向偏移
+[graphics] image_shadow | 图片路径 / 支持的特殊值 | 阴影图像，支持对应加载器提供的特殊值
+[graphics] image_shadow_frames | bool | 阴影图像也按动画帧处理
+[graphics] image_shield | 图片路径 | 护盾图像
+[graphics] image_turret | 图片路径 | 炮塔的默认图像
+[graphics] image_wreak | 图片路径 | 死亡残骸图像；wreak 是游戏实际键名
+[graphics] imageScale | float | 图像整体缩放
+[graphics] imageSmoothing | bool | 图像缩放使用平滑滤波
+[graphics] imageSmoothingWhenZoomedIn | bool | 放大时的图像平滑处理
+[graphics] isVisible | bool表达式 | 动态控制是否显示
+[graphics] isVisibleToEnemies | bool | 是否允许敌方看到本单位图像
+[graphics] lock_body_rotation_with_main_turret | bool | 机体显示朝向跟随主炮塔
+[graphics] lock_leg_rotation_with_main_turret | bool | 腿部显示朝向跟随主炮塔
+[graphics] lock_shadow_rotation_with_main_turret | bool | 阴影朝向跟随主炮塔
+[graphics] movementEffect | 效果引用/列表 | 前进时自定义移动特效
+[graphics] movementEffectRate | float | 移动特效的生成间隔
+[graphics] movementEffectReverse | 效果引用/列表 | 倒退时自定义移动特效
+[graphics] movementEffectReverseFlipEffects | bool | 倒车时翻转移动特效方向
+[graphics] reclaimEffect | 效果引用/列表 | 回收者位置的特效
+[graphics] reclaimEffectAtTarget | 效果引用/列表 | 被回收目标位置的特效
+[graphics] reclaimEffectRate | float | 回收特效生成间隔
+[graphics] repairEffect | 效果引用/列表 | 维修者位置的特效
+[graphics] repairEffectAtTarget | 效果引用/列表 | 维修目标位置的特效
+[graphics] repairEffectRate | float | 维修特效生成间隔
+[graphics] rotate_with_direction | bool | 图像随单位朝向旋转
+[graphics] scaleImagesTo | float | 把主体图像缩放到指定尺寸
+[graphics] scaleTurretImagesTo | float | 把炮塔图像缩放到指定尺寸
+[graphics] shadowOffsetX | float | 阴影横向偏移
+[graphics] shadowOffsetY | float | 阴影纵向偏移
+[graphics] showEnergyBar | bool | 显示能量条
+[graphics] showHealthBar | bool | 显示生命条
+[graphics] showHealthBarChanges | bool | 显示生命变化提示
+[graphics] showQueueBar | bool | 显示生产队列进度条
+[graphics] showSelectionIndicator | bool | 显示选择提示
+[graphics] showShieldBar | bool | 显示护盾条
+[graphics] showShotDelayBar | bool | 显示射击冷却条
+[graphics] showTransportBar | bool | 显示运输容量条
+[graphics] splastEffect | bool | 移动时产生水花；splast 是实际拼写
+[graphics] splastEffectReverse | bool | 倒车时产生水花
+[graphics] teamColoringMode | 枚举/限定值 | 队伍着色模式
+[graphics] teamColorsOnTurret | bool | 默认炮塔图像应用队伍色
+[graphics] teamColorsUseHue | bool | 使用色相方式生成队伍色
+[graphics] total_frames | int | 图像总帧数
+[graphics] turretImageScale | float | 炮塔图像缩放
+[graphics] whenBeingBuiltMakeTransparentTill | float | 未达到指定施工比例前保持半透明
+[leg_N / arm_N] alpha | float | 透明度，通常以 0 到 1 为范围
+[leg_N / arm_N] attach_x | float | 腿/机械臂根部的横向连接坐标
+[leg_N / arm_N] attach_y | float | 腿/机械臂根部的纵向连接坐标
+[leg_N / arm_N] copyFrom | 文件列表或同类定义引用(按节区分) | 继承配置；core 中为文件列表，炮塔/腿部中为同类对象的名称或编号
+[leg_N / arm_N] draw_foot_on_top | bool | 末端绘制在腿段之上
+[leg_N / arm_N] drawDirOffset | float | 绘制方向偏移
+[leg_N / arm_N] drawFootWhenZoomedOut | bool | 视图缩小时仍绘制足端
+[leg_N / arm_N] drawLegWhenZoomedOut | bool | 视图缩小时仍绘制腿段
+[leg_N / arm_N] drawOverBody | bool | 绘制在主体之上
+[leg_N / arm_N] drawUnderAllUnits | bool | 绘制在全部单位之下
+[leg_N / arm_N] dust_effect | bool | 足端落地时产生尘土
+[leg_N / arm_N] endDirOffset | float | 足端的方向偏移
+[leg_N / arm_N] estimatingPositionMultiplier | float | 根据机体移动预估落脚点的倍率
+[leg_N / arm_N] explodeOnDeath | bool | 死亡时产生普通爆炸
+[leg_N / arm_N] favourOppositeSideNeighbours | bool | 协调步态时优先考虑对侧腿
+[leg_N / arm_N] hardLimit | float | 腿偏离过远时强制拉回的距离
+[leg_N / arm_N] heightSpeed | float | 腿抬升/下降速度
+[leg_N / arm_N] hidden | bool表达式 | 隐藏对象或其界面显示
+[leg_N / arm_N] hold_moveOnlyIfFurthest | bool | 只在该腿为偏离最远者时迈步
+[leg_N / arm_N] holdDisMax | float | 腿的最大允许偏离距离
+[leg_N / arm_N] holdDisMin | float | 离目标位置至少达到此距离才迈步
+[leg_N / arm_N] holdDisMin_checkNeighbours | bool | 决定迈步时检查相邻腿
+[leg_N / arm_N] holdDisMin_maxMovingLegs | int | 同时最多允许移动的腿数
+[leg_N / arm_N] image_end | 图片路径 | 足端/机械臂端图像
+[leg_N / arm_N] image_end_shadow | 图片路径 | 末端阴影图像
+[leg_N / arm_N] image_end_teamColors | bool | 末端图像应用队伍色
+[leg_N / arm_N] image_foot | 图片路径 | 足端图像的兼容写法
+[leg_N / arm_N] image_foot_shadow | 图片路径 | 足端阴影图像的兼容写法
+[leg_N / arm_N] image_leg | 图片路径 | 腿部中段图像的兼容写法
+[leg_N / arm_N] image_middle | 图片路径 | 腿/机械臂中段图像
+[leg_N / arm_N] image_middle_teamColors | bool | 中段图像应用队伍色
+[leg_N / arm_N] liftingHeightOffset | float | 迈步时额外抬升高度
+[leg_N / arm_N] lockMovement | bool | 锁定腿/机械臂的自动步行动作
+[leg_N / arm_N] moveSpeed | float | 移动速度
+[leg_N / arm_N] moveWarmUp | 时间(帧或s) | 腿开始运动前的预热时间
+[leg_N / arm_N] resetAngle | float | 腿复位时的旋转角度
+[leg_N / arm_N] rotateSpeed | float | 腿或机械臂转速
+[leg_N / arm_N] spinRate | float | 末端持续旋转速度
+[leg_N / arm_N] targetHeight | float | 目标飞行/悬浮高度
+[leg_N / arm_N] targetHeightRelative | bool | 腿目标高度相对机体而非地面
+[leg_N / arm_N] x | float | 相对所属对象的横向坐标
+[leg_N / arm_N] y | float | 相对所属对象的纵向坐标
+[mod] description | string(支持转义换行) | 说明文字
+[mod] minVersion | 版本字符串 | 模组要求的最低游戏版本
+[mod] title | string | 模组列表显示的标题
+[movement] fallingAcceleration | float | 下落加速度
+[movement] fallingAccelerationDead | float | 死亡后的下落加速度
+[movement] heightChangeRate | float | 高度变化速度
+[movement] ignoreMoveOrders | bool | 忽略移动命令；启用时移动速度需为零
+[movement] joinsGroupFormations | bool | 是否参与编队
+[movement] landOnGround | 枚举/限定值 | 空中单位着陆行为，支持布尔文本及受支持的特殊值
+[movement] maxTurnSpeed | float | 机体最大转速
+[movement] moveAccelerationSpeed | float | 移动加速度
+[movement] moveDecelerationSpeed | float | 移动减速度
+[movement] moveIgnoringBody | bool | 允许移动方向不跟随机体朝向
+[movement] movementType | 枚举/限定值 | 移动/寻路类型，参见枚举表
+[movement] moveSlidingDir | int | 滑动模式的方向参数
+[movement] moveSlidingMode | bool | 启用滑动式移动
+[movement] moveSpeed | float | 移动速度
+[movement] moveYAxisScaling | float | 纵向移动缩放，必须大于零
+[movement] reverseSpeedPercentage | float | 倒车速度占正常速度的比例
+[movement] slowDeathFall | bool | 死亡时缓慢下落
+[movement] slowDeathFallSmoke | bool | 缓慢坠落时产生烟雾
+[movement] startingHeightOffset | float | 初始高度相对默认高度的偏移
+[movement] targetHeight | float | 目标飞行/悬浮高度
+[movement] targetHeightDrift | float | 高度周期漂浮幅度
+[movement] turnAcceleration | float | 机体转向加速度
+[movement_random] awayFromEdge | int | 随机移动远离地图边缘的距离
+[movement_random] enabled | bool表达式 | 动态启用该运动附加模块
+[movement_random] maxSpeed | float | 运动附加模块的速度限制
+[movement_random] speed | float | 速度；在不同节中分别用于移动、弹速或动画帧速
+[movement_repelFromUnits] enabled | bool表达式 | 动态启用该运动附加模块
+[movement_repelFromUnits] maxSpeed | float | 运动附加模块的速度限制
+[movement_repelFromUnits] onlySameTeam | bool | 排斥运动仅针对同队单位
+[movement_repelFromUnits] otherUnitHasTag | 标签列表 | 排斥运动只考虑带指定标签的其他单位
+[movement_repelFromUnits] speed | float | 速度；在不同节中分别用于移动、弹速或动画帧速
+[music] addToNormalPlaylist | bool | 把模组音乐加入普通播放列表
+[music] sourceFolder | 目录路径 | 模组音乐所在文件夹
+[music] whenUsingUnitsFromThisMod_playExclusively | bool | 使用本模组单位时独占播放该模组音乐
+[placementRule_NAME] aiSuggestionOnly | bool | 规则只给 AI 建造建议，不强制阻止玩家
+[placementRule_NAME] anyRuleInGroup | string(随后可能有专用校验) | 同组规则中满足任意一条即可
+[placementRule_NAME] blocksPlacement | bool | 规则失败时是否阻止建造
+[placementRule_NAME] cannotPlaceMessage | 多语言文本 / 动态文本 | 放置规则失败时显示的文字
+[placementRule_NAME] checkEachTile | bool | 建筑占地逐格检查放置规则
+[placementRule_NAME] excludeIncompleteBuildings | bool | 搜索时排除未完成建筑
+[placementRule_NAME] excludeNonBuildings | bool | 搜索时排除非建筑
+[placementRule_NAME] maxCount | int | 规则匹配的最多数量
+[placementRule_NAME] minCount | int | 规则匹配的最少数量
+[placementRule_NAME] searchDistance | float | 放置判定的搜索半径
+[placementRule_NAME] searchOffsetX | float | 放置判定搜索中心横向偏移
+[placementRule_NAME] searchOffsetY | float | 放置判定搜索中心纵向偏移
+[placementRule_NAME] searchTags | 标签列表 | 放置判定搜索的标签
+[placementRule_NAME] searchTeam | 枚举/限定值 | 放置判定搜索的队伍关系
+[projectile_NAME] alwaysVisibleInFog | bool | 射弹在迷雾中也可见
+[projectile_NAME] areaDamage | int | 范围伤害
+[projectile_NAME] areaDamageNoFalloff | bool | 范围伤害不随距离衰减
+[projectile_NAME] areaExpandTime | float | 范围伤害从中心扩散所用时间
+[projectile_NAME] areaHitAirAndLandAtSameTime | bool | 范围伤害同时作用于空中和地面
+[projectile_NAME] areaHitUnderwaterAlways | bool | 范围伤害总能影响水下目标
+[projectile_NAME] areaIgnoreUnitsCloserThan | float | 排除过于接近中心的单位
+[projectile_NAME] areaRadius | int | 范围伤害半径
+[projectile_NAME] areaRadiusFromEdge | bool | 范围距离从目标边缘计算
+[projectile_NAME] armourIgnoreAmount | float | 本射弹忽略的固定护甲值
+[projectile_NAME] autoTargetingOnDeadTarget | bool | 原目标死亡时重新寻敌
+[projectile_NAME] autoTargetingOnDeadTargetLead | float | 重新寻敌的前向偏移
+[projectile_NAME] autoTargetingOnDeadTargetRange | float | 目标死亡后重新寻敌半径
+[projectile_NAME] ballistic | bool | 启用抛物线/高抛轨迹
+[projectile_NAME] ballistic_delaymove_height | float | 达到此高度后再开始水平移动
+[projectile_NAME] ballistic_height | float | 弹道目标高度
+[projectile_NAME] beamImage | 图片路径 | 光束中段贴图
+[projectile_NAME] beamImageEnd | 图片路径 | 光束终点贴图
+[projectile_NAME] beamImageEndRotated | bool | 终点贴图是否随光束旋转
+[projectile_NAME] beamImageOffsetRate | float | 光束纹理沿长度方向滚动的速度
+[projectile_NAME] beamImageStart | 图片路径 | 光束起点贴图
+[projectile_NAME] beamImageStartRotated | bool | 起点贴图是否随光束旋转
+[projectile_NAME] buildingDamageMultiplier | float | 对建筑的伤害倍率
+[projectile_NAME] color | 颜色 | 颜色；使用颜色解析器时可用 #RRGGBB 或 #AARRGGBB
+[projectile_NAME] convertHitToSourceTeam | bool | 把命中的目标转换到发射者队伍
+[projectile_NAME] deflectionPower | float | 被防御激光拦截所需强度；特殊值见原逻辑约束
+[projectile_NAME] delayedStartTimer | 时间(帧或s) | 延迟开始的时间
+[projectile_NAME] directDamage | int | 直接命中伤害
+[projectile_NAME] disableLeadTargeting | bool | 禁用运动目标提前量
+[projectile_NAME] drawSize | float | 射弹绘制缩放
+[projectile_NAME] drawType | short | 内置绘制类型编号
+[projectile_NAME] drawUnderUnits | bool | 把该对象绘制在单位下方
+[projectile_NAME] effectOnCreate | 效果引用/列表 | 创建时产生的特效
+[projectile_NAME] explodeEffect | 效果引用/列表 | 爆炸/命中特效
+[projectile_NAME] explodeEffectOnShield | 效果引用/列表 | 命中护盾时替换的特效
+[projectile_NAME] explodeOnEndOfLife | bool | 寿命结束也触发爆炸
+[projectile_NAME] flameWeapon | bool | 火焰武器样式/效果标记
+[projectile_NAME] frame | short | 显示的贴图帧索引
+[projectile_NAME] friendlyFire | 枚举/限定值 | 友军伤害设置；支持特殊筛选文本，参见专项说明
+[projectile_NAME] gravity | float | 射弹视觉/轨迹重力参数
+[projectile_NAME] hitSound | bool | 是否播放默认命中声音
+[projectile_NAME] hullDamageMultiplier | float | 对本体生命的伤害倍率
+[projectile_NAME] ignoreParentShootDamageMultiplier | bool | 忽略发射者的伤害倍率
+[projectile_NAME] image | 图片路径 | 主图像资源路径
+[projectile_NAME] initialUnguidedSpeedHeight | float | 无导引初始高度速度
+[projectile_NAME] initialUnguidedSpeedX | float | 无导引初始横向速度
+[projectile_NAME] initialUnguidedSpeedY | float | 无导引初始纵向速度
+[projectile_NAME] instant | bool | 立即命中型射弹
+[projectile_NAME] instantReuseLast | bool | 重复使用上一次即时射弹对象，适合持续光束
+[projectile_NAME] instantReuseLast_alsoChangeTurretAim | bool | 复用即时射弹时也改变炮塔瞄准
+[projectile_NAME] instantReuseLast_keepAreaDamageList | bool | 复用即时射弹时保留范围伤害命中记录
+[projectile_NAME] interceptProjectile_removeTargetLifeOnly | bool | 拦截时只消耗目标射弹寿命
+[projectile_NAME] invisible | bool | 隐藏视觉表现，逻辑仍可存在
+[projectile_NAME] largeHitEffect | bool | 采用大型命中特效
+[projectile_NAME] laserEffect | bool | 启用激光线绘制
+[projectile_NAME] leadTargetingSpeedCalculation | float | 计算提前量时使用的弹速
+[projectile_NAME] life | 时间(帧或s) | 对象寿命，按其解析器的时间单位填写
+[projectile_NAME] lightCastOnGround | bool | 光源是否投到地面
+[projectile_NAME] lightColor | 颜色 | 光源颜色
+[projectile_NAME] lightingEffect | bool | 闪电效果；lighting 是游戏实际键名
+[projectile_NAME] lightSize | float | 光源大小
+[projectile_NAME] moveWithParent | bool | 射弹随发射者位置移动
+[projectile_NAME] mutator{NAME}_addResourcesAreaHit | 资源价格列表 | 范围命中时给目标增减资源
+[projectile_NAME] mutator{NAME}_addResourcesDirectHit | 资源价格列表 | 直接命中时给目标增减资源
+[projectile_NAME] mutator{NAME}_areaDamageMultiplier | float | 该条件规则的范围伤害倍率
+[projectile_NAME] mutator{NAME}_changedExplodeEffect | 效果引用/列表 | 符合条件时替换爆炸特效
+[projectile_NAME] mutator{NAME}_directDamageMultiplier | float | 该条件规则的直接伤害倍率
+[projectile_NAME] mutator{NAME}_ifUnitWithoutTags | 标签列表 | 该条件伤害规则排除带指定标签的目标
+[projectile_NAME] mutator{NAME}_ifUnitWithTags | 标签列表 | 该条件伤害规则仅匹配带指定标签的目标
+[projectile_NAME] nukeWeapon | bool | 核武射弹行为标记
+[projectile_NAME] pushForce | float | 命中时施加的推力，受目标质量等规则影响
+[projectile_NAME] pushVelocity | float | 命中时附加的速度式击退
+[projectile_NAME] retargetingInFlight | bool | 飞行中周期性重新选取目标
+[projectile_NAME] retargetingInFlightSearchDelay | float | 飞行中重新搜索目标的间隔
+[projectile_NAME] retargetingInFlightSearchLead | float | 飞行中搜索中心的前向偏移
+[projectile_NAME] retargetingInFlightSearchOnlyTags | 标签列表 | 飞行中搜索只匹配这些标签
+[projectile_NAME] retargetingInFlightSearchRange | float | 飞行中重新搜索的半径
+[projectile_NAME] shadowFrame | short | 阴影使用的帧索引
+[projectile_NAME] shadowImage | 图片路径 | 阴影贴图
+[projectile_NAME] shieldDamageMultiplier | float | 对护盾的伤害倍率
+[projectile_NAME] shieldDefectionMultiplier | float | 护盾偏转/抵挡消耗倍率；Defection 是实际键名
+[projectile_NAME] shouldRevealFog | bool | 射弹是否揭开迷雾
+[projectile_NAME] spawnProjectilesOnCreate | 射弹生成列表 | 创建时生成额外射弹
+[projectile_NAME] spawnProjectilesOnEndOfLife | 射弹生成列表 | 寿命结束时生成额外射弹
+[projectile_NAME] spawnProjectilesOnExplode | 射弹生成列表 | 爆炸时生成额外射弹
+[projectile_NAME] spawnUnit | 单位生成列表 | 射弹生成单位的配置
+[projectile_NAME] speed | float | 速度；在不同节中分别用于移动、弹速或动画帧速
+[projectile_NAME] speedSpread | float | 初始速度随机散布
+[projectile_NAME] sweepOffset | float | 激光/射弹扫掠偏移
+[projectile_NAME] sweepOffsetFromTargetRadius | float | 按目标半径附加的扫掠偏移
+[projectile_NAME] sweepSpeed | float | 扫掠速度
+[projectile_NAME] tags | 标签列表 | 逗号分隔的标签集合，供筛选与事件条件使用
+[projectile_NAME] targetGround | bool | 攻击地面坐标，通常不会产生单位直接命中
+[projectile_NAME] targetGround_includeTargetHeight | bool | 攻击坐标时包含目标高度
+[projectile_NAME] targetGroundHeightOffset | float | 落点高度偏移
+[projectile_NAME] targetGroundSpread | float | 地面落点散布
+[projectile_NAME] targetSpeed | float | 射弹最终目标速度
+[projectile_NAME] targetSpeedAcceleration | float | 射弹向目标速度变化的加速度
+[projectile_NAME] teamColorRatio | float | 混入所属队伍颜色的比例
+[projectile_NAME] teamColorRatio_sourceRatio | float | 混色后保留原始颜色的比例
+[projectile_NAME] teleportSource | bool | 把发射者传送至命中/目标位置
+[projectile_NAME] trailEffect | 效果引用或专用布尔值(按节区分) | 飞行/运动轨迹特效
+[projectile_NAME] trailEffectRate | float | 轨迹特效生成间隔
+[projectile_NAME] trueGravity | float | 影响实际高度运动的重力
+[projectile_NAME] turnSpeed | float | 当前对象的旋转速度
+[projectile_NAME] turnSpeedWhenNear | float | 临近目标时的转向速度
+[projectile_NAME] unloadUpToXUnitsFromSource | int | 射弹事件卸载发射者舱内的乘员
+[projectile_NAME] wobbleAmplitude | float | 弹道左右摆动幅度
+[projectile_NAME] wobbleFrequency | 时间(帧或s) | 弹道摆动周期参数
+[resource_NAME / global_resource_NAME] appendResourceInHUD | string(随后可能有专用校验) | HUD 附加资源的兼容键
+[resource_NAME / global_resource_NAME] appendResourceInHUD_whenThisZero | bool | 本资源为零时也显示附加资源
+[resource_NAME / global_resource_NAME] displayColor | 颜色 | 资源数值显示颜色
+[resource_NAME / global_resource_NAME] displayColorUseInText | bool | 普通文本中也使用资源显示颜色
+[resource_NAME / global_resource_NAME] displayDigitGrouping | 枚举/限定值 | 资源数值的分组格式
+[resource_NAME / global_resource_NAME] displayInHud | bool | 在 HUD 中显示资源
+[resource_NAME / global_resource_NAME] displayName | 多语言文本 / 动态文本 | 资源显示全名
+[resource_NAME / global_resource_NAME] displayNameHideWhenIconShownInHUD | bool | HUD 有图标时隐藏资源名称
+[resource_NAME / global_resource_NAME] displayNameHideWhenIconShownInText | bool | 文本有图标时隐藏资源名称
+[resource_NAME / global_resource_NAME] displayNameShort | 多语言文本 / 动态文本 | 资源显示简称
+[resource_NAME / global_resource_NAME] displayPos | int | 资源在 HUD 的显示排序
+[resource_NAME / global_resource_NAME] displayPostfixInHUD | 多语言文本 / 动态文本 | HUD 后缀的兼容键
+[resource_NAME / global_resource_NAME] displayPrefixInHUD | 多语言文本 / 动态文本 | HUD 前缀的兼容键
+[resource_NAME / global_resource_NAME] displayRoundedDown | bool | 资源显示向下取整
+[resource_NAME / global_resource_NAME] displayTextAppendResource | string(随后可能有专用校验) | 在本资源文本后附加另一资源数值
+[resource_NAME / global_resource_NAME] displayTextAppendResourceWithGap | bool | 资源和附加内容之间增加间隔
+[resource_NAME / global_resource_NAME] displayTextPostfix | 多语言文本 / 动态文本 | 资源显示文本的后缀
+[resource_NAME / global_resource_NAME] displayTextPrefix | 多语言文本 / 动态文本 | 资源显示文本的前缀
+[resource_NAME / global_resource_NAME] displayWhenZero | bool | 值为零时仍显示资源
+[resource_NAME / global_resource_NAME] displayWithRounding | bool | 资源显示进行取整
+[resource_NAME / global_resource_NAME] equivalentGlobalResourceForAI | string(随后可能有专用校验) | 让 AI 把此本地资源视为某项全局资源
+[resource_NAME / global_resource_NAME] hidden | bool | 隐藏对象或其界面显示
+[resource_NAME / global_resource_NAME] iconImage | 图片路径 / 支持的特殊值 | 图标资源路径
+[resource_NAME / global_resource_NAME] iconImageUseInText | bool | 普通文字中也显示资源图标
+[resource_NAME / global_resource_NAME] includeInStats | bool | 把资源纳入统计
+[resource_NAME / global_resource_NAME] priority | float | 资源/特效的优先级，具体类型依所属节
+[resource_NAME / global_resource_NAME] stackHorizontal | bool | 资源在 HUD 中横向排列
+[resource_NAME / global_resource_NAME] valueInStats | float | 统计时本资源的等价值
+[turret_NAME] aimOffsetSpread | float | 瞄准偏移散布
+[turret_NAME] altProjectile | 射弹名 | 替代射弹名称
+[turret_NAME] altProjectileCondition | bool表达式 | 使用替代射弹的动态条件
+[turret_NAME] attachedTo | 炮塔名 | 把炮塔连接到另一个炮塔
+[turret_NAME] barrelHeight | float | 炮口高度
+[turret_NAME] barrelOffsetX_onOddShots | float | 奇数次射击额外横向偏移，用于交替炮管
+[turret_NAME] barrelX | float | 炮口横向偏移
+[turret_NAME] barrelY | float | 炮口纵向偏移
+[turret_NAME] canAttack | bool | 启用攻击能力
+[turret_NAME] canAttackCondition | bool表达式 | 炮塔攻击的额外动态条件
+[turret_NAME] canAttackFlyingUnits | bool表达式 | 对空攻击条件
+[turret_NAME] canAttackLandUnits | bool表达式 | 对地/水面攻击条件
+[turret_NAME] canAttackMaxAngle | float | 偏离目标方向时仍允许射击的最大角度
+[turret_NAME] canAttackNotTouchingWaterUnits | bool表达式 | 允许攻击未接触水面的目标的条件
+[turret_NAME] canAttackUnderwaterUnits | bool表达式 | 对水下攻击条件
+[turret_NAME] canOnlyAttackUnitsWithoutTags | 标签列表 | 排除匹配标签的目标
+[turret_NAME] canOnlyAttackUnitsWithTags | 标签列表 | 只攻击匹配标签的目标
+[turret_NAME] canShoot | bool | 炮塔是否允许发射
+[turret_NAME] chargeEffectImage | 图片路径 | 蓄能阶段的特效贴图
+[turret_NAME] clearTurretTargetAfterFiring | bool | 此炮塔发射后清除目标
+[turret_NAME] copyFrom | 文件列表或同类定义引用(按节区分) | 继承配置；core 中为文件列表，炮塔/腿部中为同类对象的名称或编号
+[turret_NAME] delay | 时间(帧或s) | 当前对象的延迟；炮塔中表示射击间隔
+[turret_NAME] energyUsage | float | 每次射击消耗能量
+[turret_NAME] height | float | 相对高度
+[turret_NAME] idleDir | float | 空闲朝向
+[turret_NAME] idleDirReversing | float | 倒车时空闲朝向
+[turret_NAME] idleSpin | float | 空闲时持续旋转速度
+[turret_NAME] idleSweepAddRandomAngle | float | 空闲扫描附加随机角度
+[turret_NAME] idleSweepAddRandomDelay | float | 空闲扫描附加随机间隔
+[turret_NAME] idleSweepAngle | float | 空闲扫描角幅
+[turret_NAME] idleSweepCondition | bool表达式 | 允许空闲扫描的动态条件
+[turret_NAME] idleSweepDelay | float | 两次空闲扫描之间的间隔
+[turret_NAME] idleSweepSpeed | float | 空闲扫描转速
+[turret_NAME] image | 图片路径 | 主图像资源路径
+[turret_NAME] image_applyTeamColors | bool | 炮塔贴图应用队伍色
+[turret_NAME] image_drawOffsetX | float | 炮塔贴图绘制横向偏移
+[turret_NAME] image_drawOffsetY | float | 炮塔贴图绘制纵向偏移
+[turret_NAME] interceptProjectiles_andOverHeight | float | 仅拦截超过指定高度的射弹
+[turret_NAME] interceptProjectiles_andTargetingGroundUnderDistance | float | 只拦截落点距离较近的射弹
+[turret_NAME] interceptProjectiles_andUnderDistance | float | 拦截距离上限
+[turret_NAME] interceptProjectiles_withTags | 标签列表 | 只拦截匹配标签的射弹
+[turret_NAME] invisible | bool表达式 | 隐藏视觉表现，逻辑仍可存在
+[turret_NAME] isMainNanoTurret | bool | 把此炮塔作为建造/维修的纳米炮塔
+[turret_NAME] laserDefenceEnergyUse | float | 拦截射弹使用的能量
+[turret_NAME] limitingAngle | float | 相对默认方向的最大可转角
+[turret_NAME] limitingMinRange | float | 此炮塔最小射程
+[turret_NAME] limitingRange | float | 此炮塔射程上限
+[turret_NAME] linkDelayWithTurret | 炮塔名 | 与另一炮塔联动射击间隔
+[turret_NAME] onShoot_freezeBodyMovementFor | 时间(帧或s) | 射击后冻结机体移动一段时间
+[turret_NAME] onShoot_playAnimation | 动画名 | 射击时播放动画
+[turret_NAME] onShoot_triggerActions | Action名称列表 | 射击时触发动作，thisActionTarget 可指向射击目标
+[turret_NAME] projectile | 射弹名 | 本炮塔发射的 projectile 节名称
+[turret_NAME] recoilOffset | float | 开火时炮塔后坐位移
+[turret_NAME] recoilOutTime | float | 后坐向外运动时间
+[turret_NAME] recoilReturnTime | 时间(帧或s) | 后坐复位时间
+[turret_NAME] resourceUsage | 资源价格列表 | 每次射击消耗的资源列表
+[turret_NAME] shoot_flame | 效果引用/列表 | 开火时枪口特效
+[turret_NAME] shoot_light | 颜色 | 开火时光源颜色
+[turret_NAME] shoot_sound | 音效列表 | 开火音效列表
+[turret_NAME] shoot_sound_vol | float | 开火音量倍率
+[turret_NAME] shouldResetTurret | bool | 空闲时把炮塔归位
+[turret_NAME] showRangeUIGuide | bool | 显示射程提示圈
+[turret_NAME] size | float | 炮管/炮口的基础长度
+[turret_NAME] slave | bool | 从属于父炮塔的瞄准/转向控制
+[turret_NAME] turnSpeed | float | 当前对象的旋转速度
+[turret_NAME] turnSpeedAcceleration | float | 炮塔转速加速度
+[turret_NAME] turnSpeedDeceleration | float | 炮塔转速减速度
+[turret_NAME] unloadUpToXUnitsAndGiveAttackOrder | int | 开火时卸载指定数量乘员并下达攻击命令
+[turret_NAME] warmup | 时间(帧或s) | 预热时间
+[turret_NAME] warmupCallDownRate | float | 未射击时预热的回落速率，CallDown 为实际键名
+[turret_NAME] warmupNoReset | bool | 射击后不重置已积累的预热
+[turret_NAME] warmupShootDelayTransfer | float | 把预热计入后续射击间隔的比例
+[turret_NAME] warmupStartEffect | 效果引用/列表 | 开始预热时产生的特效
+[turret_NAME] x | float | 相对所属对象的横向坐标
+[turret_NAME] y | float | 相对所属对象的纵向坐标
+[turret_NAME] yAxisScaling | float | 炮塔纵轴坐标/表现缩放
+[通用预处理] @copyFromSection | string(随后可能有专用校验) | 从同一配置中的其他节复制字段，可用来复用 template 节
+
+逻辑函数/引用
+memory | 命名空间，不能独立求值 | 已声明单位内存的命名空间；使用 memory.变量名，不能把 memory 单独当布尔值
+self.readUnitMemory | 由 type 参数决定 | 按字符串名称读取当前上下文单位内存；type 决定结果类型，default 提供缺失时的值，index 用于数组
+eventData | 由 type 参数决定 | 读取本次事件携带的数据；通常由 sendMessageWithData 写入，只在有事件上下文时有意义
+self.playername | string | 单位所属玩家名称
+self.teamname | string | 单位所属队伍名称
+debug | string | 把表达式及其求值信息格式化为调试文本
+debugPassthrough | 与被返回的输入表达式同类型 | 求值并输出调试信息，同时原样返回该表达式的结果类型和值；调试显示受游戏设置约束
+select | 与被返回的输入表达式同类型 | 条件选择：第一个参数为 bool，第二、三个参数必须同类型；返回被选中的值
+str | string | 把一个表达式转成字符串
+substring | string | 截取字符串；start 起始位置，end 结束边界，不含 end 位置；越界处理以实现为准
+lowercase | string | 将字符串转为小写
+uppercase | string | 将字符串转为大写
+int | number | 把数值截断成整数值，结果仍属于 number 类型
+rnd | number | 在 min 与 max 之间取随机数；使用引擎的确定性随机路径，不能把它当持久变量
+max | number | 返回两个数值中的较大值
+min | number | 返回两个数值中的较小值
+length | number | 返回字符串长度；数组长度使用 .size 或 .length
+squareRoot | number | 返回数值平方根
+distanceSquared | number | 返回两组平面坐标间距离的平方，适合无需开方的范围比较
+cos | number | 角度的余弦，角度使用度
+sin | number | 角度的正弦，角度使用度
+distance | number | 返回两组平面坐标间的距离
+direction | number | 返回从坐标一指向坐标二的方向角
+distanceBetweenSquared | number | 返回两个单位/标记位置之间平面距离的平方
+distanceBetween | number | 返回两个单位/标记位置之间的平面距离
+directionBetween | number | 返回从 unit1 指向 unit2 的方向角
+createMarker | unit | 创建仅用于表达式传递位置/方向/队伍的标记引用，不会生成战斗单位
+true | bool | 布尔常量真
+false | bool | 布尔常量假
+self.underwater, self.isUnderwater | bool | 判断当前单位是否处于水下高度
+self.gound, self.ground, self.isAtGroundHeight | bool | 判断当前单位是否处于地面高度；gound 是历史拼写，ground 与 isAtGroundHeight 也是已注册别名
+self.height, self.z | number/bool(取决于参数) | 当前单位高度，z 是别名
+self.flying, self.isFlying | bool | 判断当前单位是否处于飞行高度
+self.isMoving | bool | 判断当前单位是否正在移动
+self.hasActiveWaypoint | bool | 是否有当前执行的航点/命令；type 可限定命令类型
+self.numberOfQueuedWaypoints | number/bool(取决于参数) | 命令队列中的航点数量；type 可限定类型
+self.speed | number/bool(取决于参数) | 当前实际移动速度
+self.maxspeed, self.isAtTopSpeed | bool | 判断是否达到最高移动速度；这是布尔判断，读取速度上限使用 self.maxMoveSpeed
+self.isInMap | bool | 判断单位位置是否位于地图有效边界内
+self.inwater, self.isInWater | bool | 判断单位是否接触水面/水域
+self.overwater, self.isOverwater | bool | 判断单位所在地块是否为水地形
+self.isOverLiquid | bool | 判断当前位置是否属于液体地形，范围可包含水或熔岩
+self.isOverClift, self.isOverCliff | bool | 判断当前位置是否为悬崖；isOverCliff 是兼容别名
+self.isOverPassableTile | bool | 判断当前位置对指定移动类型是否可通行；type 是 LAND 等移动类型
+self.isOverOpenLand | bool | 对 LAND 可通行性进行预设判断；该注册项已锁定参数
+self.tags, self.hasTags | bool | 检查单位标签是否与 includes 提供的标签匹配
+self.globalTeamTags, self.hasGlobalTeamTags | bool | 检查所属队伍的全局标签
+self.hasFlag | bool | 检查资源位标记 id 是否设置；id 使用 0 至 31
+self.energy | number/bool(取决于参数) | 当前能量
+self.energyIncludingQueued | number/bool(取决于参数) | 考虑排队资源预留后的能量值
+self.isEnergyFull | bool（预设判断参数） | 判断能量是否已满，预设 full=true
+self.isEnergyEmpty | bool（预设判断参数） | 判断能量是否耗尽，预设 empty=true
+self.transportingCount | number/bool(取决于参数) | 运输舱内符合过滤条件的单位数量；slot 与 withTag 可限制范围
+self.transportingUnitWithTags | bool | 运输舱中是否有符合 includes 标签的单位
+self.isTransportUnloading | bool | 是否正在执行卸载运输单位
+self.priceCredits | number/bool(取决于参数) | 当前单位造价中的 credits 数量，不包含全部自定义资源价值
+self.hp | number/bool(取决于参数) | 当前生命值
+self.maxHp | number/bool(取决于参数) | 当前生命上限
+self.maxShield | number/bool(取决于参数) | 当前护盾上限
+self.maxEnergy | number/bool(取决于参数) | 当前能量上限
+self.id | number/bool(取决于参数) | 单位的引擎内部数字标识，不能当作单位类型名称
+self.teamId | number/bool(取决于参数) | 所属队伍的数字编号
+self.teamDefeatedTech | bool | 所属队伍是否触发缺少关键发展能力的技术失败状态，具体判定由游戏队伍逻辑决定
+self.teamWipedOut | bool | 所属队伍是否被消灭
+self.teamVictory | bool | 所属队伍是否取得胜利
+self.isEnergyRecharging | bool | 是否处于必须恢复能量的锁定充能状态
+self.x | number/bool(取决于参数) | 当前平面横坐标
+self.y | number/bool(取决于参数) | 当前平面纵坐标
+self.dir | number/bool(取决于参数) | 当前朝向角度
+self.maxMoveSpeed | number/bool(取决于参数) | 当前移动速度上限
+self.builtAmount | number/bool(取决于参数) | 单位建造完成比例，完整单位通常为 1
+self.completed | bool | 单位是否完成建造
+self.shield | number/bool(取决于参数) | 当前护盾量
+self.ammo | number/bool(取决于参数) | 当前弹药资源数量
+self.isAmmoEmpty | bool（预设判断参数） | 判断弹药是否耗尽，预设 empty=true
+self.ammoIncludingQueued | number/bool(取决于参数) | 考虑排队资源预留后的弹药值
+self.resource | number/bool(取决于参数) | 读取指定资源；可写 self.resource(type='资源名') 或 self.resource.资源名，资源须先存在
+self.queueSize | number/bool(取决于参数) | 生产/动作队列大小；withActionTag 可筛选动作标签
+self.numberOfConnections | number/bool(取决于参数) | 注册存在的连接计数接口；本包未找到为普通 Mod 加载连接定义的入口，按内部/保留能力处理，不列为可直接依赖的普通功能
+self.numberOfAttachedUnits | number/bool(取决于参数) | 挂载槽中的单位数量；可按标签或槽名过滤
+self.hasParent | bool | 是否具有父单位；withTag 可检查父单位标签
+self.hasResources | bool | 按资源价格语法判断本单位/队伍是否拥有足量资源；参数不是普通函数参数注解表
+self.isResourceLargerThan | bool | 判断 source > multiplyTargetBy * (compareTarget + byMoreThan)；source 与 compareTarget 都必须提供资源名
+self.kills | number/bool(取决于参数) | 当前单位击杀计数
+self.timeAlive | number/bool(取决于参数) | 出生以来经过的时间；无条件参数时返回秒数，可用 laterThanSeconds/withinSeconds 判断
+self.lastConverted | number/bool(取决于参数) | 上次转换单位类型以来经过的时间；可返回秒数或时间条件
+self.customTimer | number/bool(取决于参数) | 自定义计时器经过的时间，resetCustomTimer 可重置；可返回秒数或时间条件
+self.hasTakenDamage | number/bool(取决于参数) | 距离上次受伤的时间；支持时间条件，名称不代表无参数必然返回 bool
+self.isAttacking | bool | 当前是否有攻击目标并处于攻击状态
+self.isReversing | bool | 是否正在倒车
+self.isOnNeutralTeam | bool | 所属队伍是否为中立队，预设 team=-1 且参数锁定
+self.isControlledByAI | bool | 当前队伍是否由 AI 控制
+numberOfUnitsInTeam, self.numberOfUnitsInTeam | number/bool(取决于参数) | 统计本队单位；支持标签、半径、是否含未完成建筑及生产队列等过滤
+hasUnitInTeam, self.hasUnitInTeam | bool（预设判断参数） | 本队匹配单位数大于零的预设布尔判断
+noUnitInTeam, self.noUnitInTeam | bool（预设判断参数） | 本队匹配单位数为零的预设布尔判断
+numberOfUnitsInNeutralTeam, self.numberOfUnitsInNeutralTeam | number/bool(取决于参数) | 统计中立队符合过滤条件的单位
+numberOfUnitsInAggressiveTeam, self.numberOfUnitsInAggressiveTeam | number/bool(取决于参数) | 统计具有敌意的特殊中立队符合过滤条件的单位
+numberOfUnitsInAllTeams, self.numberOfUnitsInAllTeams | number/bool(取决于参数) | 统计所有队伍符合过滤条件的单位
+numberOfUnitsInEnemyTeam, self.numberOfUnitsInEnemyTeam | number/bool(取决于参数) | 统计敌对队伍符合过滤条件的单位
+numberOfUnitsInAllyTeam, self.numberOfUnitsInAllyTeam, numberOfUnitsInAllyNotOwnTeam, self.numberOfUnitsInAllyNotOwnTeam | number/bool(取决于参数) | 统计盟友队伍（不含本队）符合过滤条件的单位；AllyNotOwn 是明确含义的别名
+game.nukesEnabled | bool | 判断当前对局规则是否允许核武；预设参数已锁定
+game.mapWidth | number | 地图宽度，按世界坐标尺度返回
+game.mapHeight | number | 地图高度，按世界坐标尺度返回
+thisActionIndex, index | number | alsoTriggerActionRepeat 等动作重复执行的当前索引；普通上下文不应依赖它
+attachment | unit | 取得匹配槽名或标签的挂载单位；无匹配时可能为空
+parent | unit | 取得当前单位的父级引用，常用于挂载或运输关系
+transporting | unit | 取得指定 slot 中的被运输单位，索引从 0 开始
+activeWaypointTarget | unit | 取得当前命令所指向的目标单位/目标位置引用
+attacking | unit | 取得当前攻击目标引用
+customTarget1 | unit | 取得动作 setCustomTarget1 保存的引用
+customTarget2 | unit | 取得动作 setCustomTarget2 保存的引用
+lastDamagedBy | unit | 取得最近一次伤害来源单位引用
+nearestUnit | unit | 在范围内寻找最近匹配单位；支持标签、排除标签、队伍关系和未完成建筑过滤
+globalSearchForFirstUnit | unit | 全图寻找第一个匹配单位；顺序是内部遍历顺序，不保证最近，频繁调用成本较高
+nullUnit | unit | 空单位引用
+null | unit | 空值/空单位引用；必须与接收位置的类型相容
+getOffsetAbsolute | unit | 以当前引用位置为基点，按世界坐标 x/y/height 偏移得到位置标记
+getOffsetRelative | unit | 以当前引用位置和朝向为基点作局部偏移；dirOffset 可额外旋转
+getAsMarker | unit | 把单位引用转换为保留位置等信息的标记引用
+thisActionTarget | unit | 本次动作的目标引用；需在有动作目标的上下文使用
+eventSource | unit | 本次事件的来源单位引用；需在有事件的上下文使用
+
+地图属性
+[触发器通用] activateIds | 待激活的其他触发器 ID 列表；与 alsoActivate 为同向连接别名
+[触发器通用] activatedBy | 依赖的上游触发器 ID 列表
+[changeCredits] add | 增加资金的整数数量，可使用负数表示扣减
+[teamTags] addTeamTags | 给指定队伍增加全局标签列表
+[team_info] ai | AI 类型提示；survival 启用生存相关队伍行为
+[触发器通用] allToActivate | 要求所有激活依赖同时满足，而非任一满足
+[team_info] allyGroup | 设置队伍所属同盟组编号
+[触发器通用] alsoActivate | 本触发器激活时联动的目标 ID 列表
+[team_info] basicAI | 键存在即请求基础 AI 行为；不是普通 true/false 开关
+[触发器通用] comment | 被解析器认可的备注，不是可执行脚本
+[team_info] credits | 指定队伍的初始资金
+[触发器通用] deactivatedBy | 会使本触发器失活的上游 ID 列表
+[触发器通用] debugMessage | 激活时输出调试信息
+[触发器通用] delay | 从地图开始计时的初始延迟；地图时间裸数是毫秒，也支持 ms 和 s
+[rotate 初始对象] dir | 把区域内单位旋转到指定角度
+[team_info] disabledAI | 键存在即请求禁用 AI；不要用 false 来表达关闭该请求，应删除该属性
+[map_info] fog | 迷雾模式：none、map 或 los；它是 map_info 属性，不是普通单位参数
+[触发器通用] globalMessage | 激活时显示给所有玩家的文本，支持地图文本本地化
+[触发器通用] globalMessage_delayPerChar | 消息逐字出现的时间，支持 slow 预设或地图时间值
+[触发器通用] globalMessage_textColor | 全局消息颜色
+[触发器通用] id | 显式触发器 ID；未指定时使用对象名
+[unitDetect] includeIncomplete | 把未建成单位也纳入检测
+[相机轨道对象] index | 相机轨道顺序编号，配合 camera_pan 类型
+[map_info] introText | 进入地图时的介绍文本，可使用本地化后缀及换行
+[team_info] lockAiDifficulty | 锁定 AI 难度编号；须与当前游戏支持的难度范围匹配
+[unitDetect] maxUnits | 匹配单位数允许的上限
+[unitDetect] minUnits | 匹配单位数下限；无 maxUnits 时通常默认 1，设置 maxUnits 后默认 0
+[unitDetect] onlyAttack | 只计算具有攻击能力的单位
+[unitDetect] onlyAttackAir | 只计算能够攻击空中目标的单位
+[unitDetect] onlyBuilders | 只计算建造单位
+[unitDetect] onlyEmptyQueue | 只计算生产/动作队列为空的单位
+[unitDetect / move / unitRemove] onlyIfEmpty | 只匹配运输舱为空的单位；具体适用范围由对应触发器决定
+[unitDetect] onlyMainBuildings | 只计算主要建筑
+[unitDetect] onlyOnResourcePool | 只计算位于资源点的建筑/单位
+[unitDetect] onlyTechLevel | 限制单位科技等级
+[unitDetect] onlyWithTag | 限定单位标签
+[unitDetect] onlybuildings | 只计算建筑；onlyBuildings 为可用别名
+[unitDetect] onlyBuildings | onlybuildings 的兼容别名
+[unitDetect] onlyidle | 只计算空闲单位；onlyIdle 为可用别名
+[unitDetect] onlyIdle | onlyidle 的兼容别名
+[teamTags] removeTeamTags | 从指定队伍移除全局标签列表
+[触发器通用] repeatCount | 最大激活次数
+[触发器通用] repeatDelay | 重复激活间隔，使用地图时间语法
+[触发器通用] resetActivationAfter | 激活后经过指定时间恢复可再次激活状态
+[changeCredits] set | 把指定队伍资金直接设置为整数值
+[map_info] shareFogWithAllies | 是否共享同盟视野
+[触发器通用] showOnMap | 激活时在地图上产生提示
+[unitAdd] spawnUnits | 在对象位置生成单位列表；地图上下文没有单位 Mod 元数据，部分生成参数不能使用
+[map_info] startWithMusic | 地图开始播放的音乐名/路径
+[mapText] style | 文字样式；本包识别 arrow 箭头提示样式
+[map_info] survivalWaves | 多行生存波次脚本，使用独立的 +时间 / !选项 语法
+[map_info] survivalWavesClassic | 选择经典生存波次生成模式
+[move] target | 移动目标对象的名称/ID；目标必须能在地图对象中找到
+[多种对象] team | 队伍编号；team_info、单位生成/检测/移动等分别解释，未加载的队伍会失败或被跳过
+[teamTagDetect] teamTag | 待检测的队伍标签表达式
+[objective / mapText] text | 目标说明或地图绘制文字
+[mapText] textColor | 地图文字颜色
+[mapText 相关绘制] textOffsetX | 文字相对对象位置的横向偏移
+[mapText 相关绘制] textOffsetY | 文字相对对象位置的纵向偏移
+[mapText] textSize | 文字字号
+[map_info / 单位对象] type | map_info 中指定 skirmish、survival 等模式；单位对象中用于单位子类型。触发器种类使用 XML object 的 type 属性
+[unitDetect] unitType | 按单位内部类型名筛选
+[move] unload | 到达目标时卸载运输单位；该分支按属性存在性判断
+[触发器通用] warmup | 激活条件需要持续满足的时间，使用地图时间语法
+[触发器通用] whenActivatedIds | activatedBy 的兼容依赖别名
+[map_info] winCondition | 胜利判定：none、allUnitsAndBuildings、allBuildings、mainBuildings、commandCenter、requiredObjectives；mainBuilings 为历史别名
+[camera_start] zoomTo | 地图初始镜头缩放值
+[tile] showFog | 在指定地块位置揭开一定范围迷雾
+[tile / 单位对象] unit | 生成游戏内置单位的内部名称
+[tile / 单位对象] customUnit | 生成自定义单位的内部名称
+[tile / 单位对象] randomRotate | 为生成单位设置随机朝向；按属性存在性判断
+[tile] water | 水地块通行属性
+[tile] water-bridge | 水面桥通行属性
+[tile] lava | 熔岩地块属性
+[tile] lava-cliff | 熔岩悬崖地块属性
+[tile] cliff-soft | 软悬崖地形属性
+[tile] cliff | 悬崖地形属性
+[tile] large-cliff | 大型悬崖地形属性
+[tile] trees | 树木地形/通行属性
+[tile] res_pool | 资源点标记，供采集建筑放置判断使用
+[tile] tree | 读取后未见有效设置的旧字段，按保留项处理
+[tile] small-rock | 小型石块阻挡/通行代价属性
+[tile] large-rock | 大型石块阻挡属性
+[tile] block-land | 阻挡地面单位通行
+[tile] block-buildings | 阻止在此建造建筑
+[tile] randomTileBy | 允许随机使用连续图块变体的数量
+[tile] randomTileFixedOffset | 随机图块变体的固定索引偏移
+[tileset] embedded_png | 内嵌 PNG 图像数据的 tileset 属性
