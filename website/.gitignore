@@ -1,3 +1,12 @@
 node_modules/
 .sites-runtime/
 *.log
+
+native/site.zip
+native/site/
+native/windows/bin/
+native/windows/obj/
+native/android/build/
+native/android/assets/
+*.keystore
+*.jks

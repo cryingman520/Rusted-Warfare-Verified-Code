@@ -1,0 +1,10 @@
+dist/
+node_modules/
+.sites-runtime/
+uploader/bin/
+uploader/obj/
+*.log
+*.key
+*.pem
+*.bin
+config.json

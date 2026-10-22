@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Build units and share research resources · Rusted Warfare Mod Workshop</title><meta name="description" content="Connect construction menus, team resources and one-time upgrades"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/en/learn/academy-11/"><link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/learn/academy-11/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="Build units and share research resources"><meta property="og:description" content="Connect construction menus, team resources and one-time upgrades"><meta property="og:url" content="https://rwmod.noaushio.uk/en/learn/academy-11/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Build units and share research resources","description":"Connect construction menus, team resources and one-time upgrades","inLanguage":"en","url":"https://rwmod.noaushio.uk/en/learn/academy-11/","isPartOf":{"@type":"WebSite","name":"Rusted Warfare Mod Workshop","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=en">Rusted Warfare Mod Workshop</a><div class="detail-actions"><a href="/en/tutorials/">All courses</a><a href="/?lang=en#editors">Creative tools</a><a href="/learn/academy-11/">中文</a></div></header><main class="section-wrap page-narrow"><h1>Build units and share research resources</h1><p>Connect construction menus, team resources and one-time upgrades</p><section><h2>Place the building in the sandbox</h2><p>The outpost uses isBuilding and footprint rectangles with movementType:NONE, place it from the sandbox first and add builder access after its own behavior works</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+isBuilding: true
+footprint: -1,-1,1,1
+constructionFootprint: -1,-1,1,1
+
+[movement]
+movementType: NONE
+moveSpeed: 0</code></pre></section><section><h2>Use internal names in production menus</h2><p>A canBuild name refers to the unit core.name rather than its display label, pos controls menu placement, start with the target unit cost and build time</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[canBuild_rover]
+name: rwa04Rover
+pos: 1</code></pre></section><section><h2>Separate team resources from unit state</h2><p>l04data is shared research data while upgraded belongs to one rover, the outpost converts 100 credits into one data and a rover spends it on an upgrade, do not address the resource as memory.l04data</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>
+[global_resource_l04data]
+displayName: 研究数据 / Research Data
+displayInHud: true
+
+[action_research]
+text: 记录数据 / Record data
+price: credits=100
+buildSpeed: 2s
+addResources: l04data=1</code></pre></section><section><h2>Prevent repeated purchases on one rover</h2><p>Use a lock message for the interface and an execution condition to check the state again, the turret reads upgraded afterward, verify that purchasing on one rover does not upgrade another</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_upgrade]
+text: 装填改良弹 / Improve ammunition
+price: l04data=1
+buildSpeed: 1s
+isLocked: if memory.upgraded
+isLockedMessage: 已完成改良 / Already upgraded
+requireConditional: if not memory.upgraded
+setUnitMemory: upgraded=true</code></pre></section><div class="lesson-check"><h2>Try it yourself</h2><p>Raise the upgrade cost to two data and check insufficient-resource and already-upgraded states</p></div><p><a class="btn btn-dark" href="/?lang=en#learn/academy-11">Open interactive lesson and download the companion mod</a></p></main><footer class="section-wrap"><a href="/?lang=en#editors">Create a mod →</a> · <a href="https://download.noaushio.uk/">Downloads</a></footer></body></html>

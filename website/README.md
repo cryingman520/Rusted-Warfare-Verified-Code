@@ -11,7 +11,7 @@ Live site: https://rwmod.noaushio.uk
 - Map trigger editor, preserving imported TMX layers and references
 - Separate unit pixel editor and map tile image editor, with PNG, sprite sheets, layers, frames, undo and editable projects
 - Free cloud image generation / image-to-image via AI Horde, and zero-priced OpenRouter chat with retrieval from 1212 reference and lesson records
-- 18 new practical chapters across beginner, intermediate and mastery paths, 6 complete original tutorial packs, plus 8 original guides
+- 24 practical chapters across beginner, intermediate, veteran and mastery paths, 8 complete original tutorial packs, plus 8 original guides
 - Select individual comments during mod export, remember the choice or restore the prompt in Settings
 
 ## Run locally

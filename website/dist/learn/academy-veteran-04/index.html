@@ -1,0 +1,23 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>分清挂在车上的设备与装在舱里的乘员 · 铁锈战争模组工坊</title><meta name="description" content="一个运输车同时携带电台与护卫，明确位置、容量和卸载职责"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-veteran-04/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-veteran-04/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="分清挂在车上的设备与装在舱里的乘员"><meta property="og:description" content="一个运输车同时携带电台与护卫，明确位置、容量和卸载职责"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-veteran-04/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"分清挂在车上的设备与装在舱里的乘员","description":"一个运输车同时携带电台与护卫，明确位置、容量和卸载职责","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-veteran-04/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-veteran-04/">English</a></div></header><main class="section-wrap page-narrow"><h1>分清挂在车上的设备与装在舱里的乘员</h1><p>一个运输车同时携带电台与护卫，明确位置、容量和卸载职责</p><section><h2>先按用途选择关系</h2><p>电台需要固定出现在车顶，随车移动并显示专用按钮，适合挂载，护卫需要进入运输舱并在目的地下车，适合运输，同一辆车可以同时拥有两种关系，但不要把同一个单位重复当作两类乘员管理</p></section><section><h2>用标签限制可装载对象</h2><p>护卫带 v07cargo 标签并占一个槽，指挥车只接收此标签的陆地单位，容量是两个，标签筛选解决谁能上车，transportSlotsNeeded 解决上车占多少位置</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+maxTransportingUnits: 2
+transportUnitsRequireTag: v07cargo
+transportUnitsRequireMovementType: LAND
+transportUnitsEachUnitAlwaysUsesSingleSlot: true
+transportUnitsAddUnloadOption: true
+transportUnitsUnloadDelayBetweenEachUnit: 1s
+
+# 护卫的 core 段 / In the escort core section
+# tags: v07cargo
+# transportSlotsNeeded: 1</code></pre></section><section><h2>挂载位置与乘员容量分别观察</h2><p>radio 槽的 x、y 控制电台相对车体的位置，运输舱容量由 core 管理，先让车转向观察电台是否跟随，再装入两辆护卫查看乘员计数，避免用运输容量解释电台的显示位置</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[attachment_radio]
+x: 0
+y: -3
+height: 1
+lockRotation: true
+setDrawLayerOnTop: true
+onCreateSpawnUnitOf: rwa07Radio
+showAllActionsFrom: true
+
+[action_report]
+text: 查看乘员 / Passenger count
+buildSpeed: 0
+showMessageToPlayer: Passengers=%{self.transportingCount}</code></pre></section><section><h2>卸载要考虑目的地空间</h2><p>先在空旷陆地进行装载和卸载，再检查靠近障碍物的情况，运输关系还涉及死亡、换队和变形时如何处理乘员，设计特殊行为前先写出预期，再查对应选项，避免照搬另一种运输单位的规则</p></section><div class="lesson-check"><h2>动手练习</h2><p>新增一类没有 v07cargo 标签的车，观察它与护卫的装载差别</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-veteran-04">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

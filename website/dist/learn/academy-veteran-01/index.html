@@ -1,0 +1,33 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>分清车载库存、队伍储备与单位记忆 · 铁锈战争模组工坊</title><meta name="description" content="用两辆指挥车观察数据属于谁，避免一处修改影响整个队伍"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-veteran-01/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-veteran-01/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="分清车载库存、队伍储备与单位记忆"><meta property="og:description" content="用两辆指挥车观察数据属于谁，避免一处修改影响整个队伍"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-veteran-01/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"分清车载库存、队伍储备与单位记忆","description":"用两辆指挥车观察数据属于谁，避免一处修改影响整个队伍","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-veteran-01/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-veteran-01/">English</a></div></header><main class="section-wrap page-narrow"><h1>分清车载库存、队伍储备与单位记忆</h1><p>用两辆指挥车观察数据属于谁，避免一处修改影响整个队伍</p><section><h2>先问这份数据属于谁</h2><p>车载补给跟随一辆车，车队储备属于整个队伍，收到多少次信号则只是这辆车的记录，先按用途分开，再选择 resource、global_resource 或 memory，变量名相同不代表数据就会共享</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[resource_v07cells]
+displayName: 车载补给 / Onboard supplies
+displayInHud: false
+
+[global_resource_v07stock]
+displayName: 车队储备 / Fleet stock
+displayInHud: true
+</code></pre></section><section><h2>资源适合收取，记忆适合记录状态</h2><p>price 可以直接要求一份资源，数量不足时就不能支付，memory 用来保存计数和开关，不会自动成为造价或库存，不要用一个布尔值代替可消耗数量</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+defineUnitMemory: number signals
+
+[hiddenAction_initialize]
+autoTriggerOnEvent: created
+setUnitMemory: signals=0
+addResources: v07cells=3
+
+[action_useSupply]
+text: 使用一份补给 / Use one supply
+price: v07cells=1
+buildSpeed: 1s
+showMessageToPlayer: Supply used</code></pre></section><section><h2>用两个步骤体现资源流向</h2><p>先把 100 资金转换成一份队伍储备，再由任意指挥车领取三份本车补给，两辆车都能支付队伍储备，只有领取的车增加本地库存，两个按钮比一个同时操作多种资源的按钮更容易观察</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_buyStock]
+text: 采购储备 / Buy stock
+price: credits=100
+buildSpeed: 2s
+addResources: v07stock=1
+
+[action_reload]
+text: 领取补给 / Load supplies
+price: v07stock=1
+buildSpeed: 2s
+addResources: v07cells=3</code></pre></section><section><h2>用成对单位排查作用域</h2><p>让 A 采购、B 领取，再分别查看状态，A 和 B 看到的车队储备应一致，车载补给和信号数则可以不同，记录每一步前后的值，能迅速区分资源扣错对象和显示文字写错</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_report]
+text: 查看状态 / Status
+buildSpeed: 0
+showMessageToPlayer: Signals=%{memory.signals}, supplies=%{self.resource.v07cells}, fleet stock=%{self.resource.v07stock}</code></pre></section><div class="lesson-check"><h2>动手练习</h2><p>画一张资金到储备再到车载补给的流向图，标出每一步由谁持有</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-veteran-01">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

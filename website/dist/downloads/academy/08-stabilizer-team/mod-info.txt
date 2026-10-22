@@ -1,0 +1,4 @@
+[mod]
+title: Stabilizer Team
+description: Ground and anti-air vehicles share state and effects, with a two-condition map reinforcement fragment
+minVersion: 1.15

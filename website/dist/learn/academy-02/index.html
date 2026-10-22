@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>把一辆车拆成四个基础部分 · 铁锈战争模组工坊</title><meta name="description" content="分清核心、图像、攻击与移动，学会安全修改数值"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-02/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-02/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="把一辆车拆成四个基础部分"><meta property="og:description" content="分清核心、图像、攻击与移动，学会安全修改数值"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-02/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"把一辆车拆成四个基础部分","description":"分清核心、图像、攻击与移动，学会安全修改数值","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-02/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-02/">English</a></div></header><main class="section-wrap page-narrow"><h1>把一辆车拆成四个基础部分</h1><p>分清核心、图像、攻击与移动，学会安全修改数值</p><section><h2>先读核心参数</h2><p>name 是其他配置引用的代号，displayText 才是玩家看到的名字，price 是造价，maxHp 是生命上限，mass 和 radius 影响碰撞表现，第一次练习先保留这些碰撞参数</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+name: rwa01Scout
+displayText: 巡逻侦察车 / Patrol Scout
+price: 250
+maxHp: 200
+mass: 2000
+radius: 11</code></pre></section><section><h2>让不同段落各管一件事</h2><p>graphics 决定使用哪张图，attack 决定能打谁，movement 决定怎么走，把键放到对应段落中，同名键在不同段落下可能具有不同含义</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[graphics]
+image: body.png
+
+[attack]
+canAttack: true
+canAttackFlyingUnits: false
+canAttackLandUnits: true
+canAttackUnderwaterUnits: false
+
+[movement]
+movementType: LAND
+moveSpeed: 1.2</code></pre></section><section><h2>理解数值与单位</h2><p>布尔开关使用 true 或 false，颜色采用十六进制，时间写 8s 便于直接看懂，buildSpeed 的裸数是进度速率，不能把 8 和 8s 当成同一回事</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+buildSpeed: 8s
+
+[attack]
+shootDelay: 1s
+
+[projectile_shell]
+color: #FFE1B0</code></pre></section><section><h2>用护卫车做对照</h2><p>护卫车的生命更高但移动更慢，这让两辆车有不同用途，练习时把侦察车生命从 200 改到 240，再用同样的敌人测试，记录改动前后能承受多少次命中</p></section><div class="lesson-check"><h2>动手练习</h2><p>把侦察车改为 240 生命、300 造价，解释这两项改动对玩法的影响</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-02">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

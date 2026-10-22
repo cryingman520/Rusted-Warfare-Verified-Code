@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Separate inventory, team stock and unit memory · Rusted Warfare Mod Workshop</title><meta name="description" content="Use two carriers to see which data is local and which data belongs to the team"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/en/learn/academy-veteran-01/"><link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/learn/academy-veteran-01/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="Separate inventory, team stock and unit memory"><meta property="og:description" content="Use two carriers to see which data is local and which data belongs to the team"><meta property="og:url" content="https://rwmod.noaushio.uk/en/learn/academy-veteran-01/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Separate inventory, team stock and unit memory","description":"Use two carriers to see which data is local and which data belongs to the team","inLanguage":"en","url":"https://rwmod.noaushio.uk/en/learn/academy-veteran-01/","isPartOf":{"@type":"WebSite","name":"Rusted Warfare Mod Workshop","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=en">Rusted Warfare Mod Workshop</a><div class="detail-actions"><a href="/en/tutorials/">All courses</a><a href="/?lang=en#editors">Creative tools</a><a href="/learn/academy-veteran-01/">中文</a></div></header><main class="section-wrap page-narrow"><h1>Separate inventory, team stock and unit memory</h1><p>Use two carriers to see which data is local and which data belongs to the team</p><section><h2>Decide who owns the data</h2><p>Onboard supplies belong to one carrier, fleet stock belongs to the team, and the signal count is a record kept by one vehicle, choose local resources, global resources or memory according to ownership</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[resource_v07cells]
+displayName: 车载补给 / Onboard supplies
+displayInHud: false
+
+[global_resource_v07stock]
+displayName: 车队储备 / Fleet stock
+displayInHud: true
+</code></pre></section><section><h2>Use resources for costs and memory for state</h2><p>A price can directly require a resource and cannot be paid without enough stock, memory stores counters and switches and does not automatically act as a spendable balance</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+defineUnitMemory: number signals
+
+[hiddenAction_initialize]
+autoTriggerOnEvent: created
+setUnitMemory: signals=0
+addResources: v07cells=3
+
+[action_useSupply]
+text: 使用一份补给 / Use one supply
+price: v07cells=1
+buildSpeed: 1s
+showMessageToPlayer: Supply used</code></pre></section><section><h2>Make the resource flow explicit</h2><p>First convert 100 credits into one team stock, then let any carrier exchange that stock for three onboard supplies, the shared stock is available to both carriers while only the receiving carrier gains local inventory</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_buyStock]
+text: 采购储备 / Buy stock
+price: credits=100
+buildSpeed: 2s
+addResources: v07stock=1
+
+[action_reload]
+text: 领取补给 / Load supplies
+price: v07stock=1
+buildSpeed: 2s
+addResources: v07cells=3</code></pre></section><section><h2>Compare two units to inspect scope</h2><p>Buy stock with A and collect supplies with B, both should report the same fleet stock while their inventory and signal counts may differ, compare values before and after each step</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_report]
+text: 查看状态 / Status
+buildSpeed: 0
+showMessageToPlayer: Signals=%{memory.signals}, supplies=%{self.resource.v07cells}, fleet stock=%{self.resource.v07stock}</code></pre></section><div class="lesson-check"><h2>Try it yourself</h2><p>Draw the flow from credits to team stock to inventory, marking the owner at each stage</p></div><p><a class="btn btn-dark" href="/?lang=en#learn/academy-veteran-01">Open interactive lesson and download the companion mod</a></p></main><footer class="section-wrap"><a href="/?lang=en#editors">Create a mod →</a> · <a href="https://download.noaushio.uk/">Downloads</a></footer></body></html>

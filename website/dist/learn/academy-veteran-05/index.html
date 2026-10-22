@@ -1,0 +1,32 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>让效果说明状态，让继承维护一致性 · 铁锈战争模组工坊</title><meta name="description" content="把枪口光、车体动画和共用配置组织成容易修改的一套规则"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-veteran-05/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-veteran-05/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="让效果说明状态，让继承维护一致性"><meta property="og:description" content="把枪口光、车体动画和共用配置组织成容易修改的一套规则"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-veteran-05/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"让效果说明状态，让继承维护一致性","description":"把枪口光、车体动画和共用配置组织成容易修改的一套规则","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-veteran-05/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-veteran-05/">English</a></div></header><main class="section-wrap page-narrow"><h1>让效果说明状态，让继承维护一致性</h1><p>把枪口光、车体动画和共用配置组织成容易修改的一套规则</p><section><h2>先确认效果服务什么信息</h2><p>稳定按钮出现一次扩散光，表示模式切换，开火时枪口光表示射击瞬间，轻微待机缩放只是增加生命感，效果应当帮助玩家理解状态，不能靠很强的闪烁掩盖模式没有真正改变</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_focus]
+spawnEffects: CUSTOM:signal
+
+[turret_main]
+shoot_flame: CUSTOM:signal
+
+[effect_signal]
+image: glow.png
+life: 24
+alpha: 0.8
+scaleFrom: 0.6
+scaleTo: 1.5
+fadeOut: true
+attachedToUnit: false
+color: #8AE9D1</code></pre></section><section><h2>从小幅度关键帧开始</h2><p>待机动画只让车体在 1 与 1.03 倍之间往返，不改变真实碰撞和生命值，先观察缩放能否看清，再决定是否保留，关键帧中的 scale 属于动画表现，不是单位攻击或碰撞半径</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[animation_idlePulse]
+onActions: idle
+pingPong: true
+body_0s: {scale:1}
+body_1s: {scale:1.03}</code></pre></section><section><h2>变体只覆盖自己负责的差异</h2><p>防空车继承 firecontrol.ini，保留模式按钮、记忆初始化和效果，只覆盖名字、价格、贴图和目标类型，修改基础效果后两个单位都能受益，若想单独改变某个变体，再在它的对应段落覆盖</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+copyFrom: firecontrol.ini
+name: rwa08Skyguard
+displayText: 防空火控车 / Skyguard
+price: 650
+maxHp: 320
+
+[graphics]
+image: skyguard.png
+
+[attack]
+canAttackFlyingUnits: true
+canAttackLandUnits: false
+maxAttackRange: 210</code></pre></section><section><h2>维护一张引用清单</h2><p>改名时依次跟踪 INI 继承文件、图片路径、炮塔的弹体名、CUSTOM 特效名、动作名和动画名，程序能找到文件不代表每一条名称引用都正确，保留公共基础文件，避免让 A 继承 B、B 又继承 A</p></section><div class="lesson-check"><h2>动手练习</h2><p>把共用光效改成另一种颜色，预测两个变体的变化，再仅覆盖防空车的颜色</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-veteran-05">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

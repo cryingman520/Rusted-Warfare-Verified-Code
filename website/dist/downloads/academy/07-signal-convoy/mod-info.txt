@@ -1,0 +1,4 @@
+[mod]
+title: Signal Convoy
+description: A carrier, radio pod and escort for learning resource scopes, messages and transport relationships
+minVersion: 1.15

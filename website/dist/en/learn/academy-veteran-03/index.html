@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Keep weapon modes and target roles consistent · Rusted Warfare Mod Workshop</title><meta name="description" content="Combine alternate projectiles, mode memory and ground or air filters"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/en/learn/academy-veteran-03/"><link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/learn/academy-veteran-03/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="Keep weapon modes and target roles consistent"><meta property="og:description" content="Combine alternate projectiles, mode memory and ground or air filters"><meta property="og:url" content="https://rwmod.noaushio.uk/en/learn/academy-veteran-03/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Keep weapon modes and target roles consistent","description":"Combine alternate projectiles, mode memory and ground or air filters","inLanguage":"en","url":"https://rwmod.noaushio.uk/en/learn/academy-veteran-03/","isPartOf":{"@type":"WebSite","name":"Rusted Warfare Mod Workshop","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=en">Rusted Warfare Mod Workshop</a><div class="detail-actions"><a href="/en/tutorials/">All courses</a><a href="/?lang=en#editors">Creative tools</a><a href="/learn/academy-veteran-03/">中文</a></div></header><main class="section-wrap page-narrow"><h1>Keep weapon modes and target roles consistent</h1><p>Combine alternate projectiles, mode memory and ground or air filters</p><section><h2>Inspect both unit and turret permissions</h2><p>attack defines targets the vehicle can consider and turret_main can further restrict the weapon, the anti-air variant changes both layers so they agree</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[attack]
+canAttack: true
+canAttackFlyingUnits: true
+canAttackLandUnits: false
+canAttackUnderwaterUnits: false
+
+[turret_main]
+canAttackFlyingUnits: true
+canAttackLandUnits: false
+canAttackUnderwaterUnits: false</code></pre></section><section><h2>Choose a projectile from remembered state</h2><p>Normal and focused shots use the same gun, altProjectileCondition reads the mode and selects focused when true, otherwise normal, this fits changes that need a new projectile without duplicating the gun</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[turret_main]
+x: 0
+y: 0
+projectile: normal
+altProjectile: focused
+altProjectileCondition: memory.focused
+
+[projectile_normal]
+directDamage: 20
+life: 1.8s
+speed: 4
+
+[projectile_focused]
+directDamage: 34
+life: 1.8s
+speed: 5</code></pre></section><section><h2>Pair the benefit with a cost</h2><p>Stabilization raises damage while reducing movement speed, cruise restores both state and speed, isLocked informs the player and requireConditional checks the state again when the action executes</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_focus]
+text: 稳定射击 / Stabilize
+buildSpeed: 0
+isLocked: if memory.focused
+requireConditional: if not memory.focused
+setUnitMemory: focused=true
+setUnitStats: movespeed=0.35
+
+[action_cruise]
+text: 恢复巡航 / Resume cruise
+buildSpeed: 0
+isLocked: if not memory.focused
+requireConditional: if memory.focused
+setUnitMemory: focused=false
+setUnitStats: movespeed=0.85</code></pre></section><section><h2>Compare projectiles before judging the whole unit</h2><p>Compare both modes at the same distance against the same target, then inspect movement speed and finally use the anti-air variant against an air target, keep other conditions stable when comparing</p></section><div class="lesson-check"><h2>Try it yourself</h2><p>Reduce focused damage to 30 and describe how you would adjust its movement tradeoff</p></div><p><a class="btn btn-dark" href="/?lang=en#learn/academy-veteran-03">Open interactive lesson and download the companion mod</a></p></main><footer class="section-wrap"><a href="/?lang=en#editors">Create a mod →</a> · <a href="https://download.noaushio.uk/">Downloads</a></footer></body></html>

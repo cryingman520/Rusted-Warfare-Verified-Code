@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>制作双炮塔战车并评估总火力 · 铁锈战争模组工坊</title><meta name="description" content="处理两侧位置、共用弹体和多个炮塔带来的总输出"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-15/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-15/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="制作双炮塔战车并评估总火力"><meta property="og:description" content="处理两侧位置、共用弹体和多个炮塔带来的总输出"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-15/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"制作双炮塔战车并评估总火力","description":"处理两侧位置、共用弹体和多个炮塔带来的总输出","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-15/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-15/">English</a></div></header><main class="section-wrap page-narrow"><h1>制作双炮塔战车并评估总火力</h1><p>处理两侧位置、共用弹体和多个炮塔带来的总输出</p><section><h2>分别放置两个炮塔</h2><p>双炮战车在中心左右各放一个炮塔，x 分别为 -7 和 7，y 保持 0，同一张炮塔图被重复使用，先检查炮塔是否落在底盘上</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[turret_main]
+x: -7
+y: 0
+projectile: shell
+
+[turret_second]
+x: 7
+y: 0
+projectile: shell
+delay: 1.2s</code></pre></section><section><h2>把弹体定义保留一份</h2><p>两个炮塔都引用 shell，同一项伤害调整会影响两边，如果以后两侧武器不同，再拆成各自的弹体名称，初始版本先避免重复配置</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[projectile_shell]
+directDamage: 24
+life: 1.5s
+speed: 4
+drawSize: 1
+color: #FFE1B0</code></pre></section><section><h2>不要把两门炮当成一门计算</h2><p>两门炮各自射击会提高总输出，造价和生命需要一起重新评估，示例没有设置严格交替开火，观察到齐射并不代表配置出错</p></section><section><h2>检查拥挤与移动作战</h2><p>在开阔地、狭窄地和移动追击三种场景测试，炮塔位置对视觉效果的影响会随转向变化，近距离目标可能更容易暴露炮口偏移问题</p></section><div class="lesson-check"><h2>动手练习</h2><p>在相同造价预算下，比较两辆侦察车与一辆双炮车的实战结果</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-15">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

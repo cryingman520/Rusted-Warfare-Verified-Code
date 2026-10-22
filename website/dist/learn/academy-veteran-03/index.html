@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>让武器模式与目标分工保持一致 · 铁锈战争模组工坊</title><meta name="description" content="组合替代弹体、模式记忆和地空筛选，避免两层规则互相抵消"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-veteran-03/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-veteran-03/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="让武器模式与目标分工保持一致"><meta property="og:description" content="组合替代弹体、模式记忆和地空筛选，避免两层规则互相抵消"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-veteran-03/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"让武器模式与目标分工保持一致","description":"组合替代弹体、模式记忆和地空筛选，避免两层规则互相抵消","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-veteran-03/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-veteran-03/">English</a></div></header><main class="section-wrap page-narrow"><h1>让武器模式与目标分工保持一致</h1><p>组合替代弹体、模式记忆和地空筛选，避免两层规则互相抵消</p><section><h2>单位许可与炮塔许可都要看</h2><p>attack 决定整辆车可以考虑哪些目标，turret_main 还可以继续限制这门炮，防空变体需要同时允许整车和炮塔攻击空中单位，只改一层可能仍然无法开火</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[attack]
+canAttack: true
+canAttackFlyingUnits: true
+canAttackLandUnits: false
+canAttackUnderwaterUnits: false
+
+[turret_main]
+canAttackFlyingUnits: true
+canAttackLandUnits: false
+canAttackUnderwaterUnits: false</code></pre></section><section><h2>同一门炮按状态选择弹体</h2><p>普通弹和稳定弹共用炮口，altProjectileCondition 读取当前模式，条件成立时使用 focused，否则使用 normal，这种写法适合只替换弹体而无需再复制整门炮的场景</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[turret_main]
+x: 0
+y: 0
+projectile: normal
+altProjectile: focused
+altProjectileCondition: memory.focused
+
+[projectile_normal]
+directDamage: 20
+life: 1.8s
+speed: 4
+
+[projectile_focused]
+directDamage: 34
+life: 1.8s
+speed: 5</code></pre></section><section><h2>模式获得好处，也承担代价</h2><p>稳定射击提高伤害，同时降低移动速度，恢复巡航时要把状态和速度一起还原，isLocked 控制按钮提示，requireConditional 则在执行时再次检查，减少排队期间状态变化造成的意外</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_focus]
+text: 稳定射击 / Stabilize
+buildSpeed: 0
+isLocked: if memory.focused
+requireConditional: if not memory.focused
+setUnitMemory: focused=true
+setUnitStats: movespeed=0.35
+
+[action_cruise]
+text: 恢复巡航 / Resume cruise
+buildSpeed: 0
+isLocked: if not memory.focused
+requireConditional: if memory.focused
+setUnitMemory: focused=false
+setUnitStats: movespeed=0.85</code></pre></section><section><h2>先对照弹体，再比较总表现</h2><p>先在相同距离对同一目标观察普通弹和稳定弹，再检查移动速度，最后换成防空变体面对空中目标，测试时保持其他条件一致，避免把射程、装甲或目标类型差异误认为模式带来的提升</p></section><div class="lesson-check"><h2>动手练习</h2><p>把稳定弹伤害改为 30，再写下你会如何调整移速代价</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-veteran-03">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

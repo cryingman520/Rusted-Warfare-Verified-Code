@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://rwmod.noaushio.uk/">
   <meta name="theme-color" content="#202b25">
   <meta name="description" content="铁锈战争模组工坊：分级教程、配套模组、单位与地图编辑器、像素绘图和免费云端 AI">
   <title>铁锈战争模组工坊 · 创作你的战场</title>
@@ -11,6 +13,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./editor.css">
   <link rel="stylesheet" href="./creative.css">
+  <script src="./native.js" defer></script>
   <script src="./i18n.js" defer></script>
   <script src="./site-ui.en.js" defer></script>
   <script src="./editor-ui.en.js" defer></script>
@@ -27,6 +30,8 @@
   <script src="./ai-core.js" defer></script>
   <script src="./ai.js" defer></script>
   <script src="./academy.js" defer></script>
+  <script src="./releases.js" defer></script>
+  <script src="./apps.js" defer></script>
   <script src="./app.js" defer></script>
   <link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/?lang=zh">
   <link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/?lang=en">
@@ -36,10 +41,10 @@
   <header class="site-header"><div class="header-inner">
     <a class="brand" href="#home" aria-label="铁锈战争模组工坊首页"><span class="brand-mark game-icon"><img src="./assets/rusted-warfare-app-icon.png" alt="铁锈战争游戏图标" width="42" height="42"></span><span><strong>铁锈战争模组工坊</strong><small>铁锈战争模组爱好者的天堂</small></span></a>
     <nav aria-label="主导航"><a href="#home" data-nav="home">探索工坊</a><a href="#library" data-nav="library">代码仓库</a><a href="#tutorials" data-nav="tutorials">模组教程</a><a href="#editors" data-nav="editors">创作工具</a><a href="#reference" data-nav="reference">参数速查<span class="nav-arrow">↗</span></a></nav>
-    <div class="header-actions"><a href="#settings" class="settings-link" aria-label="设置">⚙</a><label class="language-switch"><span aria-hidden="true">◎</span><select id="site-language" aria-label="Language / 语言"><option value="zh">中文</option><option value="en">English</option></select></label><a href="#saved" class="saved-link" aria-label="我的收藏">☆ <span>收藏</span></a><button class="btn btn-dark btn-small" data-action="contribute"><span>＋</span> 分享代码</button></div>
+    <div class="header-actions"><a href="#app-downloads" class="app-download-link">下载</a><a href="#settings" class="settings-link" aria-label="设置">⚙</a><label class="language-switch"><span aria-hidden="true">◎</span><select id="site-language" aria-label="Language / 语言"><option value="zh">中文</option><option value="en">English</option></select></label><a href="#saved" class="saved-link" aria-label="我的收藏">☆ <span>收藏</span></a><button class="btn btn-dark btn-small" data-action="contribute"><span>＋</span> 分享代码</button></div>
   </div></header>
   <main id="main" tabindex="-1"></main>
-  <footer><div class="footer-inner"><div><a class="brand footer-brand" href="#home"><span class="brand-mark game-icon"><img src="./assets/rusted-warfare-app-icon.png" alt="铁锈战争游戏图标" width="42" height="42"></span><strong>铁锈战争模组工坊</strong></a><p>为每一个想创造新战场的人。</p></div><div class="footer-meta"><span>NOAUSHIO / RW MOD LAB</span><p>独立爱好者站点 · 与 Corroding Games 无隶属关系</p><a href="https://corrodinggames.com/rusted_warfare" target="_blank" rel="noopener">游戏官网 ↗</a> <a href="#about">关于本站与内容说明 ↗</a> · <a href="https://github.com/cryingman520/Rusted-Warfare-Verified-Code/tree/main/website" target="_blank" rel="noopener">GitHub ↗</a></div></div></footer>
+  <footer><div class="footer-inner"><div><a class="brand footer-brand" href="#home"><span class="brand-mark game-icon"><img src="./assets/rusted-warfare-app-icon.png" alt="铁锈战争游戏图标" width="42" height="42"></span><strong>铁锈战争模组工坊</strong></a><p>为每一个想创造新战场的人。</p></div><div class="footer-meta"><span>NOAUSHIO / RW MOD LAB</span><p>独立爱好者站点 · 与 Corroding Games 无隶属关系</p><a href="https://corrodinggames.com/rusted_warfare" target="_blank" rel="noopener">游戏官网 ↗</a> <a href="#about">关于本站与内容说明 ↗</a> · <a href="/tutorials/">教程目录 ↗</a> · <a href="/tools/">创作与下载 ↗</a> · <a href="https://github.com/cryingman520/Rusted-Warfare-Verified-Code/tree/main/website" target="_blank" rel="noopener">GitHub ↗</a></div></div></footer>
   <dialog id="contribute-dialog" aria-labelledby="contribute-title"><form id="contribute-form"><div class="dialog-head"><span class="eyebrow">SHARE YOUR BUILD</span><button type="button" class="icon-btn" data-action="close-dialog" aria-label="关闭">×</button></div><h2 id="contribute-title">让一个好点子，<br>成为下一段代码。</h2><p class="muted">在这里整理你的分享卡片，导出后发送给朋友或站长。草稿仅保存在此浏览器，不会自动发布到网站。</p><label>作品名称<input name="title" required maxlength="60" placeholder="例如：具有护盾的侦察坦克"></label><div class="form-row"><label>作者昵称<input name="author" required maxlength="30" placeholder="你的昵称"></label><label>类型<select name="category"><option>单位基础</option><option>武器系统</option><option>建筑经济</option><option>动作逻辑</option><option>地图触发</option><option>图像动画</option></select></label></div><label>说明、依赖与授权<textarea name="description" required rows="2" maxlength="1200" placeholder="说明适用版本、素材依赖、授权方式与实机测试情况"></textarea></label><label>INI / XML 代码<textarea name="code" required rows="8" maxlength="40000" spellcheck="false" class="code-input" placeholder="[core]&#10;name: myUnit"></textarea></label><p class="form-note">请确认你有权分享这段内容，并在说明中写清作者、许可与验证范围。</p><div class="dialog-actions"><button type="button" class="btn btn-plain" data-action="save-draft">保存草稿</button><button class="btn btn-orange" type="submit">导出分享卡片 ↓</button></div></form></dialog>
   <a class="help-float" href="#ai-help">✦ <span>模组帮助 AI</span></a>
   <div id="toast" role="status" aria-live="polite"></div>

@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Maintain a family of units with inheritance · Rusted Warfare Mod Workshop</title><meta name="description" content="Reduce duplication while keeping variant differences readable"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/en/learn/academy-10/"><link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/learn/academy-10/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="Maintain a family of units with inheritance"><meta property="og:description" content="Reduce duplication while keeping variant differences readable"><meta property="og:url" content="https://rwmod.noaushio.uk/en/learn/academy-10/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Maintain a family of units with inheritance","description":"Reduce duplication while keeping variant differences readable","inLanguage":"en","url":"https://rwmod.noaushio.uk/en/learn/academy-10/","isPartOf":{"@type":"WebSite","name":"Rusted Warfare Mod Workshop","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=en">Rusted Warfare Mod Workshop</a><div class="detail-actions"><a href="/en/tutorials/">All courses</a><a href="/?lang=en#editors">Creative tools</a><a href="/learn/academy-10/">中文</a></div></header><main class="section-wrap page-narrow"><h1>Maintain a family of units with inheritance</h1><p>Reduce duplication while keeping variant differences readable</p><section><h2>Choose a genuinely shared base</h2><p>Both switchfire vehicles share controls, memory and ammunition, mode.ini is a playable base unit while guard.ini overrides the heavier variant</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code># 使用相同操作逻辑，只改基础数值 / Reuse the controls with different stats
+[core]
+copyFrom: mode.ini
+name: rwa02ModeGuard
+displayText: 变弹护卫车 / Switchfire Guard
+price: 650
+maxHp: 460
+
+[graphics]
+image: guard.png
+
+[movement]
+moveSpeed: 0.7
+</code></pre></section><section><h2>Trace the effective value</h2><p>If shot counting fails for both vehicles, inspect the base turret event and counter action, if only the guard speed is wrong, inspect its movement override</p></section><section><h2>Reuse repeated sections too</h2><p>File inheritance suits unit variants, section templates suit repeated turrets within a file, share values such as delay and still provide each turret position and projectile</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[template_weapon]
+delay: 1.2s
+
+[turret_left]
+@copyFromSection: template_weapon
+x: -7
+y: 0
+projectile: shell
+
+[turret_right]
+@copyFromSection: template_weapon
+x: 7
+y: 0
+projectile: shell</code></pre></section><section><h2>Keep the inheritance chain understandable</h2><p>Prefer one base and one variant layer for small projects, test every dependent unit after changing shared code and update copyFrom when moving or renaming files</p></section><div class="lesson-check"><h2>Try it yourself</h2><p>Add a third switchfire vehicle overriding only cost, health, speed and art</p></div><p><a class="btn btn-dark" href="/?lang=en#learn/academy-10">Open interactive lesson and download the companion mod</a></p></main><footer class="section-wrap"><a href="/?lang=en#editors">Create a mod →</a> · <a href="https://download.noaushio.uk/">Downloads</a></footer></body></html>

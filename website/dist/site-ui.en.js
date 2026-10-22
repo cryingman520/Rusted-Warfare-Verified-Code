@@ -3,3 +3,5 @@ window.RW_UI_EN={"铁锈工坊：基于 Android 1.15 参考资料包的铁锈战
 Object.assign(window.RW_UI_EN,{"铁锈战争模组工坊":"Rusted Warfare Mod Workshop","铁锈战争模组爱好者的天堂":"A haven for Rusted Warfare mod creators","模组帮助 AI":"Modding assistant","设置":"Settings","单位图片编辑器":"Unit image editor","地图图片编辑器":"Map image editor","AI 图形编辑器":"AI art studio","工坊设置":"Workshop settings"});
 
 Object.assign(window.RW_UI_EN,{"铁锈战争模组工坊首页":"Rusted Warfare Mod Workshop home","铁锈战争模组工坊：分级教程、配套模组、单位与地图编辑器、像素绘图和免费云端 AI":"Rusted Warfare Mod Workshop: courses, example mods, unit and map editors, pixel art and free cloud AI"});
+
+Object.assign(window.RW_UI_EN,{"下载":"Download","教程目录 ↗":"Course index ↗","创作与下载 ↗":"Create and download ↗"});

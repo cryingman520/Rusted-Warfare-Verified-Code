@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>用继承维护一整组单位 · 铁锈战争模组工坊</title><meta name="description" content="减少重复代码，同时保留清楚的单位差异"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-10/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-10/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="用继承维护一整组单位"><meta property="og:description" content="减少重复代码，同时保留清楚的单位差异"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-10/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"用继承维护一整组单位","description":"减少重复代码，同时保留清楚的单位差异","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-10/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-10/">English</a></div></header><main class="section-wrap page-narrow"><h1>用继承维护一整组单位</h1><p>减少重复代码，同时保留清楚的单位差异</p><section><h2>选择真正共用的基础</h2><p>变弹实验场的两辆车共用按钮、内存和弹药逻辑，基础文件 mode.ini 本身也是一个可用单位，变体 guard.ini 只覆盖重量级车辆的差异</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code># 使用相同操作逻辑，只改基础数值 / Reuse the controls with different stats
+[core]
+copyFrom: mode.ini
+name: rwa02ModeGuard
+displayText: 变弹护卫车 / Switchfire Guard
+price: 650
+maxHp: 460
+
+[graphics]
+image: guard.png
+
+[movement]
+moveSpeed: 0.7
+</code></pre></section><section><h2>沿着继承顺序查结果</h2><p>如果护卫车射击次数不增加，先看基础文件的炮塔事件和计数动作，若只有护卫车速度异常，再看变体 movement 的覆盖值，按共同问题与个别问题区分排查范围</p></section><section><h2>复用段落也有办法</h2><p>文件继承适合单位变体，段落模板适合同一文件中多个相似炮塔，共用 delay 等参数时可以用 template 段落，仍然为每个炮塔补上位置和弹体引用</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[template_weapon]
+delay: 1.2s
+
+[turret_left]
+@copyFromSection: template_weapon
+x: -7
+y: 0
+projectile: shell
+
+[turret_right]
+@copyFromSection: template_weapon
+x: 7
+y: 0
+projectile: shell</code></pre></section><section><h2>避免层层套娃</h2><p>新手项目优先保持一层基础加一层变体，公共文件改动后检查所有依赖它的单位，重命名文件或移动目录时同时更新 copyFrom 路径</p></section><div class="lesson-check"><h2>动手练习</h2><p>增加第三辆变弹车，只覆盖价格、生命、速度和贴图</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-10">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

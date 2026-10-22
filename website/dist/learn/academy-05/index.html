@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从炮塔一直追到命中的弹体 · 铁锈战争模组工坊</title><meta name="description" content="理解攻击开关、射程、射击间隔和炮弹引用"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-05/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-05/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="从炮塔一直追到命中的弹体"><meta property="og:description" content="理解攻击开关、射程、射击间隔和炮弹引用"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-05/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"从炮塔一直追到命中的弹体","description":"理解攻击开关、射程、射击间隔和炮弹引用","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-05/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-05/">English</a></div></header><main class="section-wrap page-narrow"><h1>从炮塔一直追到命中的弹体</h1><p>理解攻击开关、射程、射击间隔和炮弹引用</p><section><h2>单位先决定能打谁</h2><p>即使写好了炮塔，attack 中的开关也要允许目标类型，当前示例只打地面，不攻击空中或水下目标，测试时先使用地面敌军</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[attack]
+canAttack: true
+canAttackFlyingUnits: false
+canAttackLandUnits: true
+canAttackUnderwaterUnits: false
+maxAttackRange: 150
+shootDelay: 1s</code></pre></section><section><h2>炮塔引用已经定义的弹体</h2><p>projectile:shell 指向 projectile_shell 这一段，引用时只写后缀，改名时同时修改定义和引用，炮塔的位置与转向决定炮口表现</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[turret_main]
+x: 0
+y: 0
+projectile: shell
+
+[projectile_shell]
+directDamage: 18
+life: 1.5s
+speed: 4
+drawSize: 1
+color: #FFE1B0</code></pre></section><section><h2>先分开调伤害和频率</h2><p>单发伤害决定一次命中的影响，shootDelay 决定两次射击的间隔，先把伤害改成 24，保持间隔不变，再单独比较 1s 和 1.5s，实际输出还受命中与装甲影响</p></section><section><h2>给弹体留足存在时间</h2><p>life 太短时弹体可能在到达目标前消失，先沿用示例的寿命与速度，在最大射程附近测试，再考虑加大射程，单独提高 maxAttackRange 可能让远处目标进入射程却打不中</p></section><div class="lesson-check"><h2>动手练习</h2><p>让护卫车射击更慢但单发更重，记录相同目标的消灭时间</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-05">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

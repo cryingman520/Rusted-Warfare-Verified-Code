@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Finish your first two-vehicle squad · Rusted Warfare Mod Workshop</title><meta name="description" content="Use inheritance for a variant and package art, code and test notes together"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/en/learn/academy-06/"><link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/learn/academy-06/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="Finish your first two-vehicle squad"><meta property="og:description" content="Use inheritance for a variant and package art, code and test notes together"><meta property="og:url" content="https://rwmod.noaushio.uk/en/learn/academy-06/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Finish your first two-vehicle squad","description":"Use inheritance for a variant and package art, code and test notes together","inLanguage":"en","url":"https://rwmod.noaushio.uk/en/learn/academy-06/","isPartOf":{"@type":"WebSite","name":"Rusted Warfare Mod Workshop","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=en">Rusted Warfare Mod Workshop</a><div class="detail-actions"><a href="/en/tutorials/">All courses</a><a href="/?lang=en#editors">Creative tools</a><a href="/learn/academy-06/">中文</a></div></header><main class="section-wrap page-narrow"><h1>Finish your first two-vehicle squad</h1><p>Use inheritance for a variant and package art, code and test notes together</p><section><h2>Inherit from a neighboring file</h2><p>guard.ini reads scout.ini through copyFrom, unchanged settings stay inherited, the second vehicle needs its own name, paths are relative to the current INI file</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code># 继承同目录下的侦察车 / Inherit the scout in this folder
+[core]
+copyFrom: scout.ini
+name: rwa01Guard
+displayText: 巡逻护卫车 / Patrol Guard
+price: 450
+maxHp: 420
+mass: 3500
+
+[graphics]
+image: guard.png
+
+[projectile_shell]
+directDamage: 28
+
+[movement]
+moveSpeed: 0.75
+</code></pre></section><section><h2>Override only the differences</h2><p>The guard changes health, cost, image, damage and speed, avoid duplicating the whole weapon setup, fix shared behavior in the base file and verify that variants still behave as intended</p></section><section><h2>Make the project your own</h2><p>Rename the project and its two vehicles, replace both hull images and preserve the light and heavy roles, document how to find them, whether a factory entry exists and the version you tested</p></section><section><h2>Check the archive contents</h2><p>Check that mod-info.txt, both INI files and every PNG are included, extract into a fresh folder to verify references, load alongside another project to check for internal name collisions</p></section><div class="lesson-check"><h2>Try it yourself</h2><p>Add a medium vehicle through inheritance and test all three together</p></div><p><a class="btn btn-dark" href="/?lang=en#learn/academy-06">Open interactive lesson and download the companion mod</a></p></main><footer class="section-wrap"><a href="/?lang=en#editors">Create a mod →</a> · <a href="https://download.noaushio.uk/">Downloads</a></footer></body></html>

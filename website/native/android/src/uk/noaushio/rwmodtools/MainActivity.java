@@ -1,0 +1,32 @@
+package uk.noaushio.rwmodtools;
+import android.app.*;import android.os.*;import android.webkit.*;import android.content.*;import android.net.Uri;import android.view.*;import android.graphics.Color;import java.io.*;import java.util.*;
+
+public class MainActivity extends Activity {
+  private WebView web;private volatile boolean online=false;private ValueCallback<Uri[]> chooser;private byte[] pending;private static final int PICK=20,SAVE=21;private static final String HOST="appassets.androidplatform.net";
+  @Override public void onCreate(Bundle state){super.onCreate(state);web=new WebView(this);setContentView(web);getWindow().setStatusBarColor(Color.rgb(245,244,238));getWindow().setNavigationBarColor(Color.rgb(245,244,238));
+    if(Build.VERSION.SDK_INT>=30){web.setOnApplyWindowInsetsListener((v,insets)->{android.graphics.Insets i=insets.getInsets(WindowInsets.Type.systemBars()|WindowInsets.Type.displayCutout());v.setPadding(i.left,i.top,i.right,i.bottom);return insets;});}
+    WebSettings s=web.getSettings();s.setJavaScriptEnabled(true);s.setDomStorageEnabled(true);s.setAllowFileAccess(false);s.setAllowContentAccess(true);s.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);s.setUserAgentString(s.getUserAgentString()+" RWModTools/1.1.0");web.addJavascriptInterface(new NativeBridge(),"RWNative");
+    web.setWebViewClient(new WebViewClient(){
+      @Override public WebResourceResponse shouldInterceptRequest(WebView v,WebResourceRequest request){Uri u=request.getUrl();if(HOST.equals(u.getHost())){String p=u.getPath();if(p==null||p.contains(".."))return empty(403,"Forbidden");try{String file=p.startsWith("/assets/")?p.substring(8):p.substring(1);return new WebResourceResponse(mime(file),"UTF-8",getAssets().open(file));}catch(Exception e){return empty(404,"Not found");}}
+        if(!online&&("https".equals(u.getScheme())||"http".equals(u.getScheme())))return empty(503,"Offline mode");return null;}
+      @Override public boolean shouldOverrideUrlLoading(WebView v,WebResourceRequest r){Uri u=r.getUrl();if(HOST.equals(u.getHost()))return false;if("https".equals(u.getScheme())||"http".equals(u.getScheme())){try{startActivity(new Intent(Intent.ACTION_VIEW,u));}catch(Exception ignored){}}return true;}
+    });
+    web.setWebChromeClient(new WebChromeClient(){
+      @Override public boolean onShowFileChooser(WebView v,ValueCallback<Uri[]> callback,FileChooserParams p){if(chooser!=null)chooser.onReceiveValue(null);chooser=callback;Intent i=new Intent(Intent.ACTION_OPEN_DOCUMENT);i.addCategory(Intent.CATEGORY_OPENABLE);i.setType("*/*");i.putExtra(Intent.EXTRA_ALLOW_MULTIPLE,p.getMode()==FileChooserParams.MODE_OPEN_MULTIPLE);try{startActivityForResult(i,PICK);}catch(Exception e){chooser.onReceiveValue(null);chooser=null;}return true;}
+      @Override public boolean onJsAlert(WebView v,String url,String text,JsResult result){new AlertDialog.Builder(MainActivity.this).setMessage(text).setPositiveButton(android.R.string.ok,(d,w)->result.confirm()).setOnCancelListener(d->result.cancel()).show();return true;}
+      @Override public boolean onJsConfirm(WebView v,String url,String text,JsResult result){new AlertDialog.Builder(MainActivity.this).setMessage(text).setPositiveButton(android.R.string.ok,(d,w)->result.confirm()).setNegativeButton(android.R.string.cancel,(d,w)->result.cancel()).setOnCancelListener(d->result.cancel()).show();return true;}
+      @Override public boolean onJsPrompt(WebView v,String url,String text,String value,JsPromptResult result){final android.widget.EditText field=new android.widget.EditText(MainActivity.this);field.setText(value);new AlertDialog.Builder(MainActivity.this).setMessage(text).setView(field).setPositiveButton(android.R.string.ok,(d,w)->result.confirm(field.getText().toString())).setNegativeButton(android.R.string.cancel,(d,w)->result.cancel()).setOnCancelListener(d->result.cancel()).show();return true;}
+      @Override public void onPermissionRequest(PermissionRequest r){r.deny();}
+    });
+    web.loadUrl("https://"+HOST+"/assets/index.html?lang=zh#editors");
+  }
+  private WebResourceResponse empty(int code,String reason){return new WebResourceResponse("text/plain","UTF-8",code,reason,Collections.emptyMap(),new ByteArrayInputStream(new byte[0]));}
+  private static String mime(String f){if(f.endsWith(".html"))return "text/html";if(f.endsWith(".js"))return "application/javascript";if(f.endsWith(".css"))return "text/css";if(f.endsWith(".json"))return "application/json";if(f.endsWith(".png"))return "image/png";if(f.endsWith(".svg"))return "image/svg+xml";if(f.endsWith(".txt")||f.endsWith(".ini"))return "text/plain";return "application/octet-stream";}
+  public class NativeBridge {
+    @JavascriptInterface public void setOnline(boolean value){online=value;}
+    @JavascriptInterface public void saveFile(String name,String base64,String type){if(base64.length()>28*1024*1024)return;try{final byte[] bytes=android.util.Base64.decode(base64,android.util.Base64.DEFAULT);runOnUiThread(()->{if(pending!=null)return;pending=bytes;Intent i=new Intent(Intent.ACTION_CREATE_DOCUMENT);i.addCategory(Intent.CATEGORY_OPENABLE);i.setType(type==null?"application/octet-stream":type);i.putExtra(Intent.EXTRA_TITLE,name.replaceAll("[\\\\/:*?\"<>|]","_"));try{startActivityForResult(i,SAVE);}catch(Exception e){pending=null;}});}catch(Exception ignored){}}
+  }
+  @Override protected void onActivityResult(int request,int result,Intent data){super.onActivityResult(request,result,data);if(request==PICK&&chooser!=null){Uri[] uris=null;if(result==RESULT_OK&&data!=null){if(data.getClipData()!=null){uris=new Uri[data.getClipData().getItemCount()];for(int i=0;i<uris.length;i++)uris[i]=data.getClipData().getItemAt(i).getUri();}else if(data.getData()!=null)uris=new Uri[]{data.getData()};}chooser.onReceiveValue(uris);chooser=null;}if(request==SAVE){if(result==RESULT_OK&&data!=null&&data.getData()!=null&&pending!=null){try(OutputStream out=getContentResolver().openOutputStream(data.getData())){out.write(pending);android.widget.Toast.makeText(this,"已保存 / Saved",android.widget.Toast.LENGTH_SHORT).show();}catch(Exception e){android.widget.Toast.makeText(this,"保存失败 / Save failed",android.widget.Toast.LENGTH_LONG).show();}}pending=null;}}
+  @Override public void onBackPressed(){if(web.canGoBack())web.goBack();else super.onBackPressed();}
+  @Override protected void onDestroy(){if(chooser!=null)chooser.onReceiveValue(null);web.removeJavascriptInterface("RWNative");web.destroy();super.onDestroy();}
+}

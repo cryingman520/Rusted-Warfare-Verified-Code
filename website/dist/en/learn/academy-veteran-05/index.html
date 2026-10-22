@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Use effects to communicate state and inheritance to keep it consistent · Rusted Warfare Mod Workshop</title><meta name="description" content="Organize muzzle flashes, hull animation and shared settings into a maintainable set"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/en/learn/academy-veteran-05/"><link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/learn/academy-veteran-05/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="Use effects to communicate state and inheritance to keep it consistent"><meta property="og:description" content="Organize muzzle flashes, hull animation and shared settings into a maintainable set"><meta property="og:url" content="https://rwmod.noaushio.uk/en/learn/academy-veteran-05/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Use effects to communicate state and inheritance to keep it consistent","description":"Organize muzzle flashes, hull animation and shared settings into a maintainable set","inLanguage":"en","url":"https://rwmod.noaushio.uk/en/learn/academy-veteran-05/","isPartOf":{"@type":"WebSite","name":"Rusted Warfare Mod Workshop","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=en">Rusted Warfare Mod Workshop</a><div class="detail-actions"><a href="/en/tutorials/">All courses</a><a href="/?lang=en#editors">Creative tools</a><a href="/learn/academy-veteran-05/">中文</a></div></header><main class="section-wrap page-narrow"><h1>Use effects to communicate state and inheritance to keep it consistent</h1><p>Organize muzzle flashes, hull animation and shared settings into a maintainable set</p><section><h2>Give each effect an informational role</h2><p>A short expanding glow signals stabilization, the muzzle flash marks a shot, and a subtle idle scale adds life, effects should communicate behavior rather than hide a missing state change</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_focus]
+spawnEffects: CUSTOM:signal
+
+[turret_main]
+shoot_flame: CUSTOM:signal
+
+[effect_signal]
+image: glow.png
+life: 24
+alpha: 0.8
+scaleFrom: 0.6
+scaleTo: 1.5
+fadeOut: true
+attachedToUnit: false
+color: #8AE9D1</code></pre></section><section><h2>Start with a subtle keyframe change</h2><p>The idle animation moves between scale 1 and 1.03 without changing collision or health, inspect readability before keeping it, animation scale is a visual property</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[animation_idlePulse]
+onActions: idle
+pingPong: true
+body_0s: {scale:1}
+body_1s: {scale:1.03}</code></pre></section><section><h2>Override only the variant differences</h2><p>Skyguard inherits the mode actions, memory setup and effects from firecontrol.ini and overrides identity, cost, art and target role, a base effect change then applies to both</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+copyFrom: firecontrol.ini
+name: rwa08Skyguard
+displayText: 防空火控车 / Skyguard
+price: 650
+maxHp: 320
+
+[graphics]
+image: skyguard.png
+
+[attack]
+canAttackFlyingUnits: true
+canAttackLandUnits: false
+maxAttackRange: 210</code></pre></section><section><h2>Maintain a reference checklist</h2><p>When renaming, follow inheritance paths, image files, projectile names, CUSTOM effects, actions and animation names, an existing file does not guarantee that every named reference is valid, avoid inheritance cycles</p></section><div class="lesson-check"><h2>Try it yourself</h2><p>Change the shared glow color and predict both variants, then override the color only in Skyguard</p></div><p><a class="btn btn-dark" href="/?lang=en#learn/academy-veteran-05">Open interactive lesson and download the companion mod</a></p></main><footer class="section-wrap"><a href="/?lang=en#editors">Create a mod →</a> · <a href="https://download.noaushio.uk/">Downloads</a></footer></body></html>

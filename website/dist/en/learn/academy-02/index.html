@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Understand the four basic sections · Rusted Warfare Mod Workshop</title><meta name="description" content="Separate core, graphics, attack and movement before tuning values"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/en/learn/academy-02/"><link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/learn/academy-02/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="Understand the four basic sections"><meta property="og:description" content="Separate core, graphics, attack and movement before tuning values"><meta property="og:url" content="https://rwmod.noaushio.uk/en/learn/academy-02/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Understand the four basic sections","description":"Separate core, graphics, attack and movement before tuning values","inLanguage":"en","url":"https://rwmod.noaushio.uk/en/learn/academy-02/","isPartOf":{"@type":"WebSite","name":"Rusted Warfare Mod Workshop","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=en">Rusted Warfare Mod Workshop</a><div class="detail-actions"><a href="/en/tutorials/">All courses</a><a href="/?lang=en#editors">Creative tools</a><a href="/learn/academy-02/">中文</a></div></header><main class="section-wrap page-narrow"><h1>Understand the four basic sections</h1><p>Separate core, graphics, attack and movement before tuning values</p><section><h2>Read the core settings</h2><p>name is the internal identifier used by other configurations, displayText is the visible name, price is the cost and maxHp is maximum health, keep mass and radius unchanged while learning</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+name: rwa01Scout
+displayText: 巡逻侦察车 / Patrol Scout
+price: 250
+maxHp: 200
+mass: 2000
+radius: 11</code></pre></section><section><h2>Keep each section focused</h2><p>graphics chooses the images, attack sets eligible targets and movement defines travel, place each key in the matching section because the same spelling can mean different things in different sections</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[graphics]
+image: body.png
+
+[attack]
+canAttack: true
+canAttackFlyingUnits: false
+canAttackLandUnits: true
+canAttackUnderwaterUnits: false
+
+[movement]
+movementType: LAND
+moveSpeed: 1.2</code></pre></section><section><h2>Read values and units</h2><p>Boolean switches use true or false and colors use hexadecimal values, write times such as 8s for clarity, a bare buildSpeed number is a progress rate and does not mean the same thing as a time in seconds</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+buildSpeed: 8s
+
+[attack]
+shootDelay: 1s
+
+[projectile_shell]
+color: #FFE1B0</code></pre></section><section><h2>Compare against the guard</h2><p>The guard has more health and moves more slowly, giving the pair distinct roles, raise scout health from 200 to 240 and test against the same enemy, record how many hits it survives before and after</p></section><div class="lesson-check"><h2>Try it yourself</h2><p>Set the scout to 240 health and 300 credits, then explain the gameplay tradeoff</p></div><p><a class="btn btn-dark" href="/?lang=en#learn/academy-02">Open interactive lesson and download the companion mod</a></p></main><footer class="section-wrap"><a href="/?lang=en#editors">Create a mod →</a> · <a href="https://download.noaushio.uk/">Downloads</a></footer></body></html>

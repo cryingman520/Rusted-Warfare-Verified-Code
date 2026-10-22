@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从一个能导入的项目开始 · 铁锈战争模组工坊</title><meta name="description" content="认识模组目录、单位文件和贴图，完成第一次导入"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-01/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-01/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="从一个能导入的项目开始"><meta property="og:description" content="认识模组目录、单位文件和贴图，完成第一次导入"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-01/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"从一个能导入的项目开始","description":"认识模组目录、单位文件和贴图，完成第一次导入","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-01/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-01/">English</a></div></header><main class="section-wrap page-narrow"><h1>从一个能导入的项目开始</h1><p>认识模组目录、单位文件和贴图，完成第一次导入</p><section><h2>下载后先看目录</h2><p>下载巡逻双车组并解压一份副本，mod-info.txt 负责在模组列表中显示名称，units 文件夹放车辆配置和图片，压缩包根目录应直接看到 mod-info.txt，避免在外面再套一层同名文件夹</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>01-patrol-pair/
+├─ mod-info.txt
+└─ units/
+   ├─ scout.ini
+   ├─ guard.ini
+   ├─ body.png
+   ├─ guard.png
+   └─ turret.png</code></pre></section><section><h2>给模组取一个能认出的名字</h2><p>用 UTF-8 文本编辑器打开 mod-info.txt，先改 title，保留最低版本 1.15，description 适合用一句话说明玩家会得到什么单位，不要把单位配置放进这个文件</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[mod]
+# 教程配套项目 / Tutorial project
+title: Patrol Pair
+description: Two ground vehicles for learning unit basics and inheritance
+minVersion: 1.15
+</code></pre></section><section><h2>导入并找到两辆车</h2><p>把原始 .rwmod 导入游戏的模组管理界面，启用并重新加载，在沙盒单位列表搜索 Patrol 或单位代号，先确认两辆车都能出现，再改代码，这样遇到错误时容易判断是哪一步引起的</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+name: rwa01Scout
+displayText: 巡逻侦察车 / Patrol Scout
+showInEditor: true</code></pre></section><section><h2>只改一个地方再试</h2><p>先把侦察车显示名称改成自己的名字，保存、重新打包并重载，确认名称变化后再改生命和速度，保留下载时的原文件作为回退版本</p></section><div class="lesson-check"><h2>动手练习</h2><p>给两辆车各取一个中文名称，保持 name 不变</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-01">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

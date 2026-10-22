@@ -1,0 +1,4 @@
+CC0 1.0 Universal
+Original lesson code and prose dedicated to the public domain
+Pixel assets reused from Rusted Warfare Mod Academy under CC0-1.0
+https://creativecommons.org/publicdomain/zero/1.0/

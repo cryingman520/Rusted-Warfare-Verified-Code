@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Separate mounted equipment from passengers · Rusted Warfare Mod Workshop</title><meta name="description" content="Carry a radio and escorts while keeping position, capacity and unloading responsibilities clear"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/en/learn/academy-veteran-04/"><link rel="alternate" hreflang="zh-CN" href="https://rwmod.noaushio.uk/learn/academy-veteran-04/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="Separate mounted equipment from passengers"><meta property="og:description" content="Carry a radio and escorts while keeping position, capacity and unloading responsibilities clear"><meta property="og:url" content="https://rwmod.noaushio.uk/en/learn/academy-veteran-04/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Separate mounted equipment from passengers","description":"Carry a radio and escorts while keeping position, capacity and unloading responsibilities clear","inLanguage":"en","url":"https://rwmod.noaushio.uk/en/learn/academy-veteran-04/","isPartOf":{"@type":"WebSite","name":"Rusted Warfare Mod Workshop","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=en">Rusted Warfare Mod Workshop</a><div class="detail-actions"><a href="/en/tutorials/">All courses</a><a href="/?lang=en#editors">Creative tools</a><a href="/learn/academy-veteran-04/">中文</a></div></header><main class="section-wrap page-narrow"><h1>Separate mounted equipment from passengers</h1><p>Carry a radio and escorts while keeping position, capacity and unloading responsibilities clear</p><section><h2>Choose the relationship by purpose</h2><p>The radio should remain at a fixed roof position and expose its own action, so it uses an attachment, escorts should enter a hold and later disembark, so they use transport, keep their responsibilities separate</p></section><section><h2>Restrict passengers with tags</h2><p>Each escort has v07cargo and uses one slot, the carrier accepts tagged land units with a capacity of two, tags determine eligibility and slot cost determines capacity usage</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+maxTransportingUnits: 2
+transportUnitsRequireTag: v07cargo
+transportUnitsRequireMovementType: LAND
+transportUnitsEachUnitAlwaysUsesSingleSlot: true
+transportUnitsAddUnloadOption: true
+transportUnitsUnloadDelayBetweenEachUnit: 1s
+
+# 护卫的 core 段 / In the escort core section
+# tags: v07cargo
+# transportSlotsNeeded: 1</code></pre></section><section><h2>Inspect mounting and capacity separately</h2><p>The radio slot x and y place the pod relative to the hull while core manages hold capacity, first turn the carrier to inspect the pod and then load escorts to inspect passenger count</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[attachment_radio]
+x: 0
+y: -3
+height: 1
+lockRotation: true
+setDrawLayerOnTop: true
+onCreateSpawnUnitOf: rwa07Radio
+showAllActionsFrom: true
+
+[action_report]
+text: 查看乘员 / Passenger count
+buildSpeed: 0
+showMessageToPlayer: Passengers=%{self.transportingCount}</code></pre></section><section><h2>Leave room for unloading</h2><p>Begin loading and unloading on open land before trying obstacles, death, team changes and conversion also affect passengers, write down the intended behavior before choosing those options</p></section><div class="lesson-check"><h2>Try it yourself</h2><p>Add a vehicle without v07cargo and compare its loading behavior with the escort</p></div><p><a class="btn btn-dark" href="/?lang=en#learn/academy-veteran-04">Open interactive lesson and download the companion mod</a></p></main><footer class="section-wrap"><a href="/?lang=en#editors">Create a mod →</a> · <a href="https://download.noaushio.uk/">Downloads</a></footer></body></html>

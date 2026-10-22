@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>让建筑生产单位并共享研究资源 · 铁锈战争模组工坊</title><meta name="description" content="连接建造菜单、全队资源和一次性升级"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-11/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-11/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="让建筑生产单位并共享研究资源"><meta property="og:description" content="连接建造菜单、全队资源和一次性升级"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-11/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"让建筑生产单位并共享研究资源","description":"连接建造菜单、全队资源和一次性升级","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-11/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-11/">English</a></div></header><main class="section-wrap page-narrow"><h1>让建筑生产单位并共享研究资源</h1><p>连接建造菜单、全队资源和一次性升级</p><section><h2>先把建筑放进沙盒</h2><p>研究站使用 isBuilding 和占地矩形，movementType:NONE 保持固定，这个项目先从沙盒放置研究站，建造入口可以在确认建筑本身正常后再加入其他工程单位</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+isBuilding: true
+footprint: -1,-1,1,1
+constructionFootprint: -1,-1,1,1
+
+[movement]
+movementType: NONE
+moveSpeed: 0</code></pre></section><section><h2>用内部名称连接生产菜单</h2><p>canBuild 的 name 指向战车 core.name，不是它的中文显示名，pos 控制菜单位置，生产需要的时间和价格可以先沿用目标单位的配置</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[canBuild_rover]
+name: rwa04Rover
+pos: 1</code></pre></section><section><h2>把团队资源和单位状态分开</h2><p>l04data 是全队共享的研究数据，upgraded 是某一辆车自己的升级状态，研究站花 100 资金获得一份数据，车辆用数据购买升级，不要把资源写成 memory.l04data</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>
+[global_resource_l04data]
+displayName: 研究数据 / Research Data
+displayInHud: true
+
+[action_research]
+text: 记录数据 / Record data
+price: credits=100
+buildSpeed: 2s
+addResources: l04data=1</code></pre></section><section><h2>阻止同一辆车反复付费</h2><p>界面锁定给玩家说明，执行条件再次检查当前状态，升级完成后让炮塔读取 upgraded 来选择弹体，创建两辆战车验证升级只影响购买它的那一辆</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[action_upgrade]
+text: 装填改良弹 / Improve ammunition
+price: l04data=1
+buildSpeed: 1s
+isLocked: if memory.upgraded
+isLockedMessage: 已完成改良 / Already upgraded
+requireConditional: if not memory.upgraded
+setUnitMemory: upgraded=true</code></pre></section><div class="lesson-check"><h2>动手练习</h2><p>把升级费用改为两份数据，验证余额不足与已经升级两种提示</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-11">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

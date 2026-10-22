@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>完成你的第一支双车小队 · 铁锈战争模组工坊</title><meta name="description" content="用继承建立第二辆车，把图片、代码和测试记录一起交付"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-06/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-06/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="完成你的第一支双车小队"><meta property="og:description" content="用继承建立第二辆车，把图片、代码和测试记录一起交付"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-06/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"完成你的第一支双车小队","description":"用继承建立第二辆车，把图片、代码和测试记录一起交付","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-06/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-06/">English</a></div></header><main class="section-wrap page-narrow"><h1>完成你的第一支双车小队</h1><p>用继承建立第二辆车，把图片、代码和测试记录一起交付</p><section><h2>用同目录文件作为基础</h2><p>guard.ini 通过 copyFrom 读取 scout.ini，未覆盖的配置继续沿用，第二辆车必须使用新的 name，否则两个单位会争用同一个代号，路径相对于当前 INI 文件</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code># 继承同目录下的侦察车 / Inherit the scout in this folder
+[core]
+copyFrom: scout.ini
+name: rwa01Guard
+displayText: 巡逻护卫车 / Patrol Guard
+price: 450
+maxHp: 420
+mass: 3500
+
+[graphics]
+image: guard.png
+
+[projectile_shell]
+directDamage: 28
+
+[movement]
+moveSpeed: 0.75
+</code></pre></section><section><h2>覆盖需要改变的部分</h2><p>护卫车只改生命、价格、图片、伤害与速度，不必再复制一遍整套炮塔配置，将来修正共同的弹体行为时优先修改基础文件，再确认变体仍符合预期</p></section><section><h2>把教学项目改成自己的作品</h2><p>给模组和两辆车起新名字，更换两张车身图，保留可分辨的快车与重车定位，在 README 中写出如何找到单位、是否需要工厂入口，以及你测试的游戏版本</p></section><section><h2>检查压缩包内的完整性</h2><p>确认 mod-info.txt、两个 INI 和所有 PNG 都在包里，解压到一个新目录再检查一次引用，分享前启用两个示例项目同时加载，确认内部名称没有冲突</p></section><div class="lesson-check"><h2>动手练习</h2><p>额外新增一辆中型车，用继承完成并与前两辆一起测试</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-06">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

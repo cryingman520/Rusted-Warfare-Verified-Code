@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>用能量限制持续火力 · 铁锈战争模组工坊</title><meta name="description" content="把短时间爆发与长时间输出拆开考虑"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://rwmod.noaushio.uk/learn/academy-09/"><link rel="alternate" hreflang="en" href="https://rwmod.noaushio.uk/en/learn/academy-09/"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/creative.css"><meta property="og:title" content="用能量限制持续火力"><meta property="og:description" content="把短时间爆发与长时间输出拆开考虑"><meta property="og:url" content="https://rwmod.noaushio.uk/learn/academy-09/"><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"用能量限制持续火力","description":"把短时间爆发与长时间输出拆开考虑","inLanguage":"zh","url":"https://rwmod.noaushio.uk/learn/academy-09/","isPartOf":{"@type":"WebSite","name":"铁锈战争模组工坊","url":"https://rwmod.noaushio.uk"}}</script></head><body><header class="section-wrap"><a class="brand" href="/?lang=zh">铁锈战争模组工坊</a><div class="detail-actions"><a href="/tutorials/">全部教程</a><a href="/?lang=zh#editors">创作工具</a><a href="/en/learn/academy-09/">English</a></div></header><main class="section-wrap page-narrow"><h1>用能量限制持续火力</h1><p>把短时间爆发与长时间输出拆开考虑</p><section><h2>设置容量与恢复</h2><p>蓄能战车最多储存 12 能量，出生时充满，energyRegen 使用游戏自己的恢复速率，不要直接把数值当成每秒回复量，先在游戏中测量从空到满所需时间</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+energyMax: 12
+energyStartingPercentage: 1
+energyRegen: 0.03</code></pre></section><section><h2>每次开火支付能量</h2><p>炮塔 energyUsage:2 表示每发消耗 2 能量，在没有恢复的理想情况下，满能量能支付 6 发，实际连续射击时恢复同时发生，因此以游戏观察为准</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[turret_main]
+x: 0
+y: 0
+projectile: shell
+energyUsage: 2</code></pre></section><section><h2>比较三个阶段</h2><p>分别记录满能量开始的前几发、能量接近耗尽后的持续输出、完全停火后的恢复，若只看第一轮爆发，会低估长时间交战中的弱点</p></section><section><h2>把维修与补能分开</h2><p>维修工程车修复生命，战车依靠 energyRegen 恢复能量，这个项目中维修不会直接补充能量，设计技能时为玩家写清恢复的是哪一种数值</p><pre style="white-space:pre-wrap;background:#26372b;color:#e2e8d5;padding:20px;border-radius:6px;overflow:auto"><code>[core]
+isBuilder: true
+canRepairUnits: true
+canRepairBuildings: true
+nanoRange: 100
+nanoRepairSpeed: 0.3</code></pre></section><div class="lesson-check"><h2>动手练习</h2><p>做两组容量和恢复方案，记录它们在 30 秒战斗中的表现</p></div><p><a class="btn btn-dark" href="/?lang=zh#learn/academy-09">打开互动教程，下载配套模组</a></p></main><footer class="section-wrap"><a href="/?lang=zh#editors">开始创作 →</a> · <a href="https://download.noaushio.uk/">软件下载</a></footer></body></html>

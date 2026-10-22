@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rwmod.noaushio.uk/sitemap.xml
